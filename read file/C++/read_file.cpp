@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    std::ifstream sourceFile("source.txt");
-    std::ofstream destFile("destination.txt");
+    std::ifstream sourceFile("/workspaces/Rusty-Kernels-Code/read file/source.txt");
+    std::ofstream destFile("/workspaces/Rusty-Kernels-Code/read file/destination.txt");
 
     if (!sourceFile.is_open()) {
         std::cerr << "Unable to open source file.\n";
@@ -18,7 +18,7 @@ int main() {
 
     std::string line;
     while (std::getline(sourceFile, line)) {
-        destFile << line << '\n';
+        destFile << line;
     }
 
     sourceFile.close();

@@ -3,8 +3,8 @@ use std::io::{Read, Write};
 use std::error::Error;
 
 fn main() {
-    match copy_file_contents("source.txt", "destination.txt") {
-        Ok(_) => println!("File contents copied successfully."),
+    match copy_file_contents("/workspaces/Rusty-Kernels-Code/read file/source.txt", "/workspaces/Rusty-Kernels-Code/read file/destination.txt") {
+        Ok(_) => (),
         Err(e) => eprintln!("Error occurred: {}", e),
     }
 }
