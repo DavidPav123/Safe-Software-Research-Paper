@@ -3,18 +3,11 @@
 //
 // contributed by Alexander
 
-extern crate futures;
-extern crate tokio_threadpool;
-extern crate itertools;
-extern crate num;
-extern crate hashbrown;
-
-use futures::{Future, lazy};
-use self::tokio_threadpool::ThreadPool;
 use itertools::Itertools;
 use num::{FromPrimitive, ToPrimitive};
 use std::cmp::Ordering;
 use std::sync::Arc;
+use tokio::runtime::Runtime;
 
 type Map<T> = hashbrown::HashMap<T, u32>;
 
@@ -155,31 +148,36 @@ fn get_seq<R: std::io::BufRead>(mut r: R, key: &[u8]) -> Vec<u8> {
 
 pub fn calc<R: std::io::BufRead>(r: R) {
     let s_vec = get_seq(r, b">THREE");
-
-    let pool = ThreadPool::new();
-
     let arc_vec = Arc::new(s_vec);
-    let s1 = arc_vec.clone();
-    let s2 = arc_vec.clone();
-    let s3 = arc_vec.clone();
-    let s4 = arc_vec.clone();
-    let s5 = arc_vec.clone();
-    let s6 = arc_vec.clone();
-    let s7 = arc_vec.clone();
-    let f7 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s1, 18))));
-    let f6 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s2, 12))));
-    let f5 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s3, 6))));
-    let f4 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s4, 4))));
-    let f3 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s5, 3))));
-    let f2 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s6, 2))));
-    let f1 = pool.spawn_handle(lazy(move || Ok::<_, ()>(freq(&s7, 1))));
-    print_stat(f1.wait().unwrap(), 1);
-    print_stat(f2.wait().unwrap(), 2);
-    print::<u8>(f3.wait().unwrap(), "GGT");
-    print::<u8>(f4.wait().unwrap(), "GGTA");
-    print::<u16>(f5.wait().unwrap(), "GGTATT");
-    print::<u32>(f6.wait().unwrap(), "GGTATTTTAATT");
-    print::<u64>(f7.wait().unwrap(), "GGTATTTTAATTTATAGT");
+
+    let runtime = Runtime::new().unwrap();
+    runtime.block_on(async {
+        let s1 = arc_vec.clone();
+        let s2 = arc_vec.clone();
+        let s3 = arc_vec.clone();
+        let s4 = arc_vec.clone();
+        let s5 = arc_vec.clone();
+        let s6 = arc_vec.clone();
+        let s7 = arc_vec.clone();
+
+        // Use tokio::spawn to spawn async tasks and await the results
+        let f7 = tokio::spawn(async move { freq(&s1, 18) });
+        let f6 = tokio::spawn(async move { freq(&s2, 12) });
+        let f5 = tokio::spawn(async move { freq(&s3, 6) });
+        let f4 = tokio::spawn(async move { freq(&s4, 4) });
+        let f3 = tokio::spawn(async move { freq(&s5, 3) });
+        let f2 = tokio::spawn(async move { freq(&s6, 2) });
+        let f1 = tokio::spawn(async move { freq(&s7, 1) });
+
+        // Use .await to get the result of the future
+        print_stat(f1.await.unwrap(), 1);
+        print_stat(f2.await.unwrap(), 2);
+        print::<u8>(f3.await.unwrap(), "GGT");
+        print::<u8>(f4.await.unwrap(), "GGTA");
+        print::<u16>(f5.await.unwrap(), "GGTATT");
+        print::<u32>(f6.await.unwrap(), "GGTATTTTAATT");
+        print::<u64>(f7.await.unwrap(), "GGTATTTTAATTTATAGT");
+    });
 }
 
 fn main() {

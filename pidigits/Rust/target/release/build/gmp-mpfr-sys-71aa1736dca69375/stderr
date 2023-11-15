@@ -1,0 +1,17 @@
+../../gmp-src/tests/misc.c: In function ‘seed_from_urandom’:
+../../gmp-src/tests/misc.c:102:3: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+  102 |   fread (buf, 1, 6, fs);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../../mpfr-src/tests/tsprintf.c: In function ‘main’:
+../../mpfr-src/tests/tsprintf.c:327:40: warning: ‘%s’ directive writing up to 1 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  327 |                   sprintf (fmt, "%s%%%s%s%sR%s%c", expected, ps[fmtpsflags],
+      |                                        ^~
+In file included from /usr/include/stdio.h:867,
+                 from ../../mpfr-src/src/mpfr-impl.h:49,
+                 from ../../mpfr-src/tests/mpfr-test.h:38,
+                 from ../../mpfr-src/tests/tsprintf.c:54:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: ‘__builtin___sprintf_chk’ output 4 or more bytes (assuming 27) into a destination of size 20
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

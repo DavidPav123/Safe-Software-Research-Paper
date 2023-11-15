@@ -1,0 +1,10 @@
+/workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/deps/crossbeam_queue-899400f0c75ddf9d.rmeta: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/array_queue.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/err.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/seg_queue.rs
+
+/workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/deps/libcrossbeam_queue-899400f0c75ddf9d.rlib: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/array_queue.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/err.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/seg_queue.rs
+
+/workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/deps/crossbeam_queue-899400f0c75ddf9d.d: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/array_queue.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/err.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/seg_queue.rs
+
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/lib.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/array_queue.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/err.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crossbeam-queue-0.2.3/src/seg_queue.rs:

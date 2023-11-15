@@ -9,7 +9,6 @@
 // contributed by Andre Bogus
 // contributed by Ryohei Machida
 
-#[macro_use]
 extern crate generic_array;
 #[macro_use]
 extern crate numeric_array;
@@ -77,14 +76,18 @@ where
         let ix4 = I32x4::splat(4 * i + k);
 
         // column indices of A (equivarent to indices of v)
-        let mut jx4 = narr![i32; 0, 1, 2, 3];
+        let mut jx4 = [0_i32, 1, 2, 3];
         let mut sum = F64x4::default();
 
         // Each slot in the pair gets its own sum, which is further computed in
         // four f64 lanes (which are summed at the end).
         for j in 0..v.len() {
-            sum += v[j] / inv_a(ix4, jx4);
-            jx4 += nconstant!(4);
+            sum += v[j] / inv_a(ix4, jx4.into());
+            for jx in &mut jx4 {
+                *jx += 4;
+            }
+            
+            
         }
 
         // Sum the four lanes for each slot.
@@ -100,7 +103,7 @@ fn inv_a(i: I32x4, j: I32x4) -> F64x4 {
     let one = nconstant!(1);
     let two = nconstant!(2);
     let a_ij = (i + j) * (i + j + one) / two + i + one;
-    narr![f64; a_ij[0] as f64, a_ij[1] as f64, a_ij[2] as f64, a_ij[3] as f64]
+    [a_ij[0] as f64, a_ij[1] as f64, a_ij[2] as f64, a_ij[3] as f64].into()
 }
 
 /// Vectorised form of inner product

@@ -1,0 +1,243 @@
+desc: (none)
+cmd: ./Rust
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=297942
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=300180
+mem_heap_B=592
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=300353
+mem_heap_B=1616
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=301355
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=436521
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=peak
+n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x4910D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4920ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x491FCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4912717: getdelim (iogetdelim.c:73)
+     n1: 1024 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
+      n1: 1024 0x1283CD: get_stack_start (thread.rs:777)
+       n1: 1024 0x1283CD: get_stack_start_aligned (thread.rs:794)
+        n1: 1024 0x1283CD: init (thread.rs:826)
+         n1: 1024 0x1283CD: init (rt.rs:99)
+          n1: 1024 0x1283CD: {closure#1} (rt.rs:147)
+           n1: 1024 0x1283CD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+            n1: 1024 0x1283CD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+             n1: 1024 0x1283CD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+              n1: 1024 0x1283CD: std::rt::lang_start_internal (rt.rs:147)
+               n0: 1024 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n1: 472 0x491192D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x491192D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x48704AA: pthread_getattr_np (pthread_getattr_np.c:81)
+    n1: 472 0x1283CD: get_stack_start (thread.rs:777)
+     n1: 472 0x1283CD: get_stack_start_aligned (thread.rs:794)
+      n1: 472 0x1283CD: init (thread.rs:826)
+       n1: 472 0x1283CD: init (rt.rs:99)
+        n1: 472 0x1283CD: {closure#1} (rt.rs:147)
+         n1: 472 0x1283CD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+          n1: 472 0x1283CD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+           n1: 472 0x1283CD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+            n1: 472 0x1283CD: std::rt::lang_start_internal (rt.rs:147)
+             n0: 472 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n1: 240 0x491259D: getdelim (iogetdelim.c:102)
+  n1: 240 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
+   n1: 240 0x1283CD: get_stack_start (thread.rs:777)
+    n1: 240 0x1283CD: get_stack_start_aligned (thread.rs:794)
+     n1: 240 0x1283CD: init (thread.rs:826)
+      n1: 240 0x1283CD: init (rt.rs:99)
+       n1: 240 0x1283CD: {closure#1} (rt.rs:147)
+        n1: 240 0x1283CD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+         n1: 240 0x1283CD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+          n1: 240 0x1283CD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+           n1: 240 0x1283CD: std::rt::lang_start_internal (rt.rs:147)
+            n0: 240 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=436521
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=437562
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=437689
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=438542
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=439475
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=439555
+mem_heap_B=5
+mem_heap_extra_B=19
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=439736
+mem_heap_B=53
+mem_heap_extra_B=27
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=440632
+mem_heap_B=85
+mem_heap_extra_B=35
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=442714
+mem_heap_B=94
+mem_heap_extra_B=50
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=443057
+mem_heap_B=85
+mem_heap_extra_B=35
+mem_stacks_B=0
+heap_tree=detailed
+n4: 85 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 48 0x12888B: alloc (alloc.rs:98)
+  n1: 48 0x12888B: alloc_impl (alloc.rs:181)
+   n1: 48 0x12888B: allocate (alloc.rs:241)
+    n1: 48 0x12888B: {closure#0}<std::thread::Inner> (sync.rs:531)
+     n1: 48 0x12888B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
+      n1: 48 0x12888B: new_uninit<std::thread::Inner> (sync.rs:529)
+       n1: 48 0x12888B: std::thread::Thread::new (mod.rs:1204)
+        n1: 48 0x12849F: init (rt.rs:104)
+         n1: 48 0x12849F: {closure#1} (rt.rs:147)
+          n1: 48 0x12849F: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+           n1: 48 0x12849F: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+            n1: 48 0x12849F: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+             n1: 48 0x12849F: std::rt::lang_start_internal (rt.rs:147)
+              n0: 48 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n1: 32 0x48D61E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
+  n1: 32 0x12D56A: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
+   n1: 32 0x12D56A: __getit (fast_local.rs:54)
+    n1: 32 0x12D56A: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
+     n1: 32 0x12D56A: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
+      n1: 32 0x12D56A: std::sys_common::thread_info::set (thread_info.rs:41)
+       n1: 32 0x1284BC: init (rt.rs:105)
+        n1: 32 0x1284BC: {closure#1} (rt.rs:147)
+         n1: 32 0x1284BC: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+          n1: 32 0x1284BC: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+           n1: 32 0x1284BC: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+            n1: 32 0x1284BC: std::rt::lang_start_internal (rt.rs:147)
+             n0: 32 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n1: 5 0x14ACF4: alloc (alloc.rs:98)
+  n1: 5 0x14ACF4: alloc_impl (alloc.rs:181)
+   n1: 5 0x14ACF4: allocate (alloc.rs:241)
+    n1: 5 0x14ACF4: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 5 0x14ACF4: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 5 0x14ACF4: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
+       n1: 5 0x14ACF4: with_capacity<u8> (mod.rs:479)
+        n1: 5 0x14ACF4: spec_new_impl_bytes (c_str.rs:287)
+         n1: 5 0x14ACF4: <&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl (c_str.rs:306)
+          n1: 5 0x128478: new<&str> (c_str.rs:316)
+           n1: 5 0x128478: init (rt.rs:104)
+            n1: 5 0x128478: {closure#1} (rt.rs:147)
+             n1: 5 0x128478: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+              n1: 5 0x128478: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+               n1: 5 0x128478: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                n1: 5 0x128478: std::rt::lang_start_internal (rt.rs:147)
+                 n0: 5 0x1110C4: main (in /workspaces/Rusty-Kernels-Code/read file/Rust/target/release/Rust)
+ n0: 0 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=443447
+mem_heap_B=80
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=443484
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=443516
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

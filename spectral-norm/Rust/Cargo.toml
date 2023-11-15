@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+generic-array = "1.0.0"
+numeric-array = "0.5.2"
+rayon = "1.8.0"

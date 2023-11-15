@@ -1,0 +1,6 @@
+$ mkdir -p "/workspaces/Rusty-Kernels-Code/pidigits/Rust/target/release/build/az-3075e6c2bc139eda/out/try_track_caller"
+$ cd "/workspaces/Rusty-Kernels-Code/pidigits/Rust/target/release/build/az-3075e6c2bc139eda/out/try_track_caller"
+$ printf '%s' "// try_tra"... > "/workspaces/Rusty-Kernels-Code/pidigits/Rust/target/release/build/az-3075e6c2bc139eda/out/try_track_caller/try_track_caller.rs"
+$ cd "/workspaces/Rusty-Kernels-Code/pidigits/Rust/target/release/build/az-3075e6c2bc139eda/out/try_track_caller" && "/home/codespace/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=track_caller
+$ rm -r "/workspaces/Rusty-Kernels-Code/pidigits/Rust/target/release/build/az-3075e6c2bc139eda/out/try_track_caller"
