@@ -1,0 +1,1194 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/pidigits/C/Results/massif2.txt
+cmd: /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC 10000
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=54630276
+mem_heap_B=33720
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 33720 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 29624 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 29624 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 14816 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 4944 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 4936 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 4936 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 14808 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 4936 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 4936 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 4936 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=137333653
+mem_heap_B=53736
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=214084600
+mem_heap_B=67416
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=311193004
+mem_heap_B=81672
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=415030713
+mem_heap_B=94728
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=504286452
+mem_heap_B=104760
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=572729429
+mem_heap_B=111912
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=692785672
+mem_heap_B=123480
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=779395584
+mem_heap_B=131256
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=904106203
+mem_heap_B=141752
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=971120757
+mem_heap_B=147096
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1086298747
+mem_heap_B=155880
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1187372429
+mem_heap_B=163256
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1269675094
+mem_heap_B=169032
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1385571457
+mem_heap_B=176856
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1484501084
+mem_heap_B=183288
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 183288 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 179192 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 179192 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 89600 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 29872 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 29864 0x10933F: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 29864 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 89592 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 29864 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 29864 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 29864 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=1551042504
+mem_heap_B=187512
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1666643087
+mem_heap_B=194616
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1758760195
+mem_heap_B=200168
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1844018180
+mem_heap_B=238640
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1944094786
+mem_heap_B=245304
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2019646875
+mem_heap_B=215040
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2098205961
+mem_heap_B=219344
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2196584103
+mem_heap_B=261400
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 261400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 220528 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 220528 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 110272 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 36760 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 36760 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 36752 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 110256 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 36752 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 36752 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 36752 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 36776 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 36776 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 36776 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 36776 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=25
+#-----------
+time=2264119070
+mem_heap_B=265576
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2373586585
+mem_heap_B=272152
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 272152 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 229744 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 229744 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 114880 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 38296 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 38296 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 38288 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 114864 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 38288 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 38288 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 38288 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 38312 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 38312 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 38312 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 38312 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=27
+#-----------
+time=2444706000
+mem_heap_B=276384
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2540156715
+mem_heap_B=281952
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2639249717
+mem_heap_B=247112
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2742665692
+mem_heap_B=293408
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2795304365
+mem_heap_B=296320
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2876088503
+mem_heap_B=300744
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2935144363
+mem_heap_B=303960
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 303960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 257008 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 257008 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 128512 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 42840 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 42840 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 42832 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 128496 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 42832 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 42832 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 42832 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 42856 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 42856 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 42856 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 42856 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=34
+#-----------
+time=3024483414
+mem_heap_B=265216
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=3143017101
+mem_heap_B=314968
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=3233116823
+mem_heap_B=319640
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 319640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 270448 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 270448 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 135232 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 45080 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 45080 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 45072 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 135216 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 45072 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 45072 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 45072 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 45096 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 45096 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 45096 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 45096 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=37
+#-----------
+time=3327493168
+mem_heap_B=278672
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=3455089276
+mem_heap_B=284224
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=3522478013
+mem_heap_B=334232
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=3590570859
+mem_heap_B=337592
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=3659221751
+mem_heap_B=340952
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=3764060434
+mem_heap_B=345992
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=3835581553
+mem_heap_B=300080
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=3916624600
+mem_heap_B=353272
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 353272 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 299280 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 299280 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 149640 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 49880 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 49880 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 49880 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 149640 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 49880 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 49880 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 49880 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 49896 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 49896 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 49896 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 49896 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=45
+#-----------
+time=3982425376
+mem_heap_B=305976
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=4071369961
+mem_heap_B=360440
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 360440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 305424 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 305424 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 152712 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 50904 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 50904 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 50904 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n3: 101808 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 50904 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 50904 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n1: 50904 0x486CFC2: __gmpz_mul (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 50904 0x1092EB: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n2: 50920 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 50920 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 50920 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 50920 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=47
+#-----------
+time=4137224059
+mem_heap_B=312112
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=4230528834
+mem_heap_B=367712
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=detailed
+n3: 367712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 311656 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 311656 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 155832 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 51944 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 51944 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 51944 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 155824 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 51944 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 51944 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 51936 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 51960 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 51960 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 51960 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 51960 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=49
+#-----------
+time=4263549139
+mem_heap_B=369176
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=4312700793
+mem_heap_B=371408
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=detailed
+n3: 371408 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 314824 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 314824 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n5: 209880 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 52472 0x109329: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 52472 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 52472 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 52464 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n3: 104944 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 52472 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 52472 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 52488 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 52488 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 52488 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 52488 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=51
+#-----------
+time=4365451530
+mem_heap_B=373768
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=4397796497
+mem_heap_B=375192
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 375192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 318064 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 318064 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 159040 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53016 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53016 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53008 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n3: 106016 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53008 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53008 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n1: 53008 0x486CFC2: __gmpz_mul (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53008 0x1092EB: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n2: 53032 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 53032 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 53032 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53032 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=53
+#-----------
+time=4450544237
+mem_heap_B=324168
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=4481806239
+mem_heap_B=378920
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 378920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 321264 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 321264 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 160632 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53544 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53544 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53544 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n3: 107088 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53544 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 53544 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n1: 53544 0x486CFC2: __gmpz_mul (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53544 0x1092EB: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n2: 53560 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 53560 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 53560 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 53560 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=55
+#-----------
+time=4534504375
+mem_heap_B=381240
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=4568115528
+mem_heap_B=382728
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 382728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 324528 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 324528 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 162264 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54088 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54088 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54088 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 162264 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54088 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54088 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54088 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 54104 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 54104 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 54104 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54104 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=57
+#-----------
+time=4620762692
+mem_heap_B=385024
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=4658347000
+mem_heap_B=386616
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 386616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 327856 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 327856 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 163936 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54648 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54648 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54640 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 163920 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54640 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54640 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 54640 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 54664 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 54664 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 54664 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 54664 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=59
+#-----------
+time=4711161113
+mem_heap_B=388888
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=4747402111
+mem_heap_B=390456
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 390456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 331152 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 331152 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 165576 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55192 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55192 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55192 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 165576 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55192 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55192 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55192 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 55208 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 55208 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 55208 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55208 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=61
+#-----------
+time=4800194814
+mem_heap_B=392696
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=4839514236
+mem_heap_B=394376
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 394376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 334512 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 334512 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 167256 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55752 0x109315: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55752 0x10933F: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55752 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 167256 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55752 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55752 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 55752 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 55768 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 55768 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 55768 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 55768 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=63
+#-----------
+time=4892186026
+mem_heap_B=396608
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=4934279234
+mem_heap_B=398376
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 398376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 337936 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 337936 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 168976 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56328 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56328 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56320 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n3: 112640 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56320 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56320 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n1: 56320 0x486CFC2: __gmpz_mul (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56320 0x1092EB: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n2: 56344 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 56344 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 56344 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56344 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=65
+#-----------
+time=4987183445
+mem_heap_B=400592
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=5030713423
+mem_heap_B=402400
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=detailed
+n3: 402400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 341384 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 341384 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 170696 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56904 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56896 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56896 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 170688 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56896 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56896 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 56896 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 56920 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 56920 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 56920 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 56920 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=67
+#-----------
+time=5083357179
+mem_heap_B=347360
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=5127270493
+mem_heap_B=406440
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 406440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 344848 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 344848 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 172432 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 57480 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 57480 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 57472 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 172416 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 57472 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 57472 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 57472 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 57496 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 57496 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 57496 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 57496 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4953D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4963ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4962F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n0: 4096 0x1092B2: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+#-----------
+snapshot=69
+#-----------
+time=5180116900
+mem_heap_B=408600
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=5226235164
+mem_heap_B=410504
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 410504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 348336 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 348336 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 174168 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58056 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58056 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58056 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n3: 116112 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58056 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58056 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n1: 58056 0x486CFC2: __gmpz_mul (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58056 0x1092EB: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+ n2: 58072 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 58072 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 58072 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58072 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=5278942965
+mem_heap_B=354272
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=5327214923
+mem_heap_B=414648
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 414648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 351888 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 351888 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 175944 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58648 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58648 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58648 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 175944 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58648 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58648 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 58648 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 58664 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 58664 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 58664 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 58664 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=5379942428
+mem_heap_B=357808
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=5432121598
+mem_heap_B=418872
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 418872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 355504 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 355504 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 177760 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59256 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59256 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59248 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 177744 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59248 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59248 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59248 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 59272 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 59272 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 59272 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59272 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=75
+#-----------
+time=5484811345
+mem_heap_B=361424
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=5535690354
+mem_heap_B=423048
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n3: 423048 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 359088 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 359088 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 179544 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59848 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59848 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59848 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 179544 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59848 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59848 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 59848 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 59864 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 59864 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 59864 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 59864 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=5588511589
+mem_heap_B=425120
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=5641245625
+mem_heap_B=366784
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=5643000164
+mem_heap_B=427304
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=peak
+n3: 427304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 362736 0x48585E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n3: 362736 0x4870D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n4: 181368 0x485FA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 60456 0x10937B: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 60456 0x1093AF: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 60456 0x1093E7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n4: 181368 0x486D1ED: __gmpz_mul_si (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 60456 0x109365: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 60456 0x109395: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 60456 0x1093F8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 60472 0x485859D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+  n1: 60472 0x48592DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+   n2: 60472 0x4873888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+    n0: 60472 0x109245: main (in /workspaces/Rusty-Kernels-Code/pidigits/C/pidigitsC)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 4096 in 1 place, below massif's threshold (1.00%)

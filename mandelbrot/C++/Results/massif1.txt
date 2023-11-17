@@ -1,0 +1,302 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/mandelbrot/C++/Results/massif1.txt
+cmd: /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++ 200
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2457135
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2574545
+mem_heap_B=77704
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2581488
+mem_heap_B=81800
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2587805
+mem_heap_B=81840
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2587932
+mem_heap_B=81920
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2588009
+mem_heap_B=81920
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=detailed
+n4: 81920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5DA: ???
+        n0: 72704 0x1FFEFFF616: ???
+ n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n0: 120 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=2588009
+mem_heap_B=81880
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2588121
+mem_heap_B=81888
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2588172
+mem_heap_B=81984
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2592730
+mem_heap_B=82272
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2596780
+mem_heap_B=84072
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=16379823
+mem_heap_B=84072
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=peak
+n5: 84072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5DA: ???
+        n0: 72704 0x1FFEFFF616: ???
+ n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n1: 1800 0x10A81B: ComplexPlaneCalculator<double, MandelbrotFunction<double> >::operator()() (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n1: 1800 0x4947DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 1800 0x4856608: start_thread (pthread_create.c:477)
+    n0: 1800 0x4B8D132: clone (clone.S:95)
+ n0: 472 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=16379823
+mem_heap_B=82272
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=16379879
+mem_heap_B=82176
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=16383096
+mem_heap_B=82192
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=16383147
+mem_heap_B=82288
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=16383428
+mem_heap_B=82576
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=16383994
+mem_heap_B=84376
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=30210074
+mem_heap_B=82576
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=30210130
+mem_heap_B=82480
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=30210411
+mem_heap_B=82472
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=30211584
+mem_heap_B=82456
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=detailed
+n4: 82456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5DA: ???
+        n0: 72704 0x1FFEFFF616: ???
+ n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n0: 656 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=30211616
+mem_heap_B=82376
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=30212668
+mem_heap_B=77376
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=30223327
+mem_heap_B=4672
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=30225155
+mem_heap_B=576
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=30227595
+mem_heap_B=288
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=30228981
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

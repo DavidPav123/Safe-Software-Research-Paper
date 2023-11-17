@@ -1,0 +1,99 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/binary-trees/C/Results/massif1.txt
+cmd: /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC 21
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=294567
+mem_heap_B=200
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=298566
+mem_heap_B=400
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=555479681
+mem_heap_B=4496
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=833260811
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=40729860594
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=peak
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4908D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4918ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4917F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49166B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49166B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FD971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B505A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486D7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486C46D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486DFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486F4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=6
+#-----------
+time=40729860594
+mem_heap_B=4496
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=40730329489
+mem_heap_B=4296
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=40730330986
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=40730336208
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

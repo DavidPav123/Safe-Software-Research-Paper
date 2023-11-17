@@ -1,0 +1,217 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/C++/Results/massif0.txt
+cmd: /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++ 2500
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2377191
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2491354
+mem_heap_B=72992
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2495162
+mem_heap_B=77088
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2495924
+mem_heap_B=77096
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2495975
+mem_heap_B=77136
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2500652
+mem_heap_B=77424
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=138628245
+mem_heap_B=77424
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=peak
+n3: 77424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F4A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5EA: ???
+        n0: 72704 0x1FFEFFF61C: ???
+ n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x4981853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10B0EE: void make<repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)>(char const*, int, repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)) (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+         n0: 4096 0x10A3BC: main (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+ n0: 624 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=138628245
+mem_heap_B=77384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=138631446
+mem_heap_B=77376
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=138632271
+mem_heap_B=77384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=138632321
+mem_heap_B=77424
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=193135374
+mem_heap_B=77384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=193135693
+mem_heap_B=77376
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=193136509
+mem_heap_B=77384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=193136559
+mem_heap_B=77424
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=212454498
+mem_heap_B=77384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=212454817
+mem_heap_B=77376
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=detailed
+n3: 77376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F4A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5EA: ???
+        n0: 72704 0x1FFEFFF61C: ???
+ n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x4981853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10B0EE: void make<repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)>(char const*, int, repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)) (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+         n0: 4096 0x10A3BC: main (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+ n0: 576 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=212455580
+mem_heap_B=77088
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=212465928
+mem_heap_B=4384
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=212467756
+mem_heap_B=288
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=212470238
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

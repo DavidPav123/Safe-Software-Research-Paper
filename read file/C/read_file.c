@@ -2,19 +2,18 @@
 #include <stdlib.h>
 
 int main() {
-    printf("Running");
     FILE *sourceFile, *destFile;
     int ch; // Use int to handle EOF correctly
 
     // Open the source file in read mode
-    sourceFile = fopen("/workspaces/Rusty-Kernels-Code/read file/source.txt", "r");
+    sourceFile = fopen("/workspaces/Rusty-Kernels-Code/read\ file/source.txt", "r");
     if (sourceFile == NULL) {
         perror("Error opening source file");
         return 1;
     }
 
     // Open the destination file in write mode
-    destFile = fopen("/workspaces/Rusty-Kernels-Code/read file/destination.txt", "w");
+    destFile = fopen("/workspaces/Rusty-Kernels-Code/read\ file/destination.txt", "w");
     if (destFile == NULL) {
         perror("Error opening destination file");
         fclose(sourceFile);  // Close the source file before exiting

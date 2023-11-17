@@ -1,0 +1,108 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/spectral-norm/C++/Results/massif2.txt
+cmd: /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++ 5500
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=276009
+mem_heap_B=32816
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=277511
+mem_heap_B=32816
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=peak
+n1: 32816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x4ABCF18: __alloc_dir (opendir.c:118)
+  n1: 32816 0x4ABCF18: opendir_tail (opendir.c:69)
+   n1: 32816 0x4ABCF18: opendir (opendir.c:92)
+    n1: 32816 0x4AFB9EF: get_nprocs_conf (getsysstats.c:242)
+     n1: 32816 0x4AC46AC: posix_sysconf (sysconf.c:628)
+      n1: 32816 0x4AC46AC: linux_sysconf (sysconf.c:106)
+       n1: 32816 0x4AC46AC: sysconf (sysconf.c:36)
+        n1: 32816 0x49B9C72: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+         n1: 32816 0x49A7679: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+          n1: 32816 0x4011B99: call_init.part.0 (dl-init.c:72)
+           n1: 32816 0x4011CA0: call_init (dl-init.c:30)
+            n1: 32816 0x4011CA0: _dl_init (dl-init.c:119)
+             n1: 32816 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 32816 0x1: ???
+               n1: 32816 0x1FFEFFF5CE: ???
+                n0: 32816 0x1FFEFFF60F: ???
+#-----------
+snapshot=3
+#-----------
+time=277511
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=278369
+mem_heap_B=8
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=305183
+mem_heap_B=200
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=306321
+mem_heap_B=1976
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=307382
+mem_heap_B=2000
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=312112
+mem_heap_B=2288
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=13682199785
+mem_heap_B=6384
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=13683256440
+mem_heap_B=2288
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty

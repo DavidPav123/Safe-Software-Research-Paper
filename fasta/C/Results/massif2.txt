@@ -1,0 +1,132 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/C/Results/massif2.txt
+cmd: /workspaces/Rusty-Kernels-Code/fasta/C/fastaC 2500
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=162880
+mem_heap_B=347
+mem_heap_extra_B=13
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=162968
+mem_heap_B=17854
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=169643
+mem_heap_B=17854
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=detailed
+n2: 17854 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 17507 0x1091DA: main (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+ n0: 347 0x109151: main (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+#-----------
+snapshot=4
+#-----------
+time=169643
+mem_heap_B=17507
+mem_heap_extra_B=21
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=169673
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=169750
+mem_heap_B=139968
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2269374
+mem_heap_B=146068
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2368019
+mem_heap_B=146068
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=peak
+n3: 146068 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 139968 0x109480: random_fasta (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+  n0: 139968 0x10930C: main (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+ n1: 6100 0x1094F7: random_fasta (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+  n0: 6100 0x10930C: main (in /workspaces/Rusty-Kernels-Code/fasta/C/fastaC)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=2368019
+mem_heap_B=139968
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2368056
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2368115
+mem_heap_B=139968
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=4467706
+mem_heap_B=146068
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=4631815
+mem_heap_B=139968
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=4631852
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

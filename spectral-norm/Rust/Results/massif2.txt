@@ -1,0 +1,1676 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/spectral-norm/Rust/Results/massif2.txt
+cmd: /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust 5500
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=312016
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=314254
+mem_heap_B=592
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=314427
+mem_heap_B=1616
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=315429
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=446116
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x4913D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4923ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4922CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4915717: getdelim (iogetdelim.c:73)
+     n1: 1024 0x48735A3: pthread_getattr_np (pthread_getattr_np.c:118)
+      n1: 1024 0x13A37D: get_stack_start (thread.rs:777)
+       n1: 1024 0x13A37D: get_stack_start_aligned (thread.rs:794)
+        n1: 1024 0x13A37D: init (thread.rs:826)
+         n1: 1024 0x13A37D: init (rt.rs:99)
+          n1: 1024 0x13A37D: {closure#1} (rt.rs:147)
+           n1: 1024 0x13A37D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+            n1: 1024 0x13A37D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+             n1: 1024 0x13A37D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+              n1: 1024 0x13A37D: std::rt::lang_start_internal (rt.rs:147)
+               n0: 1024 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 472 0x491492D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x491492D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x48734AA: pthread_getattr_np (pthread_getattr_np.c:81)
+    n1: 472 0x13A37D: get_stack_start (thread.rs:777)
+     n1: 472 0x13A37D: get_stack_start_aligned (thread.rs:794)
+      n1: 472 0x13A37D: init (thread.rs:826)
+       n1: 472 0x13A37D: init (rt.rs:99)
+        n1: 472 0x13A37D: {closure#1} (rt.rs:147)
+         n1: 472 0x13A37D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+          n1: 472 0x13A37D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+           n1: 472 0x13A37D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+            n1: 472 0x13A37D: std::rt::lang_start_internal (rt.rs:147)
+             n0: 472 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 240 0x491559D: getdelim (iogetdelim.c:102)
+  n1: 240 0x48735A3: pthread_getattr_np (pthread_getattr_np.c:118)
+   n1: 240 0x13A37D: get_stack_start (thread.rs:777)
+    n1: 240 0x13A37D: get_stack_start_aligned (thread.rs:794)
+     n1: 240 0x13A37D: init (thread.rs:826)
+      n1: 240 0x13A37D: init (rt.rs:99)
+       n1: 240 0x13A37D: {closure#1} (rt.rs:147)
+        n1: 240 0x13A37D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+         n1: 240 0x13A37D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+          n1: 240 0x13A37D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+           n1: 240 0x13A37D: std::rt::lang_start_internal (rt.rs:147)
+            n0: 240 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=446116
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=447157
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=447284
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=448137
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=449070
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=449150
+mem_heap_B=5
+mem_heap_extra_B=19
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=449331
+mem_heap_B=53
+mem_heap_extra_B=27
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=450227
+mem_heap_B=85
+mem_heap_extra_B=35
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=451546
+mem_heap_B=133
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=451637
+mem_heap_B=202
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=detailed
+n6: 202 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69 0x13CD61: alloc (alloc.rs:98)
+  n1: 69 0x13CD61: alloc_impl (alloc.rs:181)
+   n1: 69 0x13CD61: allocate (alloc.rs:241)
+    n1: 69 0x13CD61: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 69 0x13CD61: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 69 0x13CD61: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
+       n1: 69 0x13CD61: to_vec<u8, alloc::alloc::Global> (slice.rs:162)
+        n1: 69 0x13CD61: to_vec<u8, alloc::alloc::Global> (slice.rs:111)
+         n1: 69 0x13CD61: to_vec_in<u8, alloc::alloc::Global> (slice.rs:441)
+          n1: 69 0x13CD61: to_vec<u8> (slice.rs:416)
+           n1: 69 0x13CD61: clone (args.rs:163)
+            n1: 69 0x13CD61: args (args.rs:130)
+             n1: 69 0x13CD61: args (args.rs:19)
+              n1: 69 0x13CD61: std::env::args_os (env.rs:794)
+               n1: 69 0x13CC10: std::env::args (env.rs:759)
+                n1: 69 0x1177FE: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+                 n1: 69 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+                  n1: 69 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+                   n1: 69 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                    n1: 69 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                     n1: 69 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                      n1: 69 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                       n1: 69 0x13A47A: {closure#2} (rt.rs:148)
+                        n1: 69 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                         n1: 69 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                          n1: 69 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                           n1: 69 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                            n0: 69 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 48 0x13A9BB: alloc (alloc.rs:98)
+  n1: 48 0x13A9BB: alloc_impl (alloc.rs:181)
+   n1: 48 0x13A9BB: allocate (alloc.rs:241)
+    n1: 48 0x13A9BB: {closure#0}<std::thread::Inner> (sync.rs:531)
+     n1: 48 0x13A9BB: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
+      n1: 48 0x13A9BB: new_uninit<std::thread::Inner> (sync.rs:529)
+       n1: 48 0x13A9BB: std::thread::Thread::new (mod.rs:1204)
+        n1: 48 0x13A44F: init (rt.rs:104)
+         n1: 48 0x13A44F: {closure#1} (rt.rs:147)
+          n1: 48 0x13A44F: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+           n1: 48 0x13A44F: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+            n1: 48 0x13A44F: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+             n1: 48 0x13A44F: std::rt::lang_start_internal (rt.rs:147)
+              n0: 48 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 48 0x13CC9B: alloc (alloc.rs:98)
+  n1: 48 0x13CC9B: alloc_impl (alloc.rs:181)
+   n1: 48 0x13CC9B: allocate (alloc.rs:241)
+    n1: 48 0x13CC9B: allocate_in<std::ffi::os_str::OsString, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 48 0x13CC9B: with_capacity_in<std::ffi::os_str::OsString, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 48 0x13CC9B: with_capacity_in<std::ffi::os_str::OsString, alloc::alloc::Global> (mod.rs:670)
+       n1: 48 0x13CC9B: with_capacity<std::ffi::os_str::OsString> (mod.rs:479)
+        n1: 48 0x13CC9B: clone (args.rs:145)
+         n1: 48 0x13CC9B: args (args.rs:130)
+          n1: 48 0x13CC9B: args (args.rs:19)
+           n1: 48 0x13CC9B: std::env::args_os (env.rs:794)
+            n1: 48 0x13CC10: std::env::args (env.rs:759)
+             n1: 48 0x1177FE: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+              n1: 48 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+               n1: 48 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+                n1: 48 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 48 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                  n1: 48 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                   n1: 48 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 48 0x13A47A: {closure#2} (rt.rs:148)
+                     n1: 48 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                      n1: 48 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                       n1: 48 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 48 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 48 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 32 0x48D91E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
+  n1: 32 0x14258A: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
+   n1: 32 0x14258A: __getit (fast_local.rs:54)
+    n1: 32 0x14258A: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
+     n1: 32 0x14258A: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
+      n1: 32 0x14258A: std::sys_common::thread_info::set (thread_info.rs:41)
+       n1: 32 0x13A46C: init (rt.rs:105)
+        n1: 32 0x13A46C: {closure#1} (rt.rs:147)
+         n1: 32 0x13A46C: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+          n1: 32 0x13A46C: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+           n1: 32 0x13A46C: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+            n1: 32 0x13A46C: std::rt::lang_start_internal (rt.rs:147)
+             n0: 32 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 5 0x161314: alloc (alloc.rs:98)
+  n1: 5 0x161314: alloc_impl (alloc.rs:181)
+   n1: 5 0x161314: allocate (alloc.rs:241)
+    n1: 5 0x161314: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 5 0x161314: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 5 0x161314: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
+       n1: 5 0x161314: with_capacity<u8> (mod.rs:479)
+        n1: 5 0x161314: spec_new_impl_bytes (c_str.rs:287)
+         n1: 5 0x161314: <&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl (c_str.rs:306)
+          n1: 5 0x13A428: new<&str> (c_str.rs:316)
+           n1: 5 0x13A428: init (rt.rs:104)
+            n1: 5 0x13A428: {closure#1} (rt.rs:147)
+             n1: 5 0x13A428: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+              n1: 5 0x13A428: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+               n1: 5 0x13A428: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                n1: 5 0x13A428: std::rt::lang_start_internal (rt.rs:147)
+                 n0: 5 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 0 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=451750
+mem_heap_B=206
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=451981
+mem_heap_B=137
+mem_heap_extra_B=63
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=452178
+mem_heap_B=133
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=452224
+mem_heap_B=85
+mem_heap_extra_B=35
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=452292
+mem_heap_B=44085
+mem_heap_extra_B=43
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=458923
+mem_heap_B=88085
+mem_heap_extra_B=51
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=465554
+mem_heap_B=132085
+mem_heap_extra_B=59
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=474051
+mem_heap_B=132213
+mem_heap_extra_B=67
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=474709
+mem_heap_B=132217
+mem_heap_extra_B=87
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=474836
+mem_heap_B=132345
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=detailed
+n2: 132345 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 345 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=474883
+mem_heap_B=132365
+mem_heap_extra_B=115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=483626
+mem_heap_B=132365
+mem_heap_extra_B=115
+mem_stacks_B=0
+heap_tree=detailed
+n2: 132365 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 365 in 14 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=483626
+mem_heap_B=132345
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=483660
+mem_heap_B=132217
+mem_heap_extra_B=87
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=483694
+mem_heap_B=132213
+mem_heap_extra_B=67
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=483728
+mem_heap_B=132085
+mem_heap_extra_B=59
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=484067
+mem_heap_B=132213
+mem_heap_extra_B=67
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=484176
+mem_heap_B=132277
+mem_heap_extra_B=75
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=484255
+mem_heap_B=133301
+mem_heap_extra_B=83
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=484299
+mem_heap_B=133317
+mem_heap_extra_B=91
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=484376
+mem_heap_B=133701
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=484581
+mem_heap_B=134725
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=detailed
+n3: 134725 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 677 in 17 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=484625
+mem_heap_B=134741
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=484702
+mem_heap_B=135125
+mem_heap_extra_B=299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=484983
+mem_heap_B=135253
+mem_heap_extra_B=307
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=485092
+mem_heap_B=135317
+mem_heap_extra_B=315
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=485169
+mem_heap_B=136341
+mem_heap_extra_B=323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=485213
+mem_heap_B=136357
+mem_heap_extra_B=331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=485290
+mem_heap_B=136741
+mem_heap_extra_B=451
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=485493
+mem_heap_B=137765
+mem_heap_extra_B=459
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=485537
+mem_heap_B=137781
+mem_heap_extra_B=467
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=485614
+mem_heap_B=138165
+mem_heap_extra_B=555
+mem_stacks_B=0
+heap_tree=detailed
+n5: 138165 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 1536 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 1536 0x142938: alloc (alloc.rs:22)
+   n1: 1536 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 1536 in 2 places, all below massif's threshold (1.00%)
+ n0: 533 in 17 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=485866
+mem_heap_B=138261
+mem_heap_extra_B=563
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=485996
+mem_heap_B=138261
+mem_heap_extra_B=563
+mem_stacks_B=0
+heap_tree=detailed
+n5: 138261 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 1536 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 1536 0x142938: alloc (alloc.rs:22)
+   n1: 1536 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 1536 in 2 places, all below massif's threshold (1.00%)
+ n0: 629 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=485996
+mem_heap_B=138197
+mem_heap_extra_B=555
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=486091
+mem_heap_B=138453
+mem_heap_extra_B=579
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=486197
+mem_heap_B=139973
+mem_heap_extra_B=587
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=486413
+mem_heap_B=140613
+mem_heap_extra_B=691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=487792
+mem_heap_B=140661
+mem_heap_extra_B=699
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=487867
+mem_heap_B=140709
+mem_heap_extra_B=723
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=488000
+mem_heap_B=140837
+mem_heap_extra_B=731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=488075
+mem_heap_B=140853
+mem_heap_extra_B=755
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=489244
+mem_heap_B=140885
+mem_heap_extra_B=763
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=495951
+mem_heap_B=141173
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=detailed
+n6: 141173 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2432 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 2432 0x142938: alloc (alloc.rs:22)
+   n1: 2432 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 2432 in 4 places, all below massif's threshold (1.00%)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 1520 0x11C0A7: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 1520 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 1520 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 1520 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 1520 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 1520 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 1520 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 1520 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 1520 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 1520 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 1520 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 1520 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 1520 0x13A47A: {closure#2} (rt.rs:148)
+              n1: 1520 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 1520 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 1520 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 1520 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 1520 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 1125 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=498524
+mem_heap_B=141221
+mem_heap_extra_B=779
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=498599
+mem_heap_B=141269
+mem_heap_extra_B=787
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=498732
+mem_heap_B=141397
+mem_heap_extra_B=795
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=498807
+mem_heap_B=141413
+mem_heap_extra_B=803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=499107
+mem_heap_B=141701
+mem_heap_extra_B=811
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=501698
+mem_heap_B=141733
+mem_heap_extra_B=819
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=501840
+mem_heap_B=141733
+mem_heap_extra_B=819
+mem_stacks_B=0
+heap_tree=detailed
+n6: 141733 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2432 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 2432 0x142938: alloc (alloc.rs:22)
+   n1: 2432 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 2432 in 4 places, all below massif's threshold (1.00%)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 1685 in 23 places, all below massif's threshold (1.00%)
+ n1: 1520 0x11C0A7: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 1520 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 1520 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 1520 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 1520 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 1520 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 1520 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 1520 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 1520 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 1520 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 1520 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 1520 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 1520 0x13A47A: {closure#2} (rt.rs:148)
+              n1: 1520 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 1520 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 1520 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 1520 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 1520 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+#-----------
+snapshot=67
+#-----------
+time=501840
+mem_heap_B=141701
+mem_heap_extra_B=811
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=501958
+mem_heap_B=141733
+mem_heap_extra_B=819
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=502282
+mem_heap_B=143253
+mem_heap_extra_B=827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=502737
+mem_heap_B=143285
+mem_heap_extra_B=835
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=503045
+mem_heap_B=145357
+mem_heap_extra_B=851
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=503156
+mem_heap_B=145997
+mem_heap_extra_B=907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=503766
+mem_heap_B=148101
+mem_heap_extra_B=923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=506627
+mem_heap_B=148101
+mem_heap_extra_B=923
+mem_stacks_B=0
+heap_tree=detailed
+n9: 148101 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 3072 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 3072 0x142938: alloc (alloc.rs:22)
+   n1: 3072 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 3072 in 5 places, all below massif's threshold (1.00%)
+ n1: 2104 0x122285: crossbeam_epoch::internal::Local::register (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2104 0x11DD85: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17hb09dda4be0ec6807E.llvm.5011335165992827056 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2104 0x11D2B7: crossbeam_deque::deque::Stealer<T>::steal (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2104 0x1107DC: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2104 0x11B671: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2104 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2104 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2104 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+         n1: 2104 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+          n1: 2104 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+           n1: 2104 0x4871608: start_thread (pthread_create.c:477)
+            n0: 2104 0x49B1132: clone (clone.S:95)
+ n1: 2072 0x121A6A: <crossbeam_epoch::collector::Collector as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2072 0x111F80: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2072 0x1115A0: _ZN15crossbeam_epoch4sync9once_lock17OnceLock$LT$T$GT$10initialize17h2f3fe3258e05e75fE.llvm.6722719336696926660 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2072 0x1218CF: crossbeam_epoch::default::collector (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2072 0x11DD7C: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17hb09dda4be0ec6807E.llvm.5011335165992827056 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2072 0x11D2B7: crossbeam_deque::deque::Stealer<T>::steal (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2072 0x1107DC: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2072 0x11B671: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2072 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2072 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2072 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 2072 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 2072 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 2072 0x4871608: start_thread (pthread_create.c:477)
+               n0: 2072 0x49B1132: clone (clone.S:95)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n0: 1717 in 23 places, all below massif's threshold (1.00%)
+ n1: 1520 0x11C0A7: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 1520 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 1520 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 1520 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 1520 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 1520 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 1520 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 1520 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 1520 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 1520 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 1520 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 1520 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 1520 0x13A47A: {closure#2} (rt.rs:148)
+              n1: 1520 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 1520 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 1520 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 1520 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 1520 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 1520 0x11CAE6: <rayon_core::registry::WorkerThread as core::convert::From<rayon_core::registry::ThreadBuilder>>::from (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 1520 0x11B59B: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 1520 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 1520 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 1520 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+      n1: 1520 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+       n1: 1520 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+        n1: 1520 0x4871608: start_thread (pthread_create.c:477)
+         n0: 1520 0x49B1132: clone (clone.S:95)
+#-----------
+snapshot=75
+#-----------
+time=506627
+mem_heap_B=147973
+mem_heap_extra_B=915
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=506679
+mem_heap_B=147909
+mem_heap_extra_B=907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=507591
+mem_heap_B=147941
+mem_heap_extra_B=915
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=507733
+mem_heap_B=147909
+mem_heap_extra_B=907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=507851
+mem_heap_B=147941
+mem_heap_extra_B=915
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=508175
+mem_heap_B=149461
+mem_heap_extra_B=923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=508637
+mem_heap_B=149493
+mem_heap_extra_B=931
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=509309
+mem_heap_B=151597
+mem_heap_extra_B=947
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=46668723828
+mem_heap_B=151597
+mem_heap_extra_B=947
+mem_stacks_B=0
+heap_tree=peak
+n8: 151597 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 132000 0x1175A3: <T as alloc::vec::spec_from_elem::SpecFromElem>::from_elem (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117951: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117973: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 44000 0x117995: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 44000 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 44000 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 44000 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+      n1: 44000 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+       n1: 44000 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+        n1: 44000 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+         n1: 44000 0x13A47A: {closure#2} (rt.rs:148)
+          n1: 44000 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+           n1: 44000 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+            n1: 44000 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+             n1: 44000 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+              n0: 44000 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 4208 0x122285: crossbeam_epoch::internal::Local::register (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 4208 0x11DD85: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17hb09dda4be0ec6807E.llvm.5011335165992827056 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 4208 0x11D2B7: crossbeam_deque::deque::Stealer<T>::steal (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 4208 0x1107DC: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 4208 0x11B671: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 4208 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 4208 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 4208 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+         n1: 4208 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+          n1: 4208 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+           n1: 4208 0x4871608: start_thread (pthread_create.c:477)
+            n0: 4208 0x49B1132: clone (clone.S:95)
+ n0: 3109 in 24 places, all below massif's threshold (1.00%)
+ n1: 3072 0x142938: aligned_malloc (alloc.rs:98)
+  n1: 3072 0x142938: alloc (alloc.rs:22)
+   n1: 3072 0x142938: __rdl_alloc (alloc.rs:380)
+    n0: 3072 in 5 places, all below massif's threshold (1.00%)
+ n1: 3040 0x11CAE6: <rayon_core::registry::WorkerThread as core::convert::From<rayon_core::registry::ThreadBuilder>>::from (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 3040 0x11B59B: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 3040 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 3040 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 3040 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+      n1: 3040 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+       n1: 3040 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+        n1: 3040 0x4871608: start_thread (pthread_create.c:477)
+         n0: 3040 0x49B1132: clone (clone.S:95)
+ n1: 2072 0x121A6A: <crossbeam_epoch::collector::Collector as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2072 0x111F80: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2072 0x1115A0: _ZN15crossbeam_epoch4sync9once_lock17OnceLock$LT$T$GT$10initialize17h2f3fe3258e05e75fE.llvm.6722719336696926660 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2072 0x1218CF: crossbeam_epoch::default::collector (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2072 0x11DD7C: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17hb09dda4be0ec6807E.llvm.5011335165992827056 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2072 0x11D2B7: crossbeam_deque::deque::Stealer<T>::steal (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2072 0x1107DC: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2072 0x11B671: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2072 0x11F339: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2072 0x12043E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2072 0x1459F4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 2072 0x1459F4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 2072 0x1459F4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 2072 0x4871608: start_thread (pthread_create.c:477)
+               n0: 2072 0x49B1132: clone (clone.S:95)
+ n1: 2048 0x11D041: crossbeam_deque::deque::Worker<T>::new_fifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E837: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BFBA: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+ n1: 2048 0x11D171: crossbeam_deque::deque::Worker<T>::new_lifo (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+  n1: 2048 0x11E937: <(ExtendA,ExtendB) as core::iter::traits::collect::Extend<(A,B)>>::extend (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+   n1: 2048 0x11BF15: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+    n1: 2048 0x11BC91: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+     n1: 2048 0x110D3A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+      n1: 2048 0x11BB2F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+       n1: 2048 0x120BC0: rayon_core::current_num_threads (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+        n1: 2048 0x1179FC: Rust::main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+         n1: 2048 0x117552: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+          n1: 2048 0x117178: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hf7976414c5f32a7aE.llvm.11463849327697095745 (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+           n1: 2048 0x13A47A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2048 0x13A47A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 2048 0x13A47A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 2048 0x13A47A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2048 0x13A47A: {closure#2} (rt.rs:148)
+                n1: 2048 0x13A47A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 2048 0x13A47A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 2048 0x13A47A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2048 0x13A47A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2048 0x119C64: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/Rust/target/release/Rust)
+#-----------
+snapshot=84
+#-----------
+time=46668723828
+mem_heap_B=107597
+mem_heap_extra_B=939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=46668723864
+mem_heap_B=63597
+mem_heap_extra_B=931
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=46668723899
+mem_heap_B=19597
+mem_heap_extra_B=923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=46668724053
+mem_heap_B=20621
+mem_heap_extra_B=931
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=46668725724
+mem_heap_B=19597
+mem_heap_extra_B=923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=46668725971
+mem_heap_B=19592
+mem_heap_extra_B=904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=46668726008
+mem_heap_B=19544
+mem_heap_extra_B=896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=46668726040
+mem_heap_B=19512
+mem_heap_extra_B=888
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=46668732539
+mem_heap_B=19480
+mem_heap_extra_B=880
+mem_stacks_B=0
+heap_tree=empty
