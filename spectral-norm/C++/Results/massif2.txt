@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=276009
+time=276976
 mem_heap_B=32816
 mem_heap_extra_B=8
 mem_stacks_B=0
@@ -20,32 +20,32 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=277511
+time=278812
 mem_heap_B=32816
 mem_heap_extra_B=8
 mem_stacks_B=0
 heap_tree=peak
 n1: 32816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 32816 0x4ABCF18: __alloc_dir (opendir.c:118)
-  n1: 32816 0x4ABCF18: opendir_tail (opendir.c:69)
-   n1: 32816 0x4ABCF18: opendir (opendir.c:92)
-    n1: 32816 0x4AFB9EF: get_nprocs_conf (getsysstats.c:242)
-     n1: 32816 0x4AC46AC: posix_sysconf (sysconf.c:628)
-      n1: 32816 0x4AC46AC: linux_sysconf (sysconf.c:106)
-       n1: 32816 0x4AC46AC: sysconf (sysconf.c:36)
-        n1: 32816 0x49B9C72: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-         n1: 32816 0x49A7679: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+ n1: 32816 0x4AB9F18: __alloc_dir (opendir.c:118)
+  n1: 32816 0x4AB9F18: opendir_tail (opendir.c:69)
+   n1: 32816 0x4AB9F18: opendir (opendir.c:92)
+    n1: 32816 0x4AF89EF: get_nprocs_conf (getsysstats.c:242)
+     n1: 32816 0x4AC16AC: posix_sysconf (sysconf.c:628)
+      n1: 32816 0x4AC16AC: linux_sysconf (sysconf.c:106)
+       n1: 32816 0x4AC16AC: sysconf (sysconf.c:36)
+        n1: 32816 0x49B6C72: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+         n1: 32816 0x49A4679: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
           n1: 32816 0x4011B99: call_init.part.0 (dl-init.c:72)
            n1: 32816 0x4011CA0: call_init (dl-init.c:30)
             n1: 32816 0x4011CA0: _dl_init (dl-init.c:119)
              n1: 32816 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
               n1: 32816 0x1: ???
-               n1: 32816 0x1FFEFFF5CE: ???
-                n0: 32816 0x1FFEFFF60F: ???
+               n1: 32816 0x1FFEFFF596: ???
+                n0: 32816 0x1FFEFFF5D7: ???
 #-----------
 snapshot=3
 #-----------
-time=277511
+time=278812
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -53,7 +53,7 @@ heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=278369
+time=279670
 mem_heap_B=8
 mem_heap_extra_B=16
 mem_stacks_B=0
@@ -61,7 +61,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=305183
+time=306626
 mem_heap_B=200
 mem_heap_extra_B=24
 mem_stacks_B=0
@@ -69,40 +69,81 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=306321
-mem_heap_B=1976
+time=307764
+mem_heap_B=2408
 mem_heap_extra_B=32
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=307382
-mem_heap_B=2000
+time=308825
+mem_heap_B=2448
 mem_heap_extra_B=48
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=312112
-mem_heap_B=2288
+time=313555
+mem_heap_B=2736
 mem_heap_extra_B=56
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=13682199785
-mem_heap_B=6384
+time=1733099
+mem_heap_B=3024
 mem_heap_extra_B=64
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=13683256440
-mem_heap_B=2288
-mem_heap_extra_B=56
+time=2018335
+mem_heap_B=3312
+mem_heap_extra_B=72
 mem_stacks_B=0
 heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=13721904673
+mem_heap_B=7408
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=13721911679
+mem_heap_B=3312
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3312 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 2408 0x49A624C: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 2208 0x49B48DB: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 2208 0x49AC8C9: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 2208 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+     n0: 2208 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+  n1: 192 0x49B4A80: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 192 0x49AC8C9: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 192 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+     n0: 192 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+  n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 864 0x40149DA: allocate_dtv (dl-tls.c:286)
+  n1: 864 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
+   n1: 864 0x4BDD322: allocate_stack (allocatestack.c:622)
+    n1: 864 0x4BDD322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 864 0x49B4ECA: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+      n1: 864 0x49AC8E0: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 864 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+        n0: 864 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+ n1: 40 0x49A62AC: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 40 0x49B5661: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 40 0x49AC8E0: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 40 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+     n0: 40 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)

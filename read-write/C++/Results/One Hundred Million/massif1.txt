@@ -1,0 +1,741 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/read-write/C++/Results/massif1.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1642272
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2746463
+mem_heap_B=483202
+mem_heap_extra_B=102
+mem_stacks_B=1664
+heap_tree=detailed
+n4: 483202 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 393170 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 393170 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 393170 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 393170 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 16384 0x4956D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 16384 0x495AF96: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 8192 0x495B8EF: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 8192 0x1092D6: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+   n1: 8192 0x495BDC7: std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 8192 0x1092EA: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 944 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=4110251
+mem_heap_B=1662706
+mem_heap_extra_B=102
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=6033880
+mem_heap_B=6380722
+mem_heap_extra_B=102
+mem_stacks_B=1664
+heap_tree=detailed
+n3: 6380722 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6290690 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 6290690 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 6290690 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 6290690 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17328 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=7426428
+mem_heap_B=4283825
+mem_heap_extra_B=79
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9248317
+mem_heap_B=12671410
+mem_heap_extra_B=1046
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=11031368
+mem_heap_B=8477617
+mem_heap_extra_B=1023
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=12815432
+mem_heap_B=8477617
+mem_heap_extra_B=1023
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=15119973
+mem_heap_B=25252786
+mem_heap_extra_B=3014
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=16568512
+mem_heap_B=16865201
+mem_heap_extra_B=2047
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 16865201 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16775169 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 16775169 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 16775169 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 16775169 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=18055232
+mem_heap_B=16865201
+mem_heap_extra_B=2047
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=19541952
+mem_heap_B=16865201
+mem_heap_extra_B=2047
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=21028672
+mem_heap_B=16865201
+mem_heap_extra_B=2047
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=22515392
+mem_heap_B=16865201
+mem_heap_extra_B=2047
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=24635130
+mem_heap_B=50415538
+mem_heap_extra_B=6086
+mem_stacks_B=1664
+heap_tree=detailed
+n2: 50415538 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 50325506 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 50325506 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 50325506 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 50325506 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=26863109
+mem_heap_B=50415538
+mem_heap_extra_B=6086
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=28070056
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=29872704
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=31675352
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=33478000
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=35280648
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=37083296
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=38885944
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=40688592
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=42816460
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=44043004
+mem_heap_B=33640369
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=45893274
+mem_heap_B=100741042
+mem_heap_extra_B=8134
+mem_stacks_B=1664
+heap_tree=detailed
+n2: 100741042 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 100651010 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 100651010 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100651010 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 100651010 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=50349205
+mem_heap_B=100741042
+mem_heap_extra_B=8134
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=52801280
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=55254368
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=57707456
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=60160544
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=62613632
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=65066720
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=67519808
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=69972896
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 67190705 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67100673 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 67100673 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 67100673 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 67100673 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=72425984
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=74879072
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=77332160
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=79785248
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=81011792
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=82238336
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 67190705 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67100673 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 67100673 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 67100673 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 67100673 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=83464880
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=84691424
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=85917968
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=87144512
+mem_heap_B=67190705
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=88409386
+mem_heap_B=201392050
+mem_heap_extra_B=8134
+mem_stacks_B=1664
+heap_tree=peak
+n2: 201392050 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 201302018 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 201302018 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 201302018 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 201302018 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=97321221
+mem_heap_B=201392050
+mem_heap_extra_B=8134
+mem_stacks_B=1584
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=99161067
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1456
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=100265772
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=101371520
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=102477268
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=103583016
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=104688764
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=105794512
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 134291377 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 134201345 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 134201345 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 134201345 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 134201345 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=106900260
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=108006008
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=109111756
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=110217504
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=111323252
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=112429000
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=113534748
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=114640496
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=115746244
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=116851992
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 134291377 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 134201345 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 134201345 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 134201345 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 134201345 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=117957740
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=119063488
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=120169236
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=121274984
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=122380732
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=123486480
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=124592228
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=125697976
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=126803724
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=127909472
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=detailed
+n2: 134291377 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 134201345 0x498E38D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 134201345 0x498FB82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 134201345 0x490F315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n0: 134201345 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 90032 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=129015220
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=130120968
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=131226716
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=132332464
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=133438212
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=134543960
+mem_heap_B=134291377
+mem_heap_extra_B=4095
+mem_stacks_B=1488
+heap_tree=empty

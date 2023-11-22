@@ -1,5 +1,5 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/C++/Results/massif1.txt
-cmd: /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++ 2500
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/C++/Results/massif1.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++ 250000
 time_unit: i
 #-----------
 snapshot=0
@@ -12,206 +12,585 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=2377191
-mem_heap_B=72704
-mem_heap_extra_B=8
-mem_stacks_B=0
+time=33986660
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124464
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=2491354
-mem_heap_B=72992
-mem_heap_extra_B=16
-mem_stacks_B=0
+time=88572730
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124472
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=2495162
-mem_heap_B=77088
-mem_heap_extra_B=24
-mem_stacks_B=0
+time=161181890
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124472
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=2495924
-mem_heap_B=77096
-mem_heap_extra_B=40
-mem_stacks_B=0
-heap_tree=empty
+time=230485755
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124464
+heap_tree=detailed
+n3: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n1: 4096 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x497E853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10B0EE: void make<repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)>(char const*, int, repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)) (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+         n0: 4096 0x10A3BC: main (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
+ n0: 1296 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=5
 #-----------
-time=2495975
-mem_heap_B=77136
-mem_heap_extra_B=56
-mem_stacks_B=0
+time=313650395
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124464
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=2500652
-mem_heap_B=77424
-mem_heap_extra_B=64
-mem_stacks_B=0
+time=393349836
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124480
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=160728310
-mem_heap_B=77424
-mem_heap_extra_B=64
-mem_stacks_B=0
-heap_tree=peak
-n3: 77424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x48F4A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5EA: ???
-        n0: 72704 0x1FFEFFF61C: ???
- n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x4981853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 4096 0x10B0EE: void make<repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)>(char const*, int, repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)) (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
-         n0: 4096 0x10A3BC: main (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
- n0: 624 in 4 places, all below massif's threshold (1.00%)
+time=445327980
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124464
+heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=160728310
-mem_heap_B=77384
-mem_heap_extra_B=48
-mem_stacks_B=0
+time=500771420
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=124464
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=160731511
-mem_heap_B=77376
-mem_heap_extra_B=32
-mem_stacks_B=0
+time=571630212
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=248696
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=160732336
-mem_heap_B=77384
-mem_heap_extra_B=48
-mem_stacks_B=0
+time=625355314
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=372944
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=160732386
-mem_heap_B=77424
-mem_heap_extra_B=64
-mem_stacks_B=0
+time=680798494
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=372944
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=181435439
-mem_heap_B=77384
-mem_heap_extra_B=48
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=13
-#-----------
-time=181435758
-mem_heap_B=77376
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=14
-#-----------
-time=181436574
-mem_heap_B=77384
-mem_heap_extra_B=48
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=15
-#-----------
-time=181436624
-mem_heap_B=77424
-mem_heap_extra_B=64
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=16
-#-----------
-time=207254563
-mem_heap_B=77384
-mem_heap_extra_B=48
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=17
-#-----------
-time=207254882
-mem_heap_B=77376
-mem_heap_extra_B=32
-mem_stacks_B=0
+time=749742596
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497264
 heap_tree=detailed
-n3: 77376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x48F4A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5EA: ???
-        n0: 72704 0x1FFEFFF61C: ???
- n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x4981853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 4096 0x10B0EE: void make<repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)>(char const*, int, repeat_generator_type<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, char (*)(char)) (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
-         n0: 4096 0x10A3BC: main (in /workspaces/Rusty-Kernels-Code/fasta/C++/fastaC++)
- n0: 576 in 6 places, all below massif's threshold (1.00%)
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=791324966
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497272
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=853698537
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497240
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=916072109
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497192
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=971515289
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497192
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1026958477
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497240
+heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=207255645
-mem_heap_B=77088
-mem_heap_extra_B=24
-mem_stacks_B=0
+time=1082401658
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=207265993
-mem_heap_B=4384
-mem_heap_extra_B=16
-mem_stacks_B=0
-heap_tree=empty
+time=1137844838
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
+heap_tree=detailed
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 5 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=20
 #-----------
-time=207267821
-mem_heap_B=288
-mem_heap_extra_B=8
-mem_stacks_B=0
+time=1193288028
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=207270303
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=0
+time=1248731208
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1304174388
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1359617568
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497208
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1428921554
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497232
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1484364734
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497232
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1539807914
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497232
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1609111889
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497232
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1664554994
+mem_heap_B=78096
+mem_heap_extra_B=112
+mem_stacks_B=497232
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1709525975
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=617872
+heap_tree=detailed
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=1764969090
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=617856
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1820412205
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=617856
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1875855320
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=617856
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1935269124
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=926392
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1971333013
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235056
+heap_tree=peak
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=2054497666
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235048
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2137662328
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235048
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2193105431
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235048
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2248548533
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235048
+heap_tree=detailed
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=2331713193
+mem_heap_B=78056
+mem_heap_extra_B=112
+mem_stacks_B=926720
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2387156296
+mem_heap_B=78056
+mem_heap_extra_B=112
+mem_stacks_B=926720
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2442599402
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235472
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2498042517
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235472
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2553485632
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235472
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2608928747
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235472
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2692093420
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235456
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2748278487
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235880
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2803721584
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235736
+heap_tree=detailed
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=2859164674
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235728
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2942329325
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235744
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2976315988
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235736
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=3010302651
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235736
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=3044289319
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235712
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=3078275982
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235704
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3112262645
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235704
+heap_tree=detailed
+n2: 78096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48F1A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF602: ???
+        n0: 72704 0x1FFEFFF634: ???
+ n0: 5392 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=3146249312
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235656
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3180235978
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235664
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3214222649
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235672
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3248209324
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235664
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=3282195995
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235672
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=3316182658
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235664
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=3350169321
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235664
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=3384155992
+mem_heap_B=78096
+mem_heap_extra_B=128
+mem_stacks_B=1235672
 heap_tree=empty

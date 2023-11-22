@@ -1,0 +1,1107 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/k-nucleotide/C++/Results/massif1.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=228403
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=519840
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=3
+#-----------
+time=711817
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1680
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=860545
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1176
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1163270
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1398316
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1708370
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1916894
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2061983
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1432
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2321445
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2511384
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=712
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2669001
+mem_heap_B=88320
+mem_heap_extra_B=32
+mem_stacks_B=784
+heap_tree=detailed
+n3: 88320 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 11520 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 11520 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 4096 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4AFCF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x4AEE86B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4AED6C9: fgets (iofgets.c:53)
+       n0: 4096 0x10C55B: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+#-----------
+snapshot=13
+#-----------
+time=2871658
+mem_heap_B=90048
+mem_heap_extra_B=112
+mem_stacks_B=2656
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3117236
+mem_heap_B=93024
+mem_heap_extra_B=680
+mem_stacks_B=3488
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=3273146
+mem_heap_B=106096
+mem_heap_extra_B=2872
+mem_stacks_B=3760
+heap_tree=detailed
+n7: 106096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 11264 0x110968: __gnu_pbds::detail::cc_ht_map<Key<3ul>, unsigned int, Key<3ul>::Hash, std::equal_to<Key<3ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 8192 0x1117EC: void Calculate<3ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<3ul>, unsigned int, Key<3ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<3ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 8192 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 8192 0x4853608: start_thread (pthread_create.c:477)
+     n0: 8192 0x4B8A132: clone (clone.S:95)
+  n1: 3072 0x110DB4: void __gnu_pbds::detail::cc_ht_map<Key<3ul>, unsigned int, Key<3ul>::Hash, std::equal_to<Key<3ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<3ul>, unsigned int, Key<3ul>::Hash, std::equal_to<Key<3ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<3ul>, unsigned int, Key<3ul>::Hash, std::equal_to<Key<3ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<3ul>, unsigned int, Key<3ul>::Hash, std::equal_to<Key<3ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 3072 0x111361: auto CalculateInThreads<3ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 3072 0x111524: void WriteCount<3u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 3072 0x10C631: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4AFCF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x4AEE86B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4AED6C9: fgets (iofgets.c:53)
+       n0: 4096 0x10C55B: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A1853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10F2E3: void WriteFrequencies<1u>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+         n0: 4096 0x10C602: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 4032 0x111802: void Calculate<3ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<3ul>, unsigned int, Key<3ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<3ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 4032 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 4032 0x4853608: start_thread (pthread_create.c:477)
+    n0: 4032 0x4B8A132: clone (clone.S:95)
+ n1: 1152 0x40149DA: allocate_dtv (dl-tls.c:286)
+  n1: 1152 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
+   n1: 1152 0x4854322: allocate_stack (allocatestack.c:622)
+    n1: 1152 0x4854322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 1152 0x49450C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1152 0x10EBAD: auto CalculateInThreads<1ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+       n1: 1152 0x10F146: void WriteFrequencies<1u>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+        n0: 1152 0x10C602: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1072 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=3538059
+mem_heap_B=113792
+mem_heap_extra_B=6120
+mem_stacks_B=4576
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=3752604
+mem_heap_B=127568
+mem_heap_extra_B=6968
+mem_stacks_B=4336
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=3947335
+mem_heap_B=116272
+mem_heap_extra_B=5128
+mem_stacks_B=4912
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=4104661
+mem_heap_B=150112
+mem_heap_extra_B=13968
+mem_stacks_B=5096
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=4402568
+mem_heap_B=236976
+mem_heap_extra_B=28936
+mem_stacks_B=5568
+heap_tree=detailed
+n6: 236976 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 90112 0x1129D8: __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90112 0x113884: void Calculate<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<6ul>, unsigned int, Key<6ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<6ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 90112 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 90112 0x4853608: start_thread (pthread_create.c:477)
+     n0: 90112 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 57040 0x11389A: void Calculate<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<6ul>, unsigned int, Key<6ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<6ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 57040 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 57040 0x4853608: start_thread (pthread_create.c:477)
+    n0: 57040 0x4B8A132: clone (clone.S:95)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4AFCF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x4AEE86B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4AED6C9: fgets (iofgets.c:53)
+       n0: 4096 0x10C55B: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A1853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10F2E3: void WriteFrequencies<1u>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+         n0: 4096 0x10C602: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1248 in 34 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=4718177
+mem_heap_B=335248
+mem_heap_extra_B=41248
+mem_stacks_B=5048
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=4937415
+mem_heap_B=342928
+mem_heap_extra_B=53344
+mem_stacks_B=5048
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=5075747
+mem_heap_B=443328
+mem_heap_extra_B=62592
+mem_stacks_B=5168
+heap_tree=detailed
+n8: 443328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 229376 0x1129D8: __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x112E24: void __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x1133D1: auto CalculateInThreads<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 98304 0x113594: void WriteCount<6u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 98304 0x10C68E: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 65536 0x113316: auto CalculateInThreads<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x113594: void WriteCount<6u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 65536 0x10C68E: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 65536 0x113884: void Calculate<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<6ul>, unsigned int, Key<6ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<6ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 65536 0x4853608: start_thread (pthread_create.c:477)
+     n0: 65536 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 65648 0x11389A: void Calculate<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<6ul>, unsigned int, Key<6ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<6ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 65648 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 65648 0x4853608: start_thread (pthread_create.c:477)
+    n0: 65648 0x4B8A132: clone (clone.S:95)
+ n1: 32752 0x112E3B: void __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<6ul>, unsigned int, Key<6ul>::Hash, std::equal_to<Key<6ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 32752 0x1133D1: auto CalculateInThreads<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 32752 0x113594: void WriteCount<6u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 32752 0x10C68E: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 25760 0x11332D: auto CalculateInThreads<6ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 25760 0x113594: void WriteCount<6u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 25760 0x10C68E: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1216 in 35 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=5348679
+mem_heap_B=420320
+mem_heap_extra_B=59216
+mem_stacks_B=5080
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=5611488
+mem_heap_B=274016
+mem_heap_extra_B=26752
+mem_stacks_B=5032
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=5853229
+mem_heap_B=167520
+mem_heap_extra_B=6200
+mem_stacks_B=4368
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=5995280
+mem_heap_B=188032
+mem_heap_extra_B=80
+mem_stacks_B=4408
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=6178931
+mem_heap_B=155504
+mem_heap_extra_B=8384
+mem_stacks_B=5664
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=6379978
+mem_heap_B=208208
+mem_heap_extra_B=18488
+mem_stacks_B=5848
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=6582049
+mem_heap_B=260944
+mem_heap_extra_B=28584
+mem_stacks_B=6016
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=6863892
+mem_heap_B=310048
+mem_heap_extra_B=45072
+mem_stacks_B=5704
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=7047859
+mem_heap_B=359056
+mem_heap_extra_B=53208
+mem_stacks_B=5704
+heap_tree=detailed
+n7: 359056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 163840 0x113A38: __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x1148E4: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114376: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 65536 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 80064 0x1148FA: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 80064 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 80064 0x4853608: start_thread (pthread_create.c:477)
+    n0: 80064 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 25360 0x11438D: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 25360 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 25360 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1216 in 42 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=7338278
+mem_heap_B=510256
+mem_heap_extra_B=63280
+mem_stacks_B=5752
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=7571455
+mem_heap_B=524832
+mem_heap_extra_B=78832
+mem_stacks_B=5872
+heap_tree=detailed
+n8: 524832 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 278528 0x113A38: __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x114376: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x1148E4: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 49152 0x113E84: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 49152 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 49152 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 49152 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 80064 0x1148FA: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 80064 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 80064 0x4853608: start_thread (pthread_create.c:477)
+    n0: 80064 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 60080 0x11438D: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 60080 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 60080 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 16368 0x113E9B: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 16368 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 16368 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 16368 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1216 in 43 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=7714252
+mem_heap_B=590368
+mem_heap_extra_B=87024
+mem_stacks_B=5872
+heap_tree=detailed
+n8: 590368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 327680 0x113A38: __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x114376: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x113E84: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 98304 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 98304 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x1148E4: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+ n1: 80064 0x1148FA: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 80064 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 80064 0x4853608: start_thread (pthread_create.c:477)
+    n0: 80064 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 60080 0x11438D: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 60080 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 60080 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 32752 0x113E9B: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 32752 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 32752 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 32752 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1216 in 43 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=7990120
+mem_heap_B=721440
+mem_heap_extra_B=103424
+mem_stacks_B=5872
+heap_tree=detailed
+n6: 721440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 425984 0x113A38: __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 196608 0x113E84: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 196608 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 196608 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 196608 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x114376: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x1148E4: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+ n1: 80064 0x1148FA: void Calculate<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<12ul>, unsigned int, Key<12ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<12ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 80064 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 80064 0x4853608: start_thread (pthread_create.c:477)
+    n0: 80064 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 65520 0x113E9B: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 65520 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65520 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 65520 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 60080 0x11438D: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 60080 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 60080 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 17088 in 45 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=8151499
+mem_heap_B=721440
+mem_heap_extra_B=103424
+mem_stacks_B=5800
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=8390881
+mem_heap_B=611472
+mem_heap_extra_B=97496
+mem_stacks_B=5736
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=8643981
+mem_heap_B=502192
+mem_heap_extra_B=75416
+mem_stacks_B=5736
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=8883256
+mem_heap_B=445328
+mem_heap_extra_B=46920
+mem_stacks_B=5808
+heap_tree=detailed
+n7: 445328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 262144 0x113A38: __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x113E84: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 131072 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 131072 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x114376: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 80112 0x113E9B: void __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<12ul>, unsigned int, Key<12ul>::Hash, std::equal_to<Key<12ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 80112 0x114431: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 80112 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 80112 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 10000 0x11438D: auto CalculateInThreads<12ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 10000 0x1145F4: void WriteCount<12u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 10000 0x10C6BA: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 4496 in 44 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=9080062
+mem_heap_B=497520
+mem_heap_extra_B=40224
+mem_stacks_B=5784
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=9399138
+mem_heap_B=226048
+mem_heap_extra_B=2696
+mem_stacks_B=5136
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=9653266
+mem_heap_B=126843
+mem_heap_extra_B=8317
+mem_stacks_B=6368
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=9820685
+mem_heap_B=170155
+mem_heap_extra_B=26317
+mem_stacks_B=6576
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=10100354
+mem_heap_B=256155
+mem_heap_extra_B=56373
+mem_stacks_B=6696
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=10422270
+mem_heap_B=355507
+mem_heap_extra_B=89909
+mem_stacks_B=6408
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=10681686
+mem_heap_B=432555
+mem_heap_extra_B=119429
+mem_stacks_B=6480
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=10881973
+mem_heap_B=573179
+mem_heap_extra_B=125805
+mem_stacks_B=6456
+heap_tree=detailed
+n7: 573179 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 196608 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 196608 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 196608 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 68184 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 68184 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 68184 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n0: 8192 in 2 places, all below massif's threshold (1.00%)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1267 in 52 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=11041553
+mem_heap_B=549963
+mem_heap_extra_B=148557
+mem_stacks_B=6456
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=11179905
+mem_heap_B=594387
+mem_heap_extra_B=161789
+mem_stacks_B=6456
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=11254077
+mem_heap_B=677131
+mem_heap_extra_B=173269
+mem_stacks_B=6576
+heap_tree=detailed
+n6: 677131 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 327680 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 98304 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 98304 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 49128 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 49128 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 49128 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 49128 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=11392415
+mem_heap_B=658307
+mem_heap_extra_B=182557
+mem_stacks_B=6456
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=11434559
+mem_heap_B=669203
+mem_heap_extra_B=189821
+mem_stacks_B=6528
+heap_tree=detailed
+n6: 669203 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 65536 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 73968 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 73968 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 73968 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 73968 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=11454954
+mem_heap_B=674411
+mem_heap_extra_B=193293
+mem_stacks_B=6528
+heap_tree=detailed
+n6: 674411 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 65536 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 79176 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 79176 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 79176 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 79176 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=11474685
+mem_heap_B=679667
+mem_heap_extra_B=196797
+mem_stacks_B=6528
+heap_tree=detailed
+n6: 679667 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 65536 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 84432 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 84432 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 84432 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 84432 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=11494723
+mem_heap_B=684971
+mem_heap_extra_B=200333
+mem_stacks_B=6528
+heap_tree=detailed
+n6: 684971 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 65536 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 89736 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 89736 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 89736 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 89736 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=11516099
+mem_heap_B=690323
+mem_heap_extra_B=203901
+mem_stacks_B=6528
+heap_tree=detailed
+n6: 690323 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 294912 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+  n1: 65536 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 65536 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 95088 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 95088 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 95088 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 95088 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=11529916
+mem_heap_B=824587
+mem_heap_extra_B=206037
+mem_stacks_B=6576
+heap_tree=peak
+n6: 824587 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 425984 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 196608 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 196608 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 196608 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 196608 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x1153B5: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98304 0x115924: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98304 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+    n1: 98304 0x4853608: start_thread (pthread_create.c:477)
+     n0: 98304 0x4B8A132: clone (clone.S:95)
+ n1: 120240 0x11593A: void Calculate<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&, unsigned long, __gnu_pbds::cc_hash_table<Key<18ul>, unsigned int, Key<18ul>::Hash, __gnu_pbds::detail::default_eq_fn<Key<18ul> >::type, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long>, false, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 120240 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 120240 0x4853608: start_thread (pthread_create.c:477)
+    n0: 120240 0x4B8A132: clone (clone.S:95)
+ n1: 98280 0x114EFB: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 98280 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 98280 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 98280 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 90240 0x1153CA: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 90240 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 90240 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17139 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=11691295
+mem_heap_B=824587
+mem_heap_extra_B=206037
+mem_stacks_B=6504
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=11829648
+mem_heap_B=765843
+mem_heap_extra_B=210557
+mem_stacks_B=6512
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=11967994
+mem_heap_B=695755
+mem_heap_extra_B=185669
+mem_stacks_B=6440
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=12106337
+mem_heap_B=626603
+mem_heap_extra_B=161405
+mem_stacks_B=6512
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=12244699
+mem_heap_B=555411
+mem_heap_extra_B=135781
+mem_stacks_B=6440
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=12383032
+mem_heap_B=507195
+mem_heap_extra_B=103637
+mem_stacks_B=6448
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=12620856
+mem_heap_B=537763
+mem_heap_extra_B=80333
+mem_stacks_B=6488
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=12759224
+mem_heap_B=292555
+mem_heap_extra_B=47917
+mem_stacks_B=5768
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=12897577
+mem_heap_B=242347
+mem_heap_extra_B=14445
+mem_stacks_B=5840
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=13098630
+mem_heap_B=286355
+mem_heap_extra_B=101
+mem_stacks_B=5816
+heap_tree=detailed
+n5: 286355 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 196608 0x114A98: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::resize_imp(unsigned long) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n1: 131072 0x114EE4: void __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::copy_from_range<__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_>(__gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_, __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::const_iterator_) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 131072 0x115471: auto CalculateInThreads<18ul>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n1: 131072 0x115635: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+     n0: 131072 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n2: 65536 0x114CFF: __gnu_pbds::detail::cc_ht_map<Key<18ul>, unsigned int, Key<18ul>::Hash, std::equal_to<Key<18ul> >, std::allocator<char>, false, __gnu_pbds::direct_mask_range_hashing<unsigned long>, __gnu_pbds::hash_standard_resize_policy<__gnu_pbds::hash_exponential_size_policy<unsigned long>, __gnu_pbds::hash_load_check_resize_trigger<false, unsigned long>, false, unsigned long> >::clear() (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 65536 0x1156F2: void WriteCount<18u>(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+    n0: 65536 0x10C6E6: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 8192 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 8192 0x4AFCECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4AFBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4AFCF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x4AEE86B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4AED6C9: fgets (iofgets.c:53)
+       n0: 4096 0x10C55B: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
+       n1: 4096 0x49A1853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 4096 0x10F2E3: void WriteFrequencies<1u>(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+         n0: 4096 0x10C602: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n1: 7680 0x10D77A: void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<char*>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+  n0: 7680 0x10C761: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/C++/knucleotideC++)
+ n0: 1171 in 57 places, all below massif's threshold (1.00%)

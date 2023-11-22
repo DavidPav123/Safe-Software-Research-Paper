@@ -1,5 +1,5 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/Rust/Results/massif1.txt
-cmd: /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust 2500
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fasta/Rust/Results/massif1.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust 250000
 time_unit: i
 #-----------
 snapshot=0
@@ -12,1636 +12,610 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=342062
-mem_heap_B=472
-mem_heap_extra_B=16
-mem_stacks_B=0
+time=2756924339
+mem_heap_B=3644
+mem_heap_extra_B=364
+mem_stacks_B=310184
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=344384
-mem_heap_B=592
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=empty
+time=4312089913
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236968
+heap_tree=peak
+n1: 3740 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3740 in 32 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=3
 #-----------
-time=344557
-mem_heap_B=1616
-mem_heap_extra_B=40
-mem_stacks_B=0
+time=6528654057
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=345601
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=0
+time=9218354868
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=491118
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=detailed
-n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x4A62D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 1024 0x4A72ECF: _IO_doallocbuf (genops.c:347)
-   n1: 1024 0x4A71CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
-    n1: 1024 0x4A64717: getdelim (iogetdelim.c:73)
-     n1: 1024 0x48735A3: pthread_getattr_np (pthread_getattr_np.c:118)
-      n1: 1024 0x12FBED: get_stack_start (thread.rs:777)
-       n1: 1024 0x12FBED: get_stack_start_aligned (thread.rs:794)
-        n1: 1024 0x12FBED: init (thread.rs:826)
-         n1: 1024 0x12FBED: init (rt.rs:99)
-          n1: 1024 0x12FBED: {closure#1} (rt.rs:147)
-           n1: 1024 0x12FBED: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-            n1: 1024 0x12FBED: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-             n1: 1024 0x12FBED: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-              n1: 1024 0x12FBED: std::rt::lang_start_internal (rt.rs:147)
-               n0: 1024 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 472 0x4A6392D: __fopen_internal (iofopen.c:65)
-  n1: 472 0x4A6392D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
-   n1: 472 0x48734AA: pthread_getattr_np (pthread_getattr_np.c:81)
-    n1: 472 0x12FBED: get_stack_start (thread.rs:777)
-     n1: 472 0x12FBED: get_stack_start_aligned (thread.rs:794)
-      n1: 472 0x12FBED: init (thread.rs:826)
-       n1: 472 0x12FBED: init (rt.rs:99)
-        n1: 472 0x12FBED: {closure#1} (rt.rs:147)
-         n1: 472 0x12FBED: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-          n1: 472 0x12FBED: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-           n1: 472 0x12FBED: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 472 0x12FBED: std::rt::lang_start_internal (rt.rs:147)
-             n0: 472 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 240 0x4A6459D: getdelim (iogetdelim.c:102)
-  n1: 240 0x48735A3: pthread_getattr_np (pthread_getattr_np.c:118)
-   n1: 240 0x12FBED: get_stack_start (thread.rs:777)
-    n1: 240 0x12FBED: get_stack_start_aligned (thread.rs:794)
-     n1: 240 0x12FBED: init (thread.rs:826)
-      n1: 240 0x12FBED: init (rt.rs:99)
-       n1: 240 0x12FBED: {closure#1} (rt.rs:147)
-        n1: 240 0x12FBED: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-         n1: 240 0x12FBED: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-          n1: 240 0x12FBED: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-           n1: 240 0x12FBED: std::rt::lang_start_internal (rt.rs:147)
-            n0: 240 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n0: 0 in 1 place, below massif's threshold (1.00%)
+time=11870359734
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
+heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=492201
-mem_heap_B=472
-mem_heap_extra_B=16
-mem_stacks_B=0
+time=13754061356
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=493223
-mem_heap_B=32
-mem_heap_extra_B=8
-mem_stacks_B=0
+time=17355062167
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=494198
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=0
+time=19717176591
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236960
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=494459
-mem_heap_B=53
-mem_heap_extra_B=27
-mem_stacks_B=0
+time=22943777402
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236960
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=495397
-mem_heap_B=85
-mem_heap_extra_B=35
-mem_stacks_B=0
+time=25658181511
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=496753
-mem_heap_B=133
-mem_heap_extra_B=43
-mem_stacks_B=0
+time=29647882322
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=497865
-mem_heap_B=8286
-mem_heap_extra_B=58
-mem_stacks_B=0
+time=31623884755
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=498428
-mem_heap_B=8291
-mem_heap_extra_B=77
-mem_stacks_B=0
+time=32909585566
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=499077
-mem_heap_B=8282
-mem_heap_extra_B=62
-mem_stacks_B=0
+time=35116986377
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=499575
-mem_heap_B=10515
-mem_heap_extra_B=77
-mem_stacks_B=0
-heap_tree=empty
+time=37224186154
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236800
+heap_tree=detailed
+n1: 3740 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3740 in 32 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=16
 #-----------
-time=502338
-mem_heap_B=10515
-mem_heap_extra_B=77
-mem_stacks_B=0
-heap_tree=peak
-n3: 10515 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 8192 0x116B78: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 8192 0x10F2BA: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 8192 0x1162CE: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 8192 0x1132E6: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 8192 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 8192 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 8192 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-        n1: 8192 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-         n1: 8192 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-          n1: 8192 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-           n1: 8192 0x12FCEA: {closure#2} (rt.rs:148)
-            n1: 8192 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-             n1: 8192 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-              n1: 8192 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-               n1: 8192 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                n0: 8192 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 2233 0x118193: _ZN5alloc7raw_vec11finish_grow17h2cc5194e9a1df4edE.llvm.11449681445488204352 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 2233 0x10F171: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 2233 0x11853D: std::io::append_to_string (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n2: 2233 0x11889A: <std::io::Lines<B> as core::iter::traits::iterator::Iterator>::next (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 2233 0x116BF2: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 2233 0x10F2BA: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 2233 0x1162CE: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 2233 0x1132E6: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 2233 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 2233 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 2233 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 2233 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 2233 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 2233 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 2233 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 2233 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 2233 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 2233 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 2233 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 2233 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 90 in 12 places, all below massif's threshold (1.00%)
+time=38403570021
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236800
+heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=502525
-mem_heap_B=8350
-mem_heap_extra_B=82
-mem_stacks_B=0
+time=41378177055
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236784
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=503889
-mem_heap_B=8282
-mem_heap_extra_B=62
-mem_stacks_B=0
-heap_tree=empty
+time=43447777007
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236792
+heap_tree=detailed
+n1: 3740 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3740 in 32 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=19
 #-----------
-time=504076
-mem_heap_B=8358
-mem_heap_extra_B=74
-mem_stacks_B=0
+time=46270077928
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=505461
-mem_heap_B=8282
-mem_heap_extra_B=62
-mem_stacks_B=0
+time=47644181983
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=505652
-mem_heap_B=8379
-mem_heap_extra_B=85
-mem_stacks_B=0
+time=49093682794
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=507056
-mem_heap_B=8282
-mem_heap_extra_B=62
-mem_stacks_B=0
+time=50809686849
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=507242
-mem_heap_B=8351
-mem_heap_extra_B=81
-mem_stacks_B=0
+time=51990708051
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236872
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=508623
-mem_heap_B=8282
-mem_heap_extra_B=62
-mem_stacks_B=0
+time=54776394695
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1236800
 heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=508817
-mem_heap_B=8396
-mem_heap_extra_B=84
-mem_stacks_B=0
-heap_tree=detailed
-n3: 8396 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 8192 0x116B78: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 8192 0x10F2BA: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 8192 0x1162CE: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 8192 0x1132E6: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 8192 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 8192 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 8192 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-        n1: 8192 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-         n1: 8192 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-          n1: 8192 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-           n1: 8192 0x12FCEA: {closure#2} (rt.rs:148)
-            n1: 8192 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-             n1: 8192 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-              n1: 8192 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-               n1: 8192 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                n0: 8192 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 114 0x118193: _ZN5alloc7raw_vec11finish_grow17h2cc5194e9a1df4edE.llvm.11449681445488204352 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 114 0x10F171: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 114 0x11853D: std::io::append_to_string (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n2: 114 0x11889A: <std::io::Lines<B> as core::iter::traits::iterator::Iterator>::next (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 114 0x116BF2: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 114 0x10F2BA: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 114 0x1162CE: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 114 0x1132E6: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 114 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 114 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 114 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 114 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 114 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 114 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 114 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 114 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 114 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 114 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 114 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 114 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 90 in 12 places, all below massif's threshold (1.00%)
+time=56510853196
+mem_heap_B=3740
+mem_heap_extra_B=388
+mem_stacks_B=1237040
+heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=510326
-mem_heap_B=8397
-mem_heap_extra_B=107
-mem_stacks_B=0
+time=58352822504
+mem_heap_B=3764
+mem_heap_extra_B=404
+mem_stacks_B=1237056
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=511415
-mem_heap_B=119
-mem_heap_extra_B=89
-mem_stacks_B=0
+time=59298827282
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1238248
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=512423
-mem_heap_B=145
-mem_heap_extra_B=55
-mem_stacks_B=0
+time=62043127556
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=513054
-mem_heap_B=85
-mem_heap_extra_B=35
-mem_stacks_B=0
-heap_tree=empty
+time=63813729989
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=30
 #-----------
-time=523185
-mem_heap_B=125
-mem_heap_extra_B=51
-mem_stacks_B=0
+time=65336720411
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=523360
-mem_heap_B=9341
-mem_heap_extra_B=67
-mem_stacks_B=0
+time=67921122068
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=567568
-mem_heap_B=1149
-mem_heap_extra_B=59
-mem_stacks_B=0
+time=72365822879
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=568661
-mem_heap_B=1387
-mem_heap_extra_B=125
-mem_stacks_B=0
+time=75102329367
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=569816
-mem_heap_B=1435
-mem_heap_extra_B=133
-mem_stacks_B=0
+time=77230434445
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237664
 heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=570083
-mem_heap_B=1579
-mem_heap_extra_B=157
-mem_stacks_B=0
-heap_tree=empty
+time=79389735520
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237576
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=36
 #-----------
-time=571298
-mem_heap_B=1611
-mem_heap_extra_B=165
-mem_stacks_B=0
+time=83944315860
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237488
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=578292
-mem_heap_B=1899
-mem_heap_extra_B=173
-mem_stacks_B=0
+time=86112715812
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237496
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=580709
-mem_heap_B=1959
-mem_heap_extra_B=185
-mem_stacks_B=0
-heap_tree=detailed
-n13: 1959 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x110BBE: alloc (alloc.rs:98)
-  n1: 1024 0x110BBE: alloc_impl (alloc.rs:181)
-   n1: 1024 0x110BBE: allocate (alloc.rs:241)
-    n1: 1024 0x110BBE: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
-     n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
-      n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
-       n1: 1024 0x110BBE: with_capacity<u8> (mod.rs:479)
-        n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (bufwriter.rs:115)
-         n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (linewriter.rs:109)
-          n1: 1024 0x110BBE: new<std::io::stdio::StdoutRaw> (linewriter.rs:89)
-           n1: 1024 0x110BBE: {closure#0} (stdio.rs:617)
-            n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-             n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:296)
-              n1: 1024 0x110BBE: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-               n1: 1024 0x110BBE: std::sys_common::once::futex::Once::call (futex.rs:124)
-                n1: 1024 0x110279: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-                 n1: 1024 0x110279: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
-                  n1: 1024 0x131E68: get_or_try_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:218)
-                   n1: 1024 0x131E68: get_or_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-                    n1: 1024 0x131E68: std::io::stdio::stdout (stdio.rs:617)
-                     n1: 1024 0x113353: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                      n1: 1024 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                       n1: 1024 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                        n1: 1024 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-                         n1: 1024 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-                          n1: 1024 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                           n1: 1024 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                            n1: 1024 0x12FCEA: {closure#2} (rt.rs:148)
-                             n1: 1024 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                              n1: 1024 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                               n1: 1024 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                                n1: 1024 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                                 n0: 1024 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 288 0x40149DA: allocate_dtv (dl-tls.c:286)
-  n1: 288 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
-   n1: 288 0x4872322: allocate_stack (allocatestack.c:622)
-    n1: 288 0x4872322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
-     n1: 288 0x13914E: std::sys::unix::thread::Thread::new (thread.rs:87)
-      n1: 288 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 288 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 288 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 288 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 288 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 288 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 288 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 288 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 288 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 288 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 288 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 288 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 288 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 288 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 288 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 120 0x112D7D: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 120 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 120 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 120 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 120 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 120 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 120 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 120 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 120 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 120 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 120 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 120 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 120 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 120 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 96 0x13017B: alloc (alloc.rs:98)
-  n1: 96 0x13017B: alloc_impl (alloc.rs:181)
-   n1: 96 0x13017B: allocate (alloc.rs:241)
-    n1: 96 0x13017B: {closure#0}<std::thread::Inner> (sync.rs:531)
-     n1: 96 0x13017B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
-      n1: 96 0x13017B: new_uninit<std::thread::Inner> (sync.rs:529)
-       n2: 96 0x13017B: std::thread::Thread::new (mod.rs:1204)
-        n1: 48 0x115105: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 48 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 48 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 48 0x12FCBF: init (rt.rs:104)
-         n1: 48 0x12FCBF: {closure#1} (rt.rs:147)
-          n1: 48 0x12FCBF: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-           n1: 48 0x12FCBF: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-            n1: 48 0x12FCBF: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-             n1: 48 0x12FCBF: std::rt::lang_start_internal (rt.rs:147)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 80 0x1152D0: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 80 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 80 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 80 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 80 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 80 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 80 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 80 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 80 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 80 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 80 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 80 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 80 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 80 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 80 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 60 0x112153: Rust::make_random (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 60 0x1135AF: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 60 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 60 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 60 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 60 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 60 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 60 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 60 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 60 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 60 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 60 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 60 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 60 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n0: 51 in 20 places, all below massif's threshold (1.00%)
- n1: 48 0x112CA2: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 48 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 48 0x115158: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 48 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 48 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 40 0x112B98: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 40 0x113303: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-         n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-             n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x49DCC04: _dlerror_run (dlerror.c:148)
-  n1: 32 0x49DC524: dlsym (dlsym.c:70)
-   n1: 32 0x11071A: fetch (weak.rs:138)
-    n1: 32 0x11071A: std::sys::unix::weak::DlsymWeak<F>::initialize (weak.rs:125)
-     n1: 32 0x1391DB: get<unsafe extern "C" fn(*const libc::unix::linux_like::linux::gnu::b64::x86_64::pthread_attr_t) -> usize> (weak.rs:92)
-      n1: 32 0x1391DB: min_stack_size (thread.rs:969)
-       n1: 32 0x1391DB: std::sys::unix::thread::Thread::new (thread.rs:69)
-        n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x4A281E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
-  n1: 32 0x135DFA: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
-   n1: 32 0x135DFA: __getit (fast_local.rs:54)
-    n1: 32 0x135DFA: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
-     n1: 32 0x135DFA: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
-      n1: 32 0x135DFA: std::sys_common::thread_info::set (thread_info.rs:41)
-       n1: 32 0x12FCDC: init (rt.rs:105)
-        n1: 32 0x12FCDC: {closure#1} (rt.rs:147)
-         n1: 32 0x12FCDC: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-          n1: 32 0x12FCDC: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-           n1: 32 0x12FCDC: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 32 0x12FCDC: std::rt::lang_start_internal (rt.rs:147)
-             n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
+time=87947022037
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237584
+heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=581529
-mem_heap_B=2454
-mem_heap_extra_B=234
-mem_stacks_B=0
+time=89262622943
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=584181
-mem_heap_B=2486
-mem_heap_extra_B=242
-mem_stacks_B=0
+time=91280226187
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=584441
-mem_heap_B=2486
-mem_heap_extra_B=242
-mem_stacks_B=0
+time=92915629431
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=477490305
-mem_heap_B=2518
-mem_heap_extra_B=250
-mem_stacks_B=0
-heap_tree=detailed
-n16: 2518 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x110BBE: alloc (alloc.rs:98)
-  n1: 1024 0x110BBE: alloc_impl (alloc.rs:181)
-   n1: 1024 0x110BBE: allocate (alloc.rs:241)
-    n1: 1024 0x110BBE: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
-     n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
-      n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
-       n1: 1024 0x110BBE: with_capacity<u8> (mod.rs:479)
-        n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (bufwriter.rs:115)
-         n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (linewriter.rs:109)
-          n1: 1024 0x110BBE: new<std::io::stdio::StdoutRaw> (linewriter.rs:89)
-           n1: 1024 0x110BBE: {closure#0} (stdio.rs:617)
-            n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-             n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:296)
-              n1: 1024 0x110BBE: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-               n1: 1024 0x110BBE: std::sys_common::once::futex::Once::call (futex.rs:124)
-                n1: 1024 0x110279: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-                 n1: 1024 0x110279: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
-                  n1: 1024 0x131E68: get_or_try_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:218)
-                   n1: 1024 0x131E68: get_or_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-                    n1: 1024 0x131E68: std::io::stdio::stdout (stdio.rs:617)
-                     n1: 1024 0x113353: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                      n1: 1024 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                       n1: 1024 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                        n1: 1024 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-                         n1: 1024 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-                          n1: 1024 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                           n1: 1024 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                            n1: 1024 0x12FCEA: {closure#2} (rt.rs:148)
-                             n1: 1024 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                              n1: 1024 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                               n1: 1024 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                                n1: 1024 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                                 n0: 1024 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 576 0x40149DA: allocate_dtv (dl-tls.c:286)
-  n1: 576 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
-   n1: 576 0x4872322: allocate_stack (allocatestack.c:622)
-    n1: 576 0x4872322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
-     n1: 576 0x13914E: std::sys::unix::thread::Thread::new (thread.rs:87)
-      n1: 576 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 576 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 576 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 576 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 576 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 576 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 576 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 576 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 576 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 576 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 576 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 576 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 576 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 576 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 576 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 160 0x1152D0: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 160 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 160 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 160 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 160 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 160 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 160 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 160 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 160 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 160 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 160 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 160 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 160 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 160 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 160 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 144 0x13017B: alloc (alloc.rs:98)
-  n1: 144 0x13017B: alloc_impl (alloc.rs:181)
-   n1: 144 0x13017B: allocate (alloc.rs:241)
-    n1: 144 0x13017B: {closure#0}<std::thread::Inner> (sync.rs:531)
-     n1: 144 0x13017B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
-      n1: 144 0x13017B: new_uninit<std::thread::Inner> (sync.rs:529)
-       n2: 144 0x13017B: std::thread::Thread::new (mod.rs:1204)
-        n1: 96 0x115105: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 96 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 96 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 96 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 96 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 96 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 96 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 96 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 96 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 96 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 96 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 96 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 96 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 96 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 96 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 48 0x12FCBF: init (rt.rs:104)
-         n1: 48 0x12FCBF: {closure#1} (rt.rs:147)
-          n1: 48 0x12FCBF: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-           n1: 48 0x12FCBF: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-            n1: 48 0x12FCBF: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-             n1: 48 0x12FCBF: std::rt::lang_start_internal (rt.rs:147)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 120 0x112D7D: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 120 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 120 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 120 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 120 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 120 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 120 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 120 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 120 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 120 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 120 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 120 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 120 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 120 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 96 0x115158: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 96 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 96 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 96 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 96 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 96 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 96 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 96 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 96 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 96 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 96 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 96 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 96 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 96 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 96 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 64 0x4A281E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
-  n1: 64 0x135DFA: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
-   n1: 64 0x135DFA: __getit (fast_local.rs:54)
-    n1: 64 0x135DFA: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
-     n1: 64 0x135DFA: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
-      n2: 64 0x135DFA: std::sys_common::thread_info::set (thread_info.rs:41)
-       n1: 32 0x1155EF: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 32 0x1392E4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-         n1: 32 0x1392E4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-          n1: 32 0x1392E4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-           n1: 32 0x4871608: start_thread (pthread_create.c:477)
-            n0: 32 0x4B00132: clone (clone.S:95)
-       n1: 32 0x12FCDC: init (rt.rs:105)
-        n1: 32 0x12FCDC: {closure#1} (rt.rs:147)
-         n1: 32 0x12FCDC: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-          n1: 32 0x12FCDC: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-           n1: 32 0x12FCDC: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 32 0x12FCDC: std::rt::lang_start_internal (rt.rs:147)
-             n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 60 0x112153: Rust::make_random (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 60 0x1135AF: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 60 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 60 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 60 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 60 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 60 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 60 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 60 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 60 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 60 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 60 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 60 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 60 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 48 0x112CA2: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 48 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 40 0x112B98: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 40 0x113303: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-         n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-             n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x139065: alloc (alloc.rs:98)
-  n1: 32 0x139065: alloc_impl (alloc.rs:181)
-   n1: 32 0x139065: allocate (alloc.rs:241)
-    n1: 32 0x139065: exchange_malloc (alloc.rs:330)
-     n1: 32 0x139065: new<alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>> (boxed.rs:217)
-      n1: 32 0x139065: std::sys::unix::thread::Thread::new (thread.rs:52)
-       n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-             n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-              n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-               n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                 n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                  n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                   n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                    n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                     n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n2: 32 0x48733F9: pthread_getattr_np (pthread_getattr_np.c:176)
-  n1: 32 0x1394F0: std::sys::unix::thread::guard::current (thread.rs:914)
-   n1: 32 0x1155DE: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 32 0x1392E4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-     n1: 32 0x1392E4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-      n1: 32 0x1392E4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-       n1: 32 0x4871608: start_thread (pthread_create.c:477)
-        n0: 32 0x4B00132: clone (clone.S:95)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 32 0x49DCC04: _dlerror_run (dlerror.c:148)
-  n1: 32 0x49DC524: dlsym (dlsym.c:70)
-   n1: 32 0x11071A: fetch (weak.rs:138)
-    n1: 32 0x11071A: std::sys::unix::weak::DlsymWeak<F>::initialize (weak.rs:125)
-     n1: 32 0x1391DB: get<unsafe extern "C" fn(*const libc::unix::linux_like::linux::gnu::b64::x86_64::pthread_attr_t) -> usize> (weak.rs:92)
-      n1: 32 0x1391DB: min_stack_size (thread.rs:969)
-       n1: 32 0x1391DB: std::sys::unix::thread::Thread::new (thread.rs:69)
-        n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 30 0x112DE5: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 30 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 30 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 30 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 30 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 30 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 30 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 30 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 30 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 30 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 30 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 30 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 30 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 30 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n0: 20 in 17 places, all below massif's threshold (1.00%)
+time=94521130242
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
+heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=477490565
-mem_heap_B=2518
-mem_heap_extra_B=250
-mem_stacks_B=0
-heap_tree=empty
+time=96392520960
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237664
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=44
 #-----------
-time=481201015
-mem_heap_B=2458
-mem_heap_extra_B=238
-mem_stacks_B=0
+time=100962699370
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237656
 heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=481201150
-mem_heap_B=2347
-mem_heap_extra_B=213
-mem_stacks_B=0
+time=103266303956
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237576
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=481202347
-mem_heap_B=2315
-mem_heap_extra_B=205
-mem_stacks_B=0
+time=105514005625
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=481204583
-mem_heap_B=2255
-mem_heap_extra_B=193
-mem_stacks_B=0
+time=108211583269
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237576
 heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=481205229
-mem_heap_B=2064
-mem_heap_extra_B=152
-mem_stacks_B=0
+time=110344265545
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237576
 heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=481205928
-mem_heap_B=1773
-mem_heap_extra_B=91
-mem_stacks_B=0
+time=112113566406
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237664
 heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=481206210
-mem_heap_B=1817
-mem_heap_extra_B=127
-mem_stacks_B=0
+time=115449368081
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=481206533
-mem_heap_B=1865
-mem_heap_extra_B=135
-mem_stacks_B=0
+time=117487768892
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=481206686
-mem_heap_B=1885
-mem_heap_extra_B=163
-mem_stacks_B=0
+time=118747470514
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=481206855
-mem_heap_B=1933
-mem_heap_extra_B=171
-mem_stacks_B=0
+time=120573971325
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=481207053
-mem_heap_B=2061
-mem_heap_extra_B=187
-mem_stacks_B=0
-heap_tree=empty
+time=122258779682
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237584
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=55
 #-----------
-time=481209425
-mem_heap_B=2093
-mem_heap_extra_B=203
-mem_stacks_B=0
+time=123253279634
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237592
 heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=481209679
-mem_heap_B=2145
-mem_heap_extra_B=231
-mem_stacks_B=0
+time=124915981738
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237584
 heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=481209877
-mem_heap_B=2273
-mem_heap_extra_B=247
-mem_stacks_B=0
+time=128074982601
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=481211653
-mem_heap_B=2321
-mem_heap_extra_B=263
-mem_stacks_B=0
-heap_tree=detailed
-n14: 2321 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x110BBE: alloc (alloc.rs:98)
-  n1: 1024 0x110BBE: alloc_impl (alloc.rs:181)
-   n1: 1024 0x110BBE: allocate (alloc.rs:241)
-    n1: 1024 0x110BBE: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
-     n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
-      n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
-       n1: 1024 0x110BBE: with_capacity<u8> (mod.rs:479)
-        n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (bufwriter.rs:115)
-         n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (linewriter.rs:109)
-          n1: 1024 0x110BBE: new<std::io::stdio::StdoutRaw> (linewriter.rs:89)
-           n1: 1024 0x110BBE: {closure#0} (stdio.rs:617)
-            n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-             n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:296)
-              n1: 1024 0x110BBE: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-               n1: 1024 0x110BBE: std::sys_common::once::futex::Once::call (futex.rs:124)
-                n1: 1024 0x110279: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-                 n1: 1024 0x110279: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
-                  n1: 1024 0x131E68: get_or_try_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:218)
-                   n1: 1024 0x131E68: get_or_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-                    n1: 1024 0x131E68: std::io::stdio::stdout (stdio.rs:617)
-                     n1: 1024 0x113353: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                      n1: 1024 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                       n1: 1024 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                        n1: 1024 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-                         n1: 1024 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-                          n1: 1024 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                           n1: 1024 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                            n1: 1024 0x12FCEA: {closure#2} (rt.rs:148)
-                             n1: 1024 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                              n1: 1024 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                               n1: 1024 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                                n1: 1024 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                                 n0: 1024 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 576 0x40149DA: allocate_dtv (dl-tls.c:286)
-  n1: 576 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
-   n1: 576 0x4872322: allocate_stack (allocatestack.c:622)
-    n1: 576 0x4872322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
-     n1: 576 0x13914E: std::sys::unix::thread::Thread::new (thread.rs:87)
-      n1: 576 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 576 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 576 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 576 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 576 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 576 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 576 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 576 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 576 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 576 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 576 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 576 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 576 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 576 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 576 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 160 0x1152D0: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n2: 160 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 160 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 160 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 160 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 160 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 160 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 160 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 160 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 160 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 160 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 160 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 160 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 160 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 160 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 144 0x13017B: alloc (alloc.rs:98)
-  n1: 144 0x13017B: alloc_impl (alloc.rs:181)
-   n1: 144 0x13017B: allocate (alloc.rs:241)
-    n1: 144 0x13017B: {closure#0}<std::thread::Inner> (sync.rs:531)
-     n1: 144 0x13017B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
-      n1: 144 0x13017B: new_uninit<std::thread::Inner> (sync.rs:529)
-       n2: 144 0x13017B: std::thread::Thread::new (mod.rs:1204)
-        n1: 96 0x115105: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n2: 96 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 96 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 96 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 96 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 96 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 96 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 96 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 96 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 96 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 96 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 96 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 96 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 96 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 96 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n0: 0 in 1 place, below massif's threshold (1.00%)
-        n1: 48 0x12FCBF: init (rt.rs:104)
-         n1: 48 0x12FCBF: {closure#1} (rt.rs:147)
-          n1: 48 0x12FCBF: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-           n1: 48 0x12FCBF: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-            n1: 48 0x12FCBF: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-             n1: 48 0x12FCBF: std::rt::lang_start_internal (rt.rs:147)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 96 0x115158: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n2: 96 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 96 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 96 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 96 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 96 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 96 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 96 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 96 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 96 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 96 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 96 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 96 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 96 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 96 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 48 0x112CA2: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 48 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 40 0x112B98: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 40 0x113303: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-         n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-             n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n0: 33 in 19 places, all below massif's threshold (1.00%)
- n2: 32 0x112D7D: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 32 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 32 0x139065: alloc (alloc.rs:98)
-  n1: 32 0x139065: alloc_impl (alloc.rs:181)
-   n1: 32 0x139065: allocate (alloc.rs:241)
-    n1: 32 0x139065: exchange_malloc (alloc.rs:330)
-     n1: 32 0x139065: new<alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>> (boxed.rs:217)
-      n1: 32 0x139065: std::sys::unix::thread::Thread::new (thread.rs:52)
-       n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n2: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-             n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-              n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-               n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                 n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                  n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                   n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                    n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                     n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 32 0x48733F9: pthread_getattr_np (pthread_getattr_np.c:176)
-  n1: 32 0x1394F0: std::sys::unix::thread::guard::current (thread.rs:914)
-   n1: 32 0x1155DE: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 32 0x1392E4: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-     n1: 32 0x1392E4: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-      n1: 32 0x1392E4: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-       n1: 32 0x4871608: start_thread (pthread_create.c:477)
-        n0: 32 0x4B00132: clone (clone.S:95)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 32 0x49DCC04: _dlerror_run (dlerror.c:148)
-  n1: 32 0x49DC524: dlsym (dlsym.c:70)
-   n1: 32 0x11071A: fetch (weak.rs:138)
-    n1: 32 0x11071A: std::sys::unix::weak::DlsymWeak<F>::initialize (weak.rs:125)
-     n1: 32 0x1391DB: get<unsafe extern "C" fn(*const libc::unix::linux_like::linux::gnu::b64::x86_64::pthread_attr_t) -> usize> (weak.rs:92)
-      n1: 32 0x1391DB: min_stack_size (thread.rs:969)
-       n1: 32 0x1391DB: std::sys::unix::thread::Thread::new (thread.rs:69)
-        n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x4A281E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
-  n1: 32 0x135DFA: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
-   n1: 32 0x135DFA: __getit (fast_local.rs:54)
-    n1: 32 0x135DFA: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
-     n1: 32 0x135DFA: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
-      n2: 32 0x135DFA: std::sys_common::thread_info::set (thread_info.rs:41)
-       n1: 32 0x12FCDC: init (rt.rs:105)
-        n1: 32 0x12FCDC: {closure#1} (rt.rs:147)
-         n1: 32 0x12FCDC: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-          n1: 32 0x12FCDC: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-           n1: 32 0x12FCDC: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 32 0x12FCDC: std::rt::lang_start_internal (rt.rs:147)
-             n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n0: 0 in 1 place, below massif's threshold (1.00%)
+time=131687684223
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
+heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=481211795
-mem_heap_B=2289
-mem_heap_extra_B=255
-mem_stacks_B=0
+time=133313985034
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=556556811
-mem_heap_B=2353
-mem_heap_extra_B=271
-mem_stacks_B=0
+time=138814286656
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=556556953
-mem_heap_B=2321
-mem_heap_extra_B=263
-mem_stacks_B=0
+time=140311891410
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=1040468492
-mem_heap_B=2337
-mem_heap_extra_B=263
-mem_stacks_B=0
+time=141480593843
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=1040468627
-mem_heap_B=2237
-mem_heap_extra_B=227
-mem_stacks_B=0
+time=145615895465
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=1040468814
-mem_heap_B=2205
-mem_heap_extra_B=219
-mem_stacks_B=0
-heap_tree=empty
+time=148535704945
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=65
 #-----------
-time=1040469056
-mem_heap_B=2189
-mem_heap_extra_B=211
-mem_stacks_B=0
+time=149929306567
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=1040469191
-mem_heap_B=2089
-mem_heap_extra_B=175
-mem_stacks_B=0
+time=152122413175
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237664
 heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=1040469378
-mem_heap_B=2057
-mem_heap_extra_B=167
-mem_stacks_B=0
+time=153374315661
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=1040469702
-mem_heap_B=2009
-mem_heap_extra_B=159
-mem_stacks_B=0
-heap_tree=detailed
-n10: 2009 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x110BBE: alloc (alloc.rs:98)
-  n1: 1024 0x110BBE: alloc_impl (alloc.rs:181)
-   n1: 1024 0x110BBE: allocate (alloc.rs:241)
-    n1: 1024 0x110BBE: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
-     n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
-      n1: 1024 0x110BBE: with_capacity_in<u8, alloc::alloc::Global> (mod.rs:670)
-       n1: 1024 0x110BBE: with_capacity<u8> (mod.rs:479)
-        n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (bufwriter.rs:115)
-         n1: 1024 0x110BBE: with_capacity<std::io::stdio::StdoutRaw> (linewriter.rs:109)
-          n1: 1024 0x110BBE: new<std::io::stdio::StdoutRaw> (linewriter.rs:89)
-           n1: 1024 0x110BBE: {closure#0} (stdio.rs:617)
-            n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-             n1: 1024 0x110BBE: {closure#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:296)
-              n1: 1024 0x110BBE: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-               n1: 1024 0x110BBE: std::sys_common::once::futex::Once::call (futex.rs:124)
-                n1: 1024 0x110279: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !>> (once.rs:208)
-                 n1: 1024 0x110279: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
-                  n1: 1024 0x131E68: get_or_try_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}>, !> (once_lock.rs:218)
-                   n1: 1024 0x131E68: get_or_init<std::sync::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::linewriter::LineWriter<std::io::stdio::StdoutRaw>>>, std::io::stdio::stdout::{closure_env#0}> (once_lock.rs:170)
-                    n1: 1024 0x131E68: std::io::stdio::stdout (stdio.rs:617)
-                     n1: 1024 0x113353: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                      n1: 1024 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                       n1: 1024 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-                        n1: 1024 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-                         n1: 1024 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-                          n1: 1024 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                           n1: 1024 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                            n1: 1024 0x12FCEA: {closure#2} (rt.rs:148)
-                             n1: 1024 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                              n1: 1024 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                               n1: 1024 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                                n1: 1024 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                                 n0: 1024 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 576 0x40149DA: allocate_dtv (dl-tls.c:286)
-  n1: 576 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
-   n1: 576 0x4872322: allocate_stack (allocatestack.c:622)
-    n1: 576 0x4872322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
-     n1: 576 0x13914E: std::sys::unix::thread::Thread::new (thread.rs:87)
-      n1: 576 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n1: 576 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-        n1: 576 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 576 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 576 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 576 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-            n1: 576 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-             n1: 576 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-              n1: 576 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-               n1: 576 0x12FCEA: {closure#2} (rt.rs:148)
-                n1: 576 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                 n1: 576 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                  n1: 576 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                   n1: 576 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                    n0: 576 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 96 0x115158: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n2: 96 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 96 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 96 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 96 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-      n1: 96 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-       n1: 96 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-        n1: 96 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-         n1: 96 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-          n1: 96 0x12FCEA: {closure#2} (rt.rs:148)
-           n1: 96 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-            n1: 96 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-             n1: 96 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-              n1: 96 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-               n0: 96 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 96 0x13017B: alloc (alloc.rs:98)
-  n1: 96 0x13017B: alloc_impl (alloc.rs:181)
-   n1: 96 0x13017B: allocate (alloc.rs:241)
-    n1: 96 0x13017B: {closure#0}<std::thread::Inner> (sync.rs:531)
-     n1: 96 0x13017B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>, alloc::sync::{impl#14}::new_uninit::{closure_env#0}<std::thread::Inner>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::Inner>>> (sync.rs:1797)
-      n1: 96 0x13017B: new_uninit<std::thread::Inner> (sync.rs:529)
-       n2: 96 0x13017B: std::thread::Thread::new (mod.rs:1204)
-        n1: 48 0x115105: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n2: 48 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 48 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n0: 0 in 1 place, below massif's threshold (1.00%)
-        n1: 48 0x12FCBF: init (rt.rs:104)
-         n1: 48 0x12FCBF: {closure#1} (rt.rs:147)
-          n1: 48 0x12FCBF: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-           n1: 48 0x12FCBF: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-            n1: 48 0x12FCBF: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-             n1: 48 0x12FCBF: std::rt::lang_start_internal (rt.rs:147)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n2: 48 0x112CA2: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 48 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 48 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 48 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 48 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 48 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 48 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 48 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 48 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 48 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 48 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 48 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 48 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 48 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 40 0x112B98: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x1136EB: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-     n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-      n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-       n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-        n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-         n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-          n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-           n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-            n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-             n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-              n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 40 0x113303: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-  n1: 40 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-   n1: 40 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-    n1: 40 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 40 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 40 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 40 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 40 0x12FCEA: {closure#2} (rt.rs:148)
-         n1: 40 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 40 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 40 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 40 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-             n0: 40 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x49DCC04: _dlerror_run (dlerror.c:148)
-  n1: 32 0x49DC524: dlsym (dlsym.c:70)
-   n1: 32 0x11071A: fetch (weak.rs:138)
-    n1: 32 0x11071A: std::sys::unix::weak::DlsymWeak<F>::initialize (weak.rs:125)
-     n1: 32 0x1391DB: get<unsafe extern "C" fn(*const libc::unix::linux_like::linux::gnu::b64::x86_64::pthread_attr_t) -> usize> (weak.rs:92)
-      n1: 32 0x1391DB: min_stack_size (thread.rs:969)
-       n1: 32 0x1391DB: std::sys::unix::thread::Thread::new (thread.rs:69)
-        n1: 32 0x11531F: std::thread::spawn (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-         n1: 32 0x112E76: Rust::make_fasta (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-          n1: 32 0x1135CD: Rust::main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-           n1: 32 0x114AD2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-            n1: 32 0x114AE8: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h99d1d051f54d6ee9E.llvm.699544753848763016 (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-             n1: 32 0x12FCEA: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-              n1: 32 0x12FCEA: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-               n1: 32 0x12FCEA: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-                n1: 32 0x12FCEA: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-                 n1: 32 0x12FCEA: {closure#2} (rt.rs:148)
-                  n1: 32 0x12FCEA: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-                   n1: 32 0x12FCEA: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-                    n1: 32 0x12FCEA: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-                     n1: 32 0x12FCEA: std::rt::lang_start_internal (rt.rs:148)
-                      n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
- n1: 32 0x4A281E2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:106)
-  n1: 32 0x135DFA: register_dtor<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>> (fast_local.rs:158)
-   n1: 32 0x135DFA: __getit (fast_local.rs:54)
-    n1: 32 0x135DFA: try_with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:269)
-     n1: 32 0x135DFA: with<core::cell::RefCell<core::option::Option<std::sys_common::thread_info::ThreadInfo>>, std::sys_common::thread_info::set::{closure_env#0}, ()> (local.rs:246)
-      n2: 32 0x135DFA: std::sys_common::thread_info::set (thread_info.rs:41)
-       n1: 32 0x12FCDC: init (rt.rs:105)
-        n1: 32 0x12FCDC: {closure#1} (rt.rs:147)
-         n1: 32 0x12FCDC: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
-          n1: 32 0x12FCDC: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
-           n1: 32 0x12FCDC: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 32 0x12FCDC: std::rt::lang_start_internal (rt.rs:147)
-             n0: 32 0x1139A4: main (in /workspaces/Rusty-Kernels-Code/fasta/Rust/target/release/Rust)
-       n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 25 in 23 places, all below massif's threshold (1.00%)
+time=154777019716
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
+heap_tree=empty
 #-----------
 snapshot=69
 #-----------
-time=1040470026
-mem_heap_B=1913
-mem_heap_extra_B=143
-mem_stacks_B=0
+time=158612020527
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=1040470184
-mem_heap_B=1817
-mem_heap_extra_B=127
-mem_stacks_B=0
+time=159609121338
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237744
 heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=1040470337
-mem_heap_B=1717
-mem_heap_extra_B=67
-mem_stacks_B=0
+time=160555126131
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237752
 heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=1040470581
-mem_heap_B=693
-mem_heap_extra_B=59
-mem_stacks_B=0
+time=161501130915
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237760
 heap_tree=empty
 #-----------
 snapshot=73
 #-----------
-time=1040470828
-mem_heap_B=688
-mem_heap_extra_B=40
-mem_stacks_B=0
+time=162447135698
+mem_heap_B=3489
+mem_heap_extra_B=487
+mem_stacks_B=1237752
 heap_tree=empty
 #-----------
 snapshot=74
 #-----------
-time=1040477932
-mem_heap_B=576
-mem_heap_extra_B=16
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=75
-#-----------
-time=1040479462
-mem_heap_B=288
-mem_heap_extra_B=8
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=76
-#-----------
-time=1040480866
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
+time=163393140477
+mem_heap_B=3465
+mem_heap_extra_B=471
+mem_stacks_B=1237760
+heap_tree=detailed
+n1: 3465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 3465 in 34 places, all below massif's threshold (1.00%)

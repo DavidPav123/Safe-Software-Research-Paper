@@ -1,0 +1,1888 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/Results/massif1.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=50486
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=400
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=2
+#-----------
+time=124086
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=888
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=191412
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=246642
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1432
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=291704
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1680
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=351350
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=390495
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=3048
+heap_tree=detailed
+n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x4A5FD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4A6FECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4A6ECA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4A61717: getdelim (iogetdelim.c:73)
+     n1: 1024 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
+      n1: 1024 0x17051D: get_stack_start (thread.rs:777)
+       n1: 1024 0x17051D: get_stack_start_aligned (thread.rs:794)
+        n1: 1024 0x17051D: init (thread.rs:826)
+         n1: 1024 0x17051D: init (rt.rs:99)
+          n1: 1024 0x17051D: {closure#1} (rt.rs:147)
+           n1: 1024 0x17051D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+            n1: 1024 0x17051D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+             n1: 1024 0x17051D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+              n1: 1024 0x17051D: std::rt::lang_start_internal (rt.rs:147)
+               n0: 1024 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 472 0x4A6092D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x4A6092D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x48704AA: pthread_getattr_np (pthread_getattr_np.c:81)
+    n1: 472 0x17051D: get_stack_start (thread.rs:777)
+     n1: 472 0x17051D: get_stack_start_aligned (thread.rs:794)
+      n1: 472 0x17051D: init (thread.rs:826)
+       n1: 472 0x17051D: init (rt.rs:99)
+        n1: 472 0x17051D: {closure#1} (rt.rs:147)
+         n1: 472 0x17051D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+          n1: 472 0x17051D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+           n1: 472 0x17051D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+            n1: 472 0x17051D: std::rt::lang_start_internal (rt.rs:147)
+             n0: 472 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 240 0x4A6159D: getdelim (iogetdelim.c:102)
+  n1: 240 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
+   n1: 240 0x17051D: get_stack_start (thread.rs:777)
+    n1: 240 0x17051D: get_stack_start_aligned (thread.rs:794)
+     n1: 240 0x17051D: init (thread.rs:826)
+      n1: 240 0x17051D: init (rt.rs:99)
+       n1: 240 0x17051D: {closure#1} (rt.rs:147)
+        n1: 240 0x17051D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:502)
+         n1: 240 0x17051D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:466)
+          n1: 240 0x17051D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+           n1: 240 0x17051D: std::rt::lang_start_internal (rt.rs:147)
+            n0: 240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=453844
+mem_heap_B=1736
+mem_heap_extra_B=32
+mem_stacks_B=3048
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=520655
+mem_heap_B=73813
+mem_heap_extra_B=51
+mem_stacks_B=912
+heap_tree=detailed
+n3: 73813 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 85 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=570506
+mem_heap_B=84299
+mem_heap_extra_B=117
+mem_stacks_B=3680
+heap_tree=detailed
+n5: 84299 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x153DC8: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x11756A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x15351E: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x150173: tokio::loom::std::sys::num_cpus (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x140D5B: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+           n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+            n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+             n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+              n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+               n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                 n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                  n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                   n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 2233 0x1553E3: _ZN5alloc7raw_vec11finish_grow17h2cc5194e9a1df4edE.llvm.11449681445488204352 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 2233 0x117421: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 2233 0x15578D: std::io::append_to_string (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n2: 2233 0x155AEA: <std::io::Lines<B> as core::iter::traits::iterator::Iterator>::next (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 2233 0x153E42: num_cpus::linux::init_cgroups (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 2233 0x11756A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 2233 0x15351E: num_cpus::linux::get_num_cpus (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 2233 0x150173: tokio::loom::std::sys::num_cpus (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 2233 0x140D5B: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 2233 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 2233 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 2233 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+             n1: 2233 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+              n1: 2233 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+               n1: 2233 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                n1: 2233 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                 n1: 2233 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                  n1: 2233 0x17061A: {closure#2} (rt.rs:148)
+                   n1: 2233 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                    n1: 2233 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                     n1: 2233 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                      n1: 2233 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                       n0: 2233 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 146 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=634881
+mem_heap_B=126226
+mem_heap_extra_B=1654
+mem_stacks_B=5352
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=672008
+mem_heap_B=134977
+mem_heap_extra_B=3007
+mem_stacks_B=6408
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=716920
+mem_heap_B=157825
+mem_heap_extra_B=3007
+mem_stacks_B=6480
+heap_tree=detailed
+n9: 157825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 26144 0x11414D: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 26144 0x124411: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 26144 0x127A69: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 26144 0x11E9BD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 26144 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 26144 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 26144 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 26144 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 26144 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 26144 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 26144 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 26144 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 26144 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 26144 0x486E608: start_thread (pthread_create.c:477)
+               n0: 26144 0x4AFD132: clone (clone.S:95)
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 12288 0x155FC1: mio::event::events::Events::with_capacity (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 12288 0x136B00: tokio::runtime::io::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 12288 0x135190: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 12288 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 12288 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 12288 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 12288 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 12288 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 12288 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 12288 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 12288 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 12288 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 12288 0x17061A: {closure#2} (rt.rs:148)
+              n1: 12288 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 12288 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 12288 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 12288 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 12288 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x139503: tokio::runtime::scheduler::multi_thread::queue::local (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x149261: tokio::runtime::scheduler::multi_thread::worker::create (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x141074: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+             n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 6585 in 49 places, all below massif's threshold (1.00%)
+ n1: 6240 0x14F0DA: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6240 0x135495: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6240 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6240 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6240 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6240 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6240 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6240 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 6240 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 6240 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 6240 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 6240 0x17061A: {closure#2} (rt.rs:148)
+             n1: 6240 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 6240 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 6240 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 6240 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 6240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 3328 0x1770A8: aligned_malloc (alloc.rs:98)
+  n1: 3328 0x1770A8: alloc (alloc.rs:22)
+   n1: 3328 0x1770A8: __rdl_alloc (alloc.rs:380)
+    n0: 3328 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=773588
+mem_heap_B=183937
+mem_heap_extra_B=3007
+mem_stacks_B=6400
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=810994
+mem_heap_B=183937
+mem_heap_extra_B=3007
+mem_stacks_B=6408
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=885892
+mem_heap_B=236161
+mem_heap_extra_B=3007
+mem_stacks_B=6400
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=960674
+mem_heap_B=236161
+mem_heap_extra_B=3007
+mem_stacks_B=6408
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1102874
+mem_heap_B=201329
+mem_heap_extra_B=2999
+mem_stacks_B=6296
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1111220
+mem_heap_B=340609
+mem_heap_extra_B=3007
+mem_stacks_B=6400
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1260754
+mem_heap_B=340609
+mem_heap_extra_B=3007
+mem_stacks_B=6408
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1365623
+mem_heap_B=270961
+mem_heap_extra_B=2999
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1438935
+mem_heap_B=284817
+mem_heap_extra_B=3015
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1512333
+mem_heap_B=298641
+mem_heap_extra_B=3015
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1583607
+mem_heap_B=289409
+mem_heap_extra_B=3007
+mem_stacks_B=6296
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1587858
+mem_heap_B=326289
+mem_heap_extra_B=3015
+mem_stacks_B=6384
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1659054
+mem_heap_B=326289
+mem_heap_extra_B=3015
+mem_stacks_B=6392
+heap_tree=detailed
+n9: 326289 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 139280 0x11414D: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 139280 0x124411: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 139280 0x127A69: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 139280 0x11E9BD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 139280 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 139280 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 139280 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 139280 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 139280 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 139280 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 139280 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 139280 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 139280 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 139280 0x486E608: start_thread (pthread_create.c:477)
+               n0: 139280 0x4AFD132: clone (clone.S:95)
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 55328 0x11474A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 55328 0x1247A1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 55328 0x1278A9: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 55328 0x11DBFD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 55328 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 55328 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 55328 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 55328 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 55328 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 55328 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 55328 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 55328 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 55328 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 55328 0x486E608: start_thread (pthread_create.c:477)
+               n0: 55328 0x4AFD132: clone (clone.S:95)
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 12288 0x155FC1: mio::event::events::Events::with_capacity (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 12288 0x136B00: tokio::runtime::io::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 12288 0x135190: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 12288 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 12288 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 12288 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 12288 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 12288 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 12288 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 12288 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 12288 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 12288 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 12288 0x17061A: {closure#2} (rt.rs:148)
+              n1: 12288 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 12288 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 12288 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 12288 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 12288 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 9913 in 50 places, all below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x139503: tokio::runtime::scheduler::multi_thread::queue::local (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x149261: tokio::runtime::scheduler::multi_thread::worker::create (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x141074: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+             n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 6240 0x14F0DA: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6240 0x135495: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6240 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6240 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6240 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6240 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6240 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6240 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 6240 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 6240 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 6240 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 6240 0x17061A: {closure#2} (rt.rs:148)
+             n1: 6240 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 6240 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 6240 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 6240 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 6240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+#-----------
+snapshot=27
+#-----------
+time=1800060
+mem_heap_B=307841
+mem_heap_extra_B=3007
+mem_stacks_B=6296
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1808407
+mem_heap_B=381585
+mem_heap_extra_B=3015
+mem_stacks_B=6384
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1950787
+mem_heap_B=381585
+mem_heap_extra_B=3015
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2056232
+mem_heap_B=344705
+mem_heap_extra_B=3007
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2094303
+mem_heap_B=351649
+mem_heap_extra_B=3023
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2131943
+mem_heap_B=358561
+mem_heap_extra_B=3023
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2174798
+mem_heap_B=353937
+mem_heap_extra_B=3015
+mem_stacks_B=6296
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2212613
+mem_heap_B=372385
+mem_heap_extra_B=3023
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2319799
+mem_heap_B=363153
+mem_heap_extra_B=3015
+mem_stacks_B=6296
+heap_tree=detailed
+n10: 363153 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 139280 0x11414D: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 139280 0x124411: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 139280 0x127A69: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 139280 0x11E9BD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 139280 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 139280 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 139280 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 139280 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 139280 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 139280 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 139280 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 139280 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 139280 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 139280 0x486E608: start_thread (pthread_create.c:477)
+               n0: 139280 0x4AFD132: clone (clone.S:95)
+ n1: 73744 0x11474A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 73744 0x1247A1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 73744 0x1278A9: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 73744 0x11DBFD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 73744 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 73744 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 73744 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 73744 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 73744 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 73744 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 73744 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 73744 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 73744 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 73744 0x486E608: start_thread (pthread_create.c:477)
+               n0: 73744 0x4AFD132: clone (clone.S:95)
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 18448 0x11531A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 18448 0x123CF1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 18448 0x127C29: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 18448 0x11E64D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 18448 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 18448 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 18448 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 18448 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 18448 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 18448 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 18448 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 18448 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 18448 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 18448 0x486E608: start_thread (pthread_create.c:477)
+               n0: 18448 0x4AFD132: clone (clone.S:95)
+ n1: 12288 0x155FC1: mio::event::events::Events::with_capacity (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 12288 0x136B00: tokio::runtime::io::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 12288 0x135190: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 12288 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 12288 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 12288 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 12288 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 12288 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 12288 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 12288 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 12288 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 12288 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 12288 0x17061A: {closure#2} (rt.rs:148)
+              n1: 12288 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 12288 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 12288 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 12288 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 12288 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 9913 in 50 places, all below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x139503: tokio::runtime::scheduler::multi_thread::queue::local (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x149261: tokio::runtime::scheduler::multi_thread::worker::create (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x141074: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+             n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 6240 0x14F0DA: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6240 0x135495: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6240 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6240 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6240 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6240 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6240 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6240 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 6240 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 6240 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 6240 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 6240 0x17061A: {closure#2} (rt.rs:148)
+             n1: 6240 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 6240 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 6240 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 6240 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 6240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+#-----------
+snapshot=36
+#-----------
+time=2319912
+mem_heap_B=400033
+mem_heap_extra_B=3023
+mem_stacks_B=6464
+heap_tree=peak
+n10: 400033 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 139280 0x11414D: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 139280 0x124411: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 139280 0x127A69: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 139280 0x11E9BD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 139280 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 139280 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 139280 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 139280 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 139280 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 139280 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 139280 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 139280 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 139280 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 139280 0x486E608: start_thread (pthread_create.c:477)
+               n0: 139280 0x4AFD132: clone (clone.S:95)
+ n1: 73744 0x11474A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 73744 0x1247A1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 73744 0x1278A9: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 73744 0x11DBFD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 73744 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 73744 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 73744 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 73744 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 73744 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 73744 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 73744 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 73744 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 73744 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 73744 0x486E608: start_thread (pthread_create.c:477)
+               n0: 73744 0x4AFD132: clone (clone.S:95)
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 55328 0x11531A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 55328 0x123CF1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 55328 0x127C29: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 55328 0x11E64D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 55328 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 55328 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 55328 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 55328 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 55328 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 55328 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 55328 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 55328 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 55328 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 55328 0x486E608: start_thread (pthread_create.c:477)
+               n0: 55328 0x4AFD132: clone (clone.S:95)
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 12288 0x155FC1: mio::event::events::Events::with_capacity (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 12288 0x136B00: tokio::runtime::io::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 12288 0x135190: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 12288 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 12288 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 12288 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 12288 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 12288 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 12288 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 12288 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 12288 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 12288 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 12288 0x17061A: {closure#2} (rt.rs:148)
+              n1: 12288 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 12288 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 12288 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 12288 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 12288 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 9913 in 50 places, all below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x139503: tokio::runtime::scheduler::multi_thread::queue::local (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x149261: tokio::runtime::scheduler::multi_thread::worker::create (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x141074: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+             n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 6240 0x14F0DA: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6240 0x135495: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6240 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6240 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6240 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6240 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6240 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6240 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 6240 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 6240 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 6240 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 6240 0x17061A: {closure#2} (rt.rs:148)
+             n1: 6240 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 6240 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 6240 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 6240 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 6240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+#-----------
+snapshot=37
+#-----------
+time=2324050
+mem_heap_B=400033
+mem_heap_extra_B=3023
+mem_stacks_B=6384
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2395262
+mem_heap_B=400033
+mem_heap_extra_B=3023
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2543714
+mem_heap_B=381585
+mem_heap_extra_B=3015
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2607365
+mem_heap_B=388529
+mem_heap_extra_B=3031
+mem_stacks_B=6392
+heap_tree=detailed
+n11: 388529 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 139280 0x11414D: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 139280 0x124411: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 139280 0x127A69: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 139280 0x11E9BD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 139280 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 139280 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 139280 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 139280 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 139280 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 139280 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 139280 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 139280 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 139280 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 139280 0x486E608: start_thread (pthread_create.c:477)
+               n0: 139280 0x4AFD132: clone (clone.S:95)
+ n1: 73744 0x11474A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 73744 0x1247A1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 73744 0x1278A9: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 73744 0x11DBFD: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 73744 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 73744 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 73744 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 73744 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 73744 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 73744 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 73744 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 73744 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 73744 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 73744 0x486E608: start_thread (pthread_create.c:477)
+               n0: 73744 0x4AFD132: clone (clone.S:95)
+ n1: 65536 0x1248D3: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 65536 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 65536 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 65536 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+     n1: 65536 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+      n1: 65536 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+       n1: 65536 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+        n1: 65536 0x17061A: {closure#2} (rt.rs:148)
+         n1: 65536 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+          n1: 65536 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+           n1: 65536 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+            n1: 65536 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+             n0: 65536 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 36880 0x11531A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 36880 0x123CF1: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 36880 0x127C29: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 36880 0x11E64D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 36880 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 36880 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 36880 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 36880 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 36880 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 36880 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 36880 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 36880 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 36880 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 36880 0x486E608: start_thread (pthread_create.c:477)
+               n0: 36880 0x4AFD132: clone (clone.S:95)
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 12288 0x155FC1: mio::event::events::Events::with_capacity (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 12288 0x136B00: tokio::runtime::io::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 12288 0x135190: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 12288 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 12288 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 12288 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 12288 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 12288 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 12288 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 12288 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 12288 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 12288 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 12288 0x17061A: {closure#2} (rt.rs:148)
+              n1: 12288 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 12288 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 12288 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 12288 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 12288 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 9913 in 50 places, all below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 8192 0x139503: tokio::runtime::scheduler::multi_thread::queue::local (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 8192 0x149261: tokio::runtime::scheduler::multi_thread::worker::create (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 8192 0x141074: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 8192 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 8192 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+             n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 6944 0x114D2A: hashbrown::raw::RawTable<T,A>::reserve_rehash (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6944 0x124081: Rust::freq (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6944 0x1271A9: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6944 0x11ED2D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6944 0x14BA43: tokio::runtime::scheduler::multi_thread::worker::Context::run_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6944 0x14A544: tokio::runtime::scheduler::multi_thread::worker::run (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6944 0x151179: tokio::runtime::task::core::Core<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6944 0x133B4D: tokio::runtime::task::harness::Harness<T,S>::poll (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 6944 0x142639: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 6944 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 6944 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 6944 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 6944 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 6944 0x486E608: start_thread (pthread_create.c:477)
+               n0: 6944 0x4AFD132: clone (clone.S:95)
+ n1: 6240 0x14F0DA: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 6240 0x135495: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 6240 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 6240 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 6240 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 6240 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 6240 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 6240 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+         n1: 6240 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+          n1: 6240 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+           n1: 6240 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+            n1: 6240 0x17061A: {closure#2} (rt.rs:148)
+             n1: 6240 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+              n1: 6240 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+               n1: 6240 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                n1: 6240 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                 n0: 6240 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+#-----------
+snapshot=41
+#-----------
+time=2834441
+mem_heap_B=386209
+mem_heap_extra_B=3023
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2850209
+mem_heap_B=387969
+mem_heap_extra_B=3039
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=3107108
+mem_heap_B=387377
+mem_heap_extra_B=3031
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=3111101
+mem_heap_B=387841
+mem_heap_extra_B=3047
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=3374982
+mem_heap_B=387681
+mem_heap_extra_B=3039
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=3376996
+mem_heap_B=387821
+mem_heap_extra_B=3075
+mem_stacks_B=6392
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=3641334
+mem_heap_B=387769
+mem_heap_extra_B=3055
+mem_stacks_B=6200
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=3710022
+mem_heap_B=130473
+mem_heap_extra_B=2135
+mem_stacks_B=5448
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=3731752
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=1344
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=3731965
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=2408
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=3732406
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=2664
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=3732581
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=2752
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=3732697
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=2160
+heap_tree=detailed
+n6: 33080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1560 0x14F78D: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 1560 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 1560 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 1560 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1560 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1560 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1560 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1560 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1560 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1560 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1560 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 1560 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 1560 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 1560 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 1560 0x17061A: {closure#2} (rt.rs:148)
+                n1: 1560 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 1560 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 1560 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 1560 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 1560 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1024 0x1770A8: aligned_malloc (alloc.rs:98)
+  n1: 1024 0x1770A8: alloc (alloc.rs:22)
+   n2: 1024 0x1770A8: __rdl_alloc (alloc.rs:380)
+    n1: 1024 0x158ACE: parking_lot_core::parking_lot::HashTable::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1024 0x11973F: parking_lot_core::parking_lot::create_hashtable (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1024 0x158D61: parking_lot_core::parking_lot::ThreadData::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1024 0x157E3E: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17h92c5598fb930e0d3E.llvm.5748301073361196564 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1024 0x118D44: parking_lot::raw_mutex::RawMutex::lock_slow (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1024 0x14258E: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1024 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1024 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 1024 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 1024 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 1024 0x486E608: start_thread (pthread_create.c:477)
+               n0: 1024 0x4AFD132: clone (clone.S:95)
+    n0: 0 in 8 places, all below massif's threshold (1.00%)
+ n1: 864 0x40149DA: allocate_dtv (dl-tls.c:286)
+  n1: 864 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
+   n1: 864 0x486F322: allocate_stack (allocatestack.c:622)
+    n1: 864 0x486F322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 864 0x17A2EE: std::sys::unix::thread::Thread::new (thread.rs:87)
+      n1: 864 0x13ACFA: std::thread::Builder::spawn_unchecked (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 864 0x144ABE: tokio::runtime::blocking::pool::Spawner::spawn_task (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 864 0x144733: tokio::runtime::blocking::pool::Spawner::spawn_blocking (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 864 0x143D24: tokio::runtime::blocking::pool::spawn_blocking (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 864 0x149C4A: tokio::runtime::scheduler::multi_thread::worker::Launch::launch (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 864 0x14118D: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 864 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+             n1: 864 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+              n1: 864 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+               n1: 864 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                n1: 864 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 864 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                  n1: 864 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                   n1: 864 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 864 0x17061A: {closure#2} (rt.rs:148)
+                     n1: 864 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                      n1: 864 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                       n1: 864 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 864 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 864 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n0: 120 in 62 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=3732813
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3732928
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3733043
+mem_heap_B=33080
+mem_heap_extra_B=1200
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3733156
+mem_heap_B=32792
+mem_heap_extra_B=1192
+mem_stacks_B=1344
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3733270
+mem_heap_B=32792
+mem_heap_extra_B=1192
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=3733385
+mem_heap_B=32792
+mem_heap_extra_B=1192
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=3733500
+mem_heap_B=32792
+mem_heap_extra_B=1192
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=3733613
+mem_heap_B=32504
+mem_heap_extra_B=1184
+mem_stacks_B=1344
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=3733727
+mem_heap_B=32504
+mem_heap_extra_B=1184
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=3733842
+mem_heap_B=32504
+mem_heap_extra_B=1184
+mem_stacks_B=1280
+heap_tree=detailed
+n5: 32504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1560 0x14F78D: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 1560 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 1560 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 1560 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1560 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1560 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1560 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1560 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1560 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1560 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1560 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 1560 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 1560 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 1560 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 1560 0x17061A: {closure#2} (rt.rs:148)
+                n1: 1560 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 1560 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 1560 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 1560 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 1560 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1024 0x1770A8: aligned_malloc (alloc.rs:98)
+  n1: 1024 0x1770A8: alloc (alloc.rs:22)
+   n2: 1024 0x1770A8: __rdl_alloc (alloc.rs:380)
+    n1: 1024 0x158ACE: parking_lot_core::parking_lot::HashTable::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1024 0x11973F: parking_lot_core::parking_lot::create_hashtable (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1024 0x158D61: parking_lot_core::parking_lot::ThreadData::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1024 0x157E3E: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17h92c5598fb930e0d3E.llvm.5748301073361196564 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1024 0x118D44: parking_lot::raw_mutex::RawMutex::lock_slow (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1024 0x14258E: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1024 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1024 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 1024 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 1024 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 1024 0x486E608: start_thread (pthread_create.c:477)
+               n0: 1024 0x4AFD132: clone (clone.S:95)
+    n0: 0 in 8 places, all below massif's threshold (1.00%)
+ n0: 408 in 63 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=3733957
+mem_heap_B=32504
+mem_heap_extra_B=1184
+mem_stacks_B=1280
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=3734070
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1344
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=3734184
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1160
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=3734306
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=3734420
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=3734537
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=3734651
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=3734768
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3734882
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3734999
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=detailed
+n5: 32216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 21320 0x13DF38: <tokio::signal::unix::SignalInfo as core::default::Default>::default (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 20992 0x14F7D4: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 20992 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 20992 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 20992 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 20992 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 20992 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 20992 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 20992 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 20992 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 20992 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+            n1: 20992 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 20992 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+              n1: 20992 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+               n1: 20992 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 20992 0x17061A: {closure#2} (rt.rs:148)
+                 n1: 20992 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                  n1: 20992 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                   n1: 20992 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 20992 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 20992 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n0: 328 in 1 place, below massif's threshold (1.00%)
+ n1: 8192 0x11B75E: alloc (alloc.rs:98)
+  n1: 8192 0x11B75E: alloc_impl (alloc.rs:181)
+   n1: 8192 0x11B75E: allocate (alloc.rs:241)
+    n1: 8192 0x11B75E: allocate_in<u8, alloc::alloc::Global> (raw_vec.rs:184)
+     n1: 8192 0x11B75E: with_capacity_in<u8, alloc::alloc::Global> (raw_vec.rs:130)
+      n1: 8192 0x11B75E: with_capacity<u8> (raw_vec.rs:92)
+       n1: 8192 0x11B75E: new_uninit_slice<u8> (boxed.rs:635)
+        n1: 8192 0x11B75E: with_capacity (buffer.rs:34)
+         n1: 8192 0x11B75E: with_capacity<std::io::stdio::StdinRaw> (bufreader.rs:94)
+          n1: 8192 0x11B75E: {closure#0} (stdio.rs:326)
+           n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+            n1: 8192 0x11B75E: {closure#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:296)
+             n1: 8192 0x11B75E: {closure#0}<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+              n1: 8192 0x11B75E: std::sys_common::once::futex::Once::call (futex.rs:124)
+               n1: 8192 0x11A609: call_once_force<std::sync::once_lock::{impl#0}::initialize::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !>> (once.rs:208)
+                n1: 8192 0x11A609: std::sync::once_lock::OnceLock<T>::initialize (once_lock.rs:295)
+                 n1: 8192 0x172678: get_or_try_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::sync::once_lock::{impl#0}::get_or_init::{closure_env#0}<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}>, !> (once_lock.rs:218)
+                  n1: 8192 0x172678: get_or_init<std::sync::mutex::Mutex<std::io::buffered::bufreader::BufReader<std::io::stdio::StdinRaw>>, std::io::stdio::stdin::{closure_env#0}> (once_lock.rs:170)
+                   n1: 8192 0x172678: std::io::stdio::stdin (stdio.rs:325)
+                    n1: 8192 0x124896: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                     n1: 8192 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                      n1: 8192 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+                       n1: 8192 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                        n1: 8192 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                         n1: 8192 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                          n1: 8192 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                           n1: 8192 0x17061A: {closure#2} (rt.rs:148)
+                            n1: 8192 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                             n1: 8192 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                              n1: 8192 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                               n1: 8192 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                                n0: 8192 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1560 0x14F78D: tokio::signal::unix::<impl tokio::signal::registry::Init for alloc::vec::Vec<tokio::signal::unix::SignalInfo>>::init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+  n1: 1560 0x116936: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+   n1: 1560 0x115A8D: tokio::util::once_cell::OnceCell<T>::do_init (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+    n1: 1560 0x1370A8: tokio::runtime::signal::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1560 0x13528D: tokio::runtime::driver::Driver::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1560 0x140DAF: tokio::runtime::builder::Builder::build (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1560 0x1418B4: tokio::runtime::runtime::Runtime::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1560 0x124C7C: Rust::main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1560 0x131E62: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1560 0x131658: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h1446792ff88c621eE.llvm.9165754229430872211 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1560 0x17061A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 1560 0x17061A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+             n1: 1560 0x17061A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+              n1: 1560 0x17061A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 1560 0x17061A: {closure#2} (rt.rs:148)
+                n1: 1560 0x17061A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                 n1: 1560 0x17061A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                  n1: 1560 0x17061A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 1560 0x17061A: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 1560 0x124ED4: main (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+ n1: 1024 0x1770A8: aligned_malloc (alloc.rs:98)
+  n1: 1024 0x1770A8: alloc (alloc.rs:22)
+   n2: 1024 0x1770A8: __rdl_alloc (alloc.rs:380)
+    n1: 1024 0x158ACE: parking_lot_core::parking_lot::HashTable::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+     n1: 1024 0x11973F: parking_lot_core::parking_lot::create_hashtable (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+      n1: 1024 0x158D61: parking_lot_core::parking_lot::ThreadData::new (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+       n1: 1024 0x157E3E: _ZN3std3sys6common12thread_local10fast_local12Key$LT$T$GT$14try_initialize17h92c5598fb930e0d3E.llvm.5748301073361196564 (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+        n1: 1024 0x118D44: parking_lot::raw_mutex::RawMutex::lock_slow (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+         n1: 1024 0x14258E: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+          n1: 1024 0x13AFE8: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/k-nucleotide/Rust/target/release/Rust)
+           n1: 1024 0x17A484: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+            n1: 1024 0x17A484: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+             n1: 1024 0x17A484: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+              n1: 1024 0x486E608: start_thread (pthread_create.c:477)
+               n0: 1024 0x4AFD132: clone (clone.S:95)
+    n0: 0 in 8 places, all below massif's threshold (1.00%)
+ n0: 120 in 63 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=3735113
+mem_heap_B=32216
+mem_heap_extra_B=1176
+mem_stacks_B=1168
+heap_tree=empty

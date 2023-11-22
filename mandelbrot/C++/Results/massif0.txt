@@ -1,5 +1,5 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/mandelbrot/C++/Results/massif0.txt
-cmd: /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++ 200
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/mandelbrot/C++/Results/massif0.txt --stacks=yes
+cmd: /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++ 16000
 time_unit: i
 #-----------
 snapshot=0
@@ -12,291 +12,693 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=2457135
-mem_heap_B=72704
-mem_heap_extra_B=8
-mem_stacks_B=0
-heap_tree=empty
+time=57279
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=7392
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=2
 #-----------
-time=2574545
-mem_heap_B=77704
-mem_heap_extra_B=24
-mem_stacks_B=0
+time=101099
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=2632
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=2581488
-mem_heap_B=81800
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=empty
+time=140908
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=4
 #-----------
-time=2587805
-mem_heap_B=81840
-mem_heap_extra_B=48
-mem_stacks_B=0
+time=189080
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1432
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=2587932
-mem_heap_B=81920
-mem_heap_extra_B=56
-mem_stacks_B=0
+time=228842
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=2588009
-mem_heap_B=81920
-mem_heap_extra_B=56
-mem_stacks_B=0
-heap_tree=detailed
-n4: 81920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5DA: ???
-        n0: 72704 0x1FFEFFF616: ???
- n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n0: 120 in 1 place, below massif's threshold (1.00%)
+time=275512
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=2588009
-mem_heap_B=81880
-mem_heap_extra_B=40
-mem_stacks_B=0
+time=307050
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=2588121
-mem_heap_B=81888
-mem_heap_extra_B=56
-mem_stacks_B=0
+time=355979
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=2588172
-mem_heap_B=81984
-mem_heap_extra_B=64
-mem_stacks_B=0
+time=386774
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=2592730
-mem_heap_B=82272
-mem_heap_extra_B=72
-mem_stacks_B=0
+time=421853
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=2596780
-mem_heap_B=84072
-mem_heap_extra_B=88
-mem_stacks_B=0
+time=484567
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=16379823
-mem_heap_B=84072
-mem_heap_extra_B=88
-mem_stacks_B=0
-heap_tree=peak
-n5: 84072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5DA: ???
-        n0: 72704 0x1FFEFFF616: ???
- n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n1: 1800 0x10A81B: ComplexPlaneCalculator<double, MandelbrotFunction<double> >::operator()() (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-  n1: 1800 0x4947DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 1800 0x4856608: start_thread (pthread_create.c:477)
-    n0: 1800 0x4B8D132: clone (clone.S:95)
- n0: 472 in 4 places, all below massif's threshold (1.00%)
+time=545385
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=16379823
-mem_heap_B=82272
-mem_heap_extra_B=72
-mem_stacks_B=0
+time=587055
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=16379879
-mem_heap_B=82176
-mem_heap_extra_B=64
-mem_stacks_B=0
+time=636339
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1648
 heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=16383096
-mem_heap_B=82192
-mem_heap_extra_B=72
-mem_stacks_B=0
-heap_tree=empty
+time=672403
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=16
 #-----------
-time=16383147
-mem_heap_B=82288
-mem_heap_extra_B=80
-mem_stacks_B=0
+time=732761
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1688
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=16383428
-mem_heap_B=82576
-mem_heap_extra_B=88
-mem_stacks_B=0
+time=772584
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=16383994
-mem_heap_B=84376
-mem_heap_extra_B=104
-mem_stacks_B=0
+time=803316
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=30210074
-mem_heap_B=82576
-mem_heap_extra_B=88
-mem_stacks_B=0
+time=860889
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1176
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=30210130
-mem_heap_B=82480
-mem_heap_extra_B=80
-mem_stacks_B=0
+time=904510
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=30210411
-mem_heap_B=82472
-mem_heap_extra_B=64
-mem_stacks_B=0
+time=948300
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=30211584
-mem_heap_B=82456
-mem_heap_extra_B=56
-mem_stacks_B=0
+time=974907
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1017923
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1050223
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1108345
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1145034
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1178844
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1223313
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1251550
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1298903
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1351015
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1391319
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1432161
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1484945
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1540883
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1577878
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1392
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1620194
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1654025
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1685542
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1720435
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=detailed
-n4: 82456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4917A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=41
+#-----------
+time=1768445
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1803617
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=43
+#-----------
+time=1844810
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1893178
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1955918
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1991292
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2039877
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2074042
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2116661
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2143652
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2170267
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2197079
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2223895
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2250725
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=55
+#-----------
+time=2277370
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2303981
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2331160
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2358157
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2389565
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2416208
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2442821
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1392
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2458148
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=208
+heap_tree=detailed
+n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5DA: ???
-        n0: 72704 0x1FFEFFF616: ???
- n1: 5000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-  n0: 5000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n1: 4096 0x4AEFD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFFECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFEF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFD6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFD6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AF13C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x49A4853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 4096 0x109923: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
-         n0: 4096 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
- n0: 656 in 5 places, all below massif's threshold (1.00%)
+       n1: 72704 0x1FFEFFF5BA: ???
+        n0: 72704 0x1FFEFFF5F6: ???
 #-----------
-snapshot=23
+snapshot=63
 #-----------
-time=30211616
-mem_heap_B=82376
-mem_heap_extra_B=48
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=24
-#-----------
-time=30212668
-mem_heap_B=77376
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=25
-#-----------
-time=30223327
-mem_heap_B=4672
-mem_heap_extra_B=24
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=26
-#-----------
-time=30225155
-mem_heap_B=576
-mem_heap_extra_B=16
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=27
-#-----------
-time=30227595
-mem_heap_B=288
+time=2460035
+mem_heap_B=72704
 mem_heap_extra_B=8
-mem_stacks_B=0
+mem_stacks_B=1928
+heap_tree=detailed
+n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5BA: ???
+        n0: 72704 0x1FFEFFF5F6: ???
+#-----------
+snapshot=64
+#-----------
+time=2486693
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=1896
 heap_tree=empty
 #-----------
-snapshot=28
+snapshot=65
 #-----------
-time=30228981
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=0
+time=2513348
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=712
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2539956
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=1696
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2567015
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=1640
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2574824
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=8768
+heap_tree=detailed
+n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFEFFF5BA: ???
+        n0: 72704 0x1FFEFFF5F6: ???
+#-----------
+snapshot=69
+#-----------
+time=2575594
+mem_heap_B=32072704
+mem_heap_extra_B=2000
+mem_stacks_B=752
+heap_tree=detailed
+n2: 32072704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32000000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n0: 32000000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n0: 72704 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=34575621
+mem_heap_B=32072704
+mem_heap_extra_B=2000
+mem_stacks_B=672
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=333113477
+mem_heap_B=32221752
+mem_heap_extra_B=2096
+mem_stacks_B=1904
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1142610931
+mem_heap_B=32366160
+mem_heap_extra_B=2112
+mem_stacks_B=2672
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1142611122
+mem_heap_B=32510160
+mem_heap_extra_B=2120
+mem_stacks_B=3528
+heap_tree=peak
+n3: 32510160 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32000000 0x1098EF: PortableBinaryBitmap::PortableBinaryBitmap(std::ostream&, unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n0: 32000000 0x10937B: main (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+ n1: 432000 0x10A81B: ComplexPlaneCalculator<double, MandelbrotFunction<double> >::operator()() (in /workspaces/Rusty-Kernels-Code/mandelbrot/C++/mandelbrotC++)
+  n1: 432000 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 432000 0x4853608: start_thread (pthread_create.c:477)
+    n0: 432000 0x4B8A132: clone (clone.S:95)
+ n0: 78160 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=2637812934
+mem_heap_B=32510160
+mem_heap_extra_B=2120
+mem_stacks_B=3440
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=11958093922
+mem_heap_B=32510528
+mem_heap_extra_B=2128
+mem_stacks_B=3080
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=131685168709
+mem_heap_B=32654528
+mem_heap_extra_B=2136
+mem_stacks_B=3864
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=134931745824
+mem_heap_B=32510432
+mem_heap_extra_B=2120
+mem_stacks_B=3264
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=143165843080
+mem_heap_B=32510432
+mem_heap_extra_B=2120
+mem_stacks_B=3272
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=147091180908
+mem_heap_B=32366336
+mem_heap_extra_B=2104
+mem_stacks_B=2672
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=150450943945
+mem_heap_B=32366336
+mem_heap_extra_B=2104
+mem_stacks_B=2680
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=151023947403
+mem_heap_B=32222240
+mem_heap_extra_B=2088
+mem_stacks_B=2096
 heap_tree=empty

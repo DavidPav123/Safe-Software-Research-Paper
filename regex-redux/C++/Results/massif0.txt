@@ -1,0 +1,478 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/regex-redux/C++/Results/massif0.txt
+cmd: /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=24916084
+mem_heap_B=33631233
+mem_heap_extra_B=4055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=46150373
+mem_heap_B=67185665
+mem_heap_extra_B=4055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=79763732
+mem_heap_B=118019567
+mem_heap_extra_B=6097
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=420807933
+mem_heap_B=168019568
+mem_heap_extra_B=10008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=445738844
+mem_heap_B=323020034
+mem_heap_extra_B=14854
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=500740864
+mem_heap_B=323020216
+mem_heap_extra_B=14872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=500775156
+mem_heap_B=323028741
+mem_heap_extra_B=14947
+mem_stacks_B=0
+heap_tree=peak
+n3: 323028741 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 86461 in 16 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=500780354
+mem_heap_B=323020552
+mem_heap_extra_B=14912
+mem_stacks_B=0
+heap_tree=detailed
+n3: 323020552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 78272 in 16 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=554427056
+mem_heap_B=323020472
+mem_heap_extra_B=14904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=554488517
+mem_heap_B=323020577
+mem_heap_extra_B=14903
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1454570144
+mem_heap_B=323020497
+mem_heap_extra_B=14895
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1454614818
+mem_heap_B=323020555
+mem_heap_extra_B=14909
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1580121782
+mem_heap_B=323020643
+mem_heap_extra_B=14925
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1580174927
+mem_heap_B=323021493
+mem_heap_extra_B=15011
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1625192828
+mem_heap_B=323021509
+mem_heap_extra_B=15035
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1625257155
+mem_heap_B=323022509
+mem_heap_extra_B=15123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1665745871
+mem_heap_B=323022541
+mem_heap_extra_B=15131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1682171861
+mem_heap_B=323023981
+mem_heap_extra_B=15251
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1752640174
+mem_heap_B=323024069
+mem_heap_extra_B=15267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1760223770
+mem_heap_B=323026621
+mem_heap_extra_B=15475
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2416519608
+mem_heap_B=323026541
+mem_heap_extra_B=15467
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2416519962
+mem_heap_B=323026029
+mem_heap_extra_B=15403
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=3147439587
+mem_heap_B=323025949
+mem_heap_extra_B=15395
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=3147439941
+mem_heap_B=323025437
+mem_heap_extra_B=15347
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=3749275134
+mem_heap_B=323025357
+mem_heap_extra_B=15339
+mem_stacks_B=0
+heap_tree=detailed
+n3: 323025357 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 83077 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=3749275488
+mem_heap_B=323024907
+mem_heap_extra_B=15277
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=4374431835
+mem_heap_B=323024995
+mem_heap_extra_B=15293
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=4392659795
+mem_heap_B=323026755
+mem_heap_extra_B=15445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=4418705385
+mem_heap_B=323027331
+mem_heap_extra_B=15493
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=4469137266
+mem_heap_B=323027357
+mem_heap_extra_B=15507
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=4469201733
+mem_heap_B=323027933
+mem_heap_extra_B=15555
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=4518540474
+mem_heap_B=323027827
+mem_heap_extra_B=15533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=4518540828
+mem_heap_B=323027315
+mem_heap_extra_B=15485
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=5193314582
+mem_heap_B=323027235
+mem_heap_extra_B=15477
+mem_stacks_B=0
+heap_tree=detailed
+n3: 323027235 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 84955 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=5193314936
+mem_heap_B=323026723
+mem_heap_extra_B=15429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=5601915946
+mem_heap_B=323026979
+mem_heap_extra_B=15437
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=5601918958
+mem_heap_B=323026707
+mem_heap_extra_B=15413
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=7719174575
+mem_heap_B=323026547
+mem_heap_extra_B=15397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=7719212873
+mem_heap_B=323026559
+mem_heap_extra_B=15401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=9369679339
+mem_heap_B=323026511
+mem_heap_extra_B=15401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=9377696981
+mem_heap_B=323025407
+mem_heap_extra_B=15297
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=9447156078
+mem_heap_B=323025327
+mem_heap_extra_B=15289
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=9447156432
+mem_heap_B=323024815
+mem_heap_extra_B=15241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=9950690171
+mem_heap_B=323024735
+mem_heap_extra_B=15233
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=9950690525
+mem_heap_B=323024223
+mem_heap_extra_B=15185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=10395873410
+mem_heap_B=323024143
+mem_heap_extra_B=15177
+mem_stacks_B=0
+heap_tree=detailed
+n3: 323024143 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 81863 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=10395913972
+mem_heap_B=323024193
+mem_heap_extra_B=15175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=11038480931
+mem_heap_B=323024145
+mem_heap_extra_B=15175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=11038527131
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

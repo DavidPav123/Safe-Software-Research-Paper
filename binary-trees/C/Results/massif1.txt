@@ -1,4 +1,4 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/binary-trees/C/Results/massif1.txt
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/binary-trees/C/Results/massif1.txt --stacks=yes
 cmd: /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC 21
 time_unit: i
 #-----------
@@ -12,88 +12,784 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=294567
-mem_heap_B=200
-mem_heap_extra_B=16
-mem_stacks_B=0
-heap_tree=empty
+time=57265
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=7392
+heap_tree=peak
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=2
 #-----------
-time=298566
-mem_heap_B=400
-mem_heap_extra_B=32
-mem_stacks_B=0
-heap_tree=empty
+time=565646032
+mem_heap_B=4496
+mem_heap_extra_B=40
+mem_stacks_B=1080
+heap_tree=detailed
+n3: 4496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
 #-----------
 snapshot=3
 #-----------
-time=555479681
-mem_heap_B=4496
-mem_heap_extra_B=40
-mem_stacks_B=0
+time=1252699096
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=616
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=833260811
+time=1751168546
 mem_heap_B=4696
 mem_heap_extra_B=56
-mem_stacks_B=0
+mem_stacks_B=536
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=40729860594
+time=2646269822
 mem_heap_B=4696
 mem_heap_extra_B=56
-mem_stacks_B=0
-heap_tree=peak
+mem_stacks_B=520
+heap_tree=detailed
 n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4908D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4918ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4917F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49166B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49166B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FD971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B505A: __printf_chk (printf_chk.c:33)
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
         n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486D7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
   n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
   n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486C46D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486DFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486F4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
     n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
 #-----------
 snapshot=6
 #-----------
-time=40729860594
-mem_heap_B=4496
-mem_heap_extra_B=40
-mem_stacks_B=0
+time=3514571789
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=568
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=40730329489
-mem_heap_B=4296
-mem_heap_extra_B=24
-mem_stacks_B=0
-heap_tree=empty
+time=4093439789
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=440
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
 #-----------
 snapshot=8
 #-----------
-time=40730330986
-mem_heap_B=4096
-mem_heap_extra_B=8
-mem_stacks_B=0
+time=4575829780
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=552
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=40730336208
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=0
+time=5283334929
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=648
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=5797884127
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=600
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=6441070631
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=520
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=7019938477
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=640
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=7791762276
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=672
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=8660063967
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=712
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9238931761
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=584
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=16
+#-----------
+time=9721321571
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=600
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=10396667332
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=712
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=10782579191
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=704
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=11361446976
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=672
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=11843836803
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=712
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=12615660628
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=776
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=13130209879
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=744
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=13902033746
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=736
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=14673857628
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=760
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=15188406854
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=552
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=15960230704
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=680
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=16603417261
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=696
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=17117966495
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=472
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=29
+#-----------
+time=17761153047
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=728
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=18147064984
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=608
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=18661614236
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=904
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=19047526172
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=19626394000
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=800
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=20398217777
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=904
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=20977085602
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=840
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=21748909605
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=472
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=22134821504
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=800
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=22713689330
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=864
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=23099601218
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=904
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=23678469042
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=968
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=24450292807
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=904
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=25029160648
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=872
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=25608028478
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=936
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=25993940364
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=536
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=26572808187
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=808
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=27151676028
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=896
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=27730543851
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=920
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=48
+#-----------
+time=28309411670
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1000
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=28695323563
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=720
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=29081235438
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=920
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=29467147299
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1000
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=29853059171
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=968
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=30238971039
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1032
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=30624882900
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1032
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=55
+#-----------
+time=31010794766
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=992
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=31396706638
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=928
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=31782618508
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=888
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=32168530380
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1032
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=32554442247
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=992
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=32940354113
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1032
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=33326265986
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1032
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=33712177863
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1096
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=34098089723
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=744
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=34484001586
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1016
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=65
+#-----------
+time=34869913464
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1064
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=35255825323
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=968
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=35641737190
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1096
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=36027649052
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1016
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=36413560914
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=824
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=36799472777
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1160
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=37185384642
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1048
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=37571296512
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1088
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=37957208373
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1096
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=38343120233
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1064
+heap_tree=detailed
+n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
+       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
+        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+#-----------
+snapshot=75
+#-----------
+time=38729032094
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1056
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=39114943964
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1128
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=39500855828
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1016
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=39886767689
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=656
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=40272679552
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1096
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=40658591414
+mem_heap_B=4696
+mem_heap_extra_B=56
+mem_stacks_B=1088
 heap_tree=empty
