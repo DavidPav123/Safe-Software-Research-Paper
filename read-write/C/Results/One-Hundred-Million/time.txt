@@ -1,0 +1,20 @@
+
+real	0m1.142s
+user	0m0.760s
+sys	0m0.314s
+
+real	0m1.054s
+user	0m0.693s
+sys	0m0.326s
+
+real	0m1.074s
+user	0m0.686s
+sys	0m0.328s
+
+real	0m1.078s
+user	0m0.687s
+sys	0m0.338s
+
+real	0m1.248s
+user	0m0.718s
+sys	0m0.333s

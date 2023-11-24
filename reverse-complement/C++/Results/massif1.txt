@@ -1,815 +1,844 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/reverse-complement/C++/Results/massif1.txt
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/reverse-complement/C++/Results/massif1.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=8192
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=2480569
-mem_heap_B=72704
-mem_heap_extra_B=8
+time=0
+mem_heap_B=20480
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=2609074
-mem_heap_B=80896
-mem_heap_extra_B=16
+time=0
+mem_heap_B=24576
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=2610214
-mem_heap_B=97280
-mem_heap_extra_B=32
+time=0
+mem_heap_B=32768
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=2617932
-mem_heap_B=130048
-mem_heap_extra_B=40
+time=0
+mem_heap_B=36864
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=2622495
-mem_heap_B=195616
-mem_heap_extra_B=64
+time=0
+mem_heap_B=180224
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=2627049
-mem_heap_B=195904
-mem_heap_extra_B=72
+time=0
+mem_heap_B=212992
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 195904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n0: 320 in 2 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=2631109
-mem_heap_B=326976
-mem_heap_extra_B=80
+time=0
+mem_heap_B=221184
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=2638442
-mem_heap_B=326992
-mem_heap_extra_B=88
+time=0
+mem_heap_B=225280
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=2638712
-mem_heap_B=327280
-mem_heap_extra_B=96
+time=0
+mem_heap_B=229376
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n1: 229376 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 229376 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=2644753
-mem_heap_B=327311
-mem_heap_extra_B=105
+time=0
+mem_heap_B=233472
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=2646212
-mem_heap_B=328397
-mem_heap_extra_B=139
+time=0
+mem_heap_B=245760
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=2651843
-mem_heap_B=330446
-mem_heap_extra_B=162
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=2652719
-mem_heap_B=329421
-mem_heap_extra_B=139
+time=0
+mem_heap_B=253952
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=2658214
-mem_heap_B=330446
-mem_heap_extra_B=162
+time=0
+mem_heap_B=253952
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n2: 253952 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 249856 0x0: ???
+ n0: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
 #-----------
 snapshot=15
 #-----------
-time=2658519
-mem_heap_B=330507
-mem_heap_extra_B=173
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=2664156
-mem_heap_B=332556
-mem_heap_extra_B=196
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=2664356
-mem_heap_B=331531
-mem_heap_extra_B=173
+time=57446
+mem_heap_B=270336
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=2669856
-mem_heap_B=335628
-mem_heap_extra_B=196
+time=57522
+mem_heap_B=274432
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=2670160
-mem_heap_B=333579
-mem_heap_extra_B=173
+time=57572
+mem_heap_B=278528
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=2675340
-mem_heap_B=334604
-mem_heap_extra_B=196
+time=57619
+mem_heap_B=286720
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=2675645
-mem_heap_B=334665
-mem_heap_extra_B=207
+time=60397
+mem_heap_B=327680
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=2681285
-mem_heap_B=336714
-mem_heap_extra_B=230
+time=62488
+mem_heap_B=335872
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=2681485
-mem_heap_B=335689
-mem_heap_extra_B=207
+time=63460
+mem_heap_B=479232
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=2686979
-mem_heap_B=339786
-mem_heap_extra_B=230
+time=63517
+mem_heap_B=548864
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 548864 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 299008 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 299008 0x401F186: mmap (mmap64.c:47)
+   n1: 163840 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 163840 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 163840 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 143360 0x400F514: openaux (dl-deps.c:64)
+       n1: 143360 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 143360 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 143360 0x4004063: dl_main (rtld.c:1805)
+          n1: 143360 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 143360 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 143360 0x400204B: _dl_start (rtld.c:539)
+             n0: 143360 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n0: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 86016 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 86016 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 86016 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 69632 0x400F514: openaux (dl-deps.c:64)
+       n1: 69632 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 69632 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 69632 0x4004063: dl_main (rtld.c:1805)
+          n1: 69632 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 69632 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 69632 0x400204B: _dl_start (rtld.c:539)
+             n0: 69632 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 8192 0x401D53F: malloc (dl-minimal.c:73)
+    n1: 8192 0x400D283: _dl_new_object (dl-object.c:89)
+     n1: 8192 0x4006E96: _dl_map_object_from_fd (dl-load.c:997)
+      n1: 8192 0x400A61A: _dl_map_object (dl-load.c:2236)
+       n1: 8192 0x400F514: openaux (dl-deps.c:64)
+        n1: 8192 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 8192 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+          n1: 8192 0x4004063: dl_main (rtld.c:1805)
+           n1: 8192 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+            n1: 8192 0x400204B: _dl_start_final (rtld.c:449)
+             n1: 8192 0x400204B: _dl_start (rtld.c:539)
+              n0: 8192 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=2687283
-mem_heap_B=337737
-mem_heap_extra_B=207
+time=63567
+mem_heap_B=573440
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=2698483
-mem_heap_B=345930
-mem_heap_extra_B=230
+time=63614
+mem_heap_B=581632
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=2698995
-mem_heap_B=345930
-mem_heap_extra_B=230
+time=64059
+mem_heap_B=598016
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=peak
-n6: 345930 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 131072 0x10BDA5: std::vector<item, std::allocator<item> >::reserve(unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-  n1: 131072 0x10B527: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 131072 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n1: 131072 0x4853608: start_thread (pthread_create.c:477)
-     n0: 131072 0x4B8A132: clone (clone.S:95)
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 18650 0x49B138D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n2: 18650 0x49B2B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 18436 0x10B5AC: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-    n1: 18436 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-     n1: 18436 0x4853608: start_thread (pthread_create.c:477)
-      n0: 18436 0x4B8A132: clone (clone.S:95)
-   n0: 214 in 1 place, below massif's threshold (1.00%)
- n0: 624 in 4 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=2698995
-mem_heap_B=341833
-mem_heap_extra_B=207
+time=68371
+mem_heap_B=2572288
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=2704136
-mem_heap_B=341881
-mem_heap_extra_B=215
+time=68465
+mem_heap_B=3559424
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=2705473
-mem_heap_B=341980
-mem_heap_extra_B=228
+time=68515
+mem_heap_B=3858432
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=2710933
-mem_heap_B=341988
-mem_heap_extra_B=260
+time=68562
+mem_heap_B=3915776
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=2711252
-mem_heap_B=342308
-mem_heap_extra_B=276
+time=69049
+mem_heap_B=3928064
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=2731970
-mem_heap_B=344343
-mem_heap_extra_B=313
+time=73823
+mem_heap_B=4038656
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=2735343
-mem_heap_B=344404
-mem_heap_extra_B=324
+time=73899
+mem_heap_B=4112384
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 4112384 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 3862528 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 3862528 0x401F186: mmap (mmap64.c:47)
+   n1: 2248704 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2248704 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2248704 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2228224 0x400F514: openaux (dl-deps.c:64)
+       n1: 2228224 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2228224 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2228224 0x4004063: dl_main (rtld.c:1805)
+          n1: 2228224 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2228224 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2228224 0x400204B: _dl_start (rtld.c:539)
+             n0: 2228224 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1536000 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1536000 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1536000 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1519616 0x400F514: openaux (dl-deps.c:64)
+       n1: 1519616 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1519616 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1519616 0x4004063: dl_main (rtld.c:1805)
+          n1: 1519616 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1519616 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1519616 0x400204B: _dl_start (rtld.c:539)
+             n0: 1519616 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 77824 in 3 places, all below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=2737752
-mem_heap_B=344404
-mem_heap_extra_B=324
+time=73949
+mem_heap_B=4128768
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=2741176
-mem_heap_B=342942
-mem_heap_extra_B=314
+time=73996
+mem_heap_B=4136960
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=2791894
-mem_heap_B=348027
-mem_heap_extra_B=325
+time=78528
+mem_heap_B=6176768
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n7: 348027 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 131072 0x10BDA5: std::vector<item, std::allocator<item> >::reserve(unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-  n1: 131072 0x10B527: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 131072 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n1: 131072 0x4853608: start_thread (pthread_create.c:477)
-     n0: 131072 0x4B8A132: clone (clone.S:95)
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 12443 0x49B138D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n2: 12443 0x49B2B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 12290 0x10B5AC: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-    n1: 12290 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-     n1: 12290 0x4853608: start_thread (pthread_create.c:477)
-      n0: 12290 0x4B8A132: clone (clone.S:95)
-   n0: 153 in 1 place, below massif's threshold (1.00%)
- n2: 7120 0x49B18AF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 7120 0x10AE8C: do_reverse_complement(item&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 7120 0x10B21F: worker_main(unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-    n1: 7120 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-     n1: 7120 0x4853608: start_thread (pthread_create.c:477)
-      n0: 7120 0x4B8A132: clone (clone.S:95)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 1808 in 8 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=2794610
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=78585
+mem_heap_B=7716864
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=2798114
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=78635
+mem_heap_B=8036352
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=2800085
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=78682
+mem_heap_B=8060928
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=2803589
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=79001
+mem_heap_B=8077312
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=2805560
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=86572
+mem_heap_B=9449472
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=2809064
-mem_heap_B=348088
-mem_heap_extra_B=336
+time=86648
+mem_heap_B=10133504
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=2811827
-mem_heap_B=340074
-mem_heap_extra_B=278
+time=86698
+mem_heap_B=10760192
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 10760192 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10510336 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10510336 0x401F186: mmap (mmap64.c:47)
+   n1: 5660672 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5660672 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5660672 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5640192 0x400F514: openaux (dl-deps.c:64)
+       n1: 5640192 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5640192 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5640192 0x4004063: dl_main (rtld.c:1805)
+          n1: 5640192 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5640192 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5640192 0x400204B: _dl_start (rtld.c:539)
+             n0: 5640192 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4755456 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4755456 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4755456 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4739072 0x400F514: openaux (dl-deps.c:64)
+       n1: 4739072 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4739072 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4739072 0x4004063: dl_main (rtld.c:1805)
+          n1: 4739072 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4739072 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4739072 0x400204B: _dl_start (rtld.c:539)
+             n0: 4739072 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 94208 in 3 places, all below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=45
 #-----------
-time=2843406
-mem_heap_B=343126
-mem_heap_extra_B=290
+time=86745
+mem_heap_B=10768384
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=2846779
-mem_heap_B=343187
-mem_heap_extra_B=301
+time=110052
+mem_heap_B=10776576
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=2848898
-mem_heap_B=343126
-mem_heap_extra_B=290
+time=117706
+mem_heap_B=10788864
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=2852402
-mem_heap_B=343126
-mem_heap_extra_B=290
+time=2364047
+mem_heap_B=10788864
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 10788864 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10539008 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10539008 0x401F186: mmap (mmap64.c:47)
+   n1: 5660672 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5660672 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5660672 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5640192 0x400F514: openaux (dl-deps.c:64)
+       n1: 5640192 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5640192 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5640192 0x4004063: dl_main (rtld.c:1805)
+          n1: 5640192 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5640192 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5640192 0x400204B: _dl_start (rtld.c:539)
+             n0: 5640192 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4763648 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4763648 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4763648 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4747264 0x400F514: openaux (dl-deps.c:64)
+       n1: 4747264 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4747264 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4747264 0x4004063: dl_main (rtld.c:1805)
+          n1: 4747264 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4747264 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4747264 0x400204B: _dl_start (rtld.c:539)
+             n0: 4747264 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 114688 in 3 places, all below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=49
 #-----------
-time=2854373
-mem_heap_B=343126
-mem_heap_extra_B=290
+time=2364047
+mem_heap_B=10784768
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=2854448
-mem_heap_B=339029
-mem_heap_extra_B=267
+time=2451292
+mem_heap_B=10883072
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=2854581
-mem_heap_B=339069
-mem_heap_extra_B=283
+time=2587606
+mem_heap_B=11042816
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=2855797
-mem_heap_B=339021
-mem_heap_extra_B=275
+time=2594335
+mem_heap_B=19435520
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=2855887
-mem_heap_B=338989
-mem_heap_extra_B=267
+time=2598989
+mem_heap_B=27828224
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=2856392
-mem_heap_B=343085
-mem_heap_extra_B=291
-mem_stacks_B=0
-heap_tree=detailed
-n7: 343085 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 131072 0x10BDA5: std::vector<item, std::allocator<item> >::reserve(unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-  n1: 131072 0x10B527: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 131072 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n1: 131072 0x4853608: start_thread (pthread_create.c:477)
-     n0: 131072 0x4B8A132: clone (clone.S:95)
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n2: 10172 0x49B18AF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 10172 0x10AE8C: do_reverse_complement(item&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 10172 0x10B21F: worker_main(unsigned long, unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-    n1: 10172 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-     n1: 10172 0x4853608: start_thread (pthread_create.c:477)
-      n0: 10172 0x4B8A132: clone (clone.S:95)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 4096 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFCECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x10AC08: output() (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-        n1: 4096 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-         n1: 4096 0x4853608: start_thread (pthread_create.c:477)
-          n0: 4096 0x4B8A132: clone (clone.S:95)
- n0: 2161 in 11 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=55
-#-----------
-time=2859072
-mem_heap_B=341050
-mem_heap_extra_B=254
+time=2603760
+mem_heap_B=162045952
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
+snapshot=55
+#-----------
+time=2603779
+mem_heap_B=162045952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 162045952 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 151003136 0x4B798E6: __mmap64 (mmap64.c:59)
+  n2: 151003136 0x4B798E6: mmap (mmap64.c:47)
+   n1: 134217728 0x4AF63A6: new_heap (arena.c:488)
+    n1: 134217728 0x4AF6DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4AF6DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4AF99F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4AF99F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4AFB1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4AFB1BD: malloc (malloc.c:3044)
+          n1: 134217728 0x490EB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 134217728 0x10BDA5: std::vector<item, std::allocator<item> >::reserve(unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+            n1: 134217728 0x10B527: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+             n1: 134217728 0x493ADF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+              n1: 134217728 0x4849608: start_thread (pthread_create.c:477)
+               n0: 134217728 0x4B80132: clone (clone.S:95)
+   n1: 16785408 0x484A258: allocate_stack (allocatestack.c:562)
+    n1: 16785408 0x484A258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 16785408 0x493B0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n0: 8392704 0x10A706: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+      n1: 8392704 0x10BF04: std::thread::thread<void (&)(), , void>(void (&)()) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+       n0: 8392704 0x10A72F: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+ n1: 10498048 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10498048 0x401F186: mmap (mmap64.c:47)
+   n1: 5660672 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5660672 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5660672 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5640192 0x400F514: openaux (dl-deps.c:64)
+       n1: 5640192 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5640192 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5640192 0x4004063: dl_main (rtld.c:1805)
+          n1: 5640192 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5640192 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5640192 0x400204B: _dl_start (rtld.c:539)
+             n0: 5640192 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4763648 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4763648 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4763648 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4747264 0x400F514: openaux (dl-deps.c:64)
+       n1: 4747264 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4747264 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4747264 0x4004063: dl_main (rtld.c:1805)
+          n1: 4747264 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4747264 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4747264 0x400204B: _dl_start (rtld.c:539)
+             n0: 4747264 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 73728 in 3 places, all below massif's threshold (1.00%)
+ n0: 544768 in 3 places, all below massif's threshold (1.00%)
+#-----------
 snapshot=56
 #-----------
-time=2859105
-mem_heap_B=341019
-mem_heap_extra_B=245
+time=2603779
+mem_heap_B=162041856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=2859141
-mem_heap_B=337967
-mem_heap_extra_B=233
+time=2603790
+mem_heap_B=126033920
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=2859174
-mem_heap_B=337906
-mem_heap_extra_B=222
+time=2612835
+mem_heap_B=103329792
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=2859210
-mem_heap_B=332821
-mem_heap_extra_B=211
+time=2614607
+mem_heap_B=111722496
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=2859243
-mem_heap_B=332760
-mem_heap_extra_B=200
+time=2672573
+mem_heap_B=120115200
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=2859279
-mem_heap_B=201688
-mem_heap_extra_B=192
+time=2686429
+mem_heap_B=128507904
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=2859309
-mem_heap_B=201648
-mem_heap_extra_B=176
+time=2691838
+mem_heap_B=262725632
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=2859397
-mem_heap_B=201632
-mem_heap_extra_B=168
+time=2691859
+mem_heap_B=262725632
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=peak
+n3: 262725632 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 251682816 0x4B798E6: __mmap64 (mmap64.c:59)
+  n2: 251682816 0x4B798E6: mmap (mmap64.c:47)
+   n1: 201326592 0x4AF63A6: new_heap (arena.c:488)
+    n1: 201326592 0x4AF6DCB: _int_new_arena (arena.c:693)
+     n1: 201326592 0x4AF6DCB: arena_get2.part.0 (arena.c:912)
+      n1: 201326592 0x4AF99F8: arena_get2 (arena.c:880)
+       n2: 201326592 0x4AF99F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4AFB7C6: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4AFB7C6: free (malloc.c:3122)
+          n1: 134217728 0x493ADFD: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 134217728 0x4849608: start_thread (pthread_create.c:477)
+            n0: 134217728 0x4B80132: clone (clone.S:95)
+        n1: 67108864 0x4AFB1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4AFB1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x490EB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10BDA5: std::vector<item, std::allocator<item> >::reserve(unsigned long) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+            n1: 67108864 0x10B527: process_input(unsigned long, std::istream&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+             n1: 67108864 0x493ADF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+              n1: 67108864 0x4849608: start_thread (pthread_create.c:477)
+               n0: 67108864 0x4B80132: clone (clone.S:95)
+   n1: 50356224 0x484A258: allocate_stack (allocatestack.c:562)
+    n1: 50356224 0x484A258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n4: 50356224 0x493B0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 25178112 0x10C35C: void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(unsigned long, unsigned long), unsigned long&, unsigned long&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(unsigned long, unsigned long), unsigned long&, unsigned long&) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+       n0: 25178112 0x10A830: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+      n0: 8392704 0x10A706: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+      n0: 8392704 0x10A7D6: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+      n1: 8392704 0x10BF04: std::thread::thread<void (&)(), , void>(void (&)()) (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+       n0: 8392704 0x10A72F: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
+ n1: 10498048 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10498048 0x401F186: mmap (mmap64.c:47)
+   n1: 5660672 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5660672 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5660672 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5640192 0x400F514: openaux (dl-deps.c:64)
+       n1: 5640192 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5640192 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5640192 0x4004063: dl_main (rtld.c:1805)
+          n1: 5640192 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5640192 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5640192 0x400204B: _dl_start (rtld.c:539)
+             n0: 5640192 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4763648 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4763648 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4763648 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4747264 0x400F514: openaux (dl-deps.c:64)
+       n1: 4747264 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4747264 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4747264 0x4004063: dl_main (rtld.c:1805)
+          n1: 4747264 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4747264 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4747264 0x400204B: _dl_start (rtld.c:539)
+             n0: 4747264 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 73728 in 3 places, all below massif's threshold (1.00%)
+ n0: 544768 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=64
 #-----------
-time=2861561
-mem_heap_B=201344
-mem_heap_extra_B=160
+time=2691859
+mem_heap_B=262721536
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n5: 201344 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 72704 0x4914A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 4096 0x4AECD03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4AFCECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4AFBF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x4AFA6B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x4AFA6B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x4AEE3C0: fwrite (iofwrite.c:39)
-       n1: 4096 0x10AC08: output() (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-        n1: 4096 0x4944DF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-         n1: 4096 0x4853608: start_thread (pthread_create.c:477)
-          n0: 4096 0x4B8A132: clone (clone.S:95)
- n0: 1664 in 13 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=2863115
-mem_heap_B=201056
-mem_heap_extra_B=152
+time=2869806
+mem_heap_B=195612672
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=2863229
-mem_heap_B=201024
-mem_heap_extra_B=144
+time=2870476
+mem_heap_B=187219968
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=2864531
-mem_heap_B=200976
-mem_heap_extra_B=136
+time=2883036
+mem_heap_B=178827264
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=2864571
-mem_heap_B=200928
-mem_heap_extra_B=128
+time=2883485
+mem_heap_B=170434560
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=69
 #-----------
-time=2864611
-mem_heap_B=200880
-mem_heap_extra_B=120
+time=2883934
+mem_heap_B=162041856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=2864651
-mem_heap_B=200832
-mem_heap_extra_B=112
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=71
-#-----------
-time=2873267
-mem_heap_B=128128
-mem_heap_extra_B=104
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=72
-#-----------
-time=2875095
-mem_heap_B=124032
-mem_heap_extra_B=80
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=73
-#-----------
-time=2876546
-mem_heap_B=123744
-mem_heap_extra_B=72
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=74
-#-----------
-time=2877003
-mem_heap_B=123456
-mem_heap_extra_B=64
-mem_stacks_B=0
-heap_tree=detailed
-n3: 123456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 98304 0x497BB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x4977CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x4929B6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 32768 0x4929BA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n1: 24576 0x4979D33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x4977B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x4929AB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
-   n1: 8192 0x4929AF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x10A6A7: main (in /workspaces/Rusty-Kernels-Code/reverse-complement/C++/revcompC++)
- n0: 576 in 15 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=75
-#-----------
-time=2877460
-mem_heap_B=123168
-mem_heap_extra_B=56
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=76
-#-----------
-time=2877917
-mem_heap_B=122880
-mem_heap_extra_B=48
+time=2884383
+mem_heap_B=153649152
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty

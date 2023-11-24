@@ -1,1379 +1,807 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/pidigits/C++/Results/massif0.txt --stacks=yes
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/pidigits/C++/Results/massif0.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++ 10000
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=4096
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=93010670
-mem_heap_B=220624
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=0
+mem_heap_B=8192
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=180851783
-mem_heap_B=231920
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=0
+mem_heap_B=12288
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=280738308
-mem_heap_B=241808
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=0
+mem_heap_B=20480
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=370840353
-mem_heap_B=249400
-mem_heap_extra_B=120
-mem_stacks_B=496
+time=0
+mem_heap_B=24576
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=431198141
-mem_heap_B=254000
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=0
+mem_heap_B=167936
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=537741863
-mem_heap_B=277760
-mem_heap_extra_B=104
-mem_stacks_B=496
+time=0
+mem_heap_B=200704
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=654793802
-mem_heap_B=268568
-mem_heap_extra_B=104
-mem_stacks_B=19216
-heap_tree=detailed
-n5: 268568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72984 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n4: 72984 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 36480 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 18240 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 18240 0x10950D: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n2: 18248 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 18248 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 18240 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 18240 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n0: 0 in 1 place, below massif's threshold (1.00%)
+time=0
+mem_heap_B=208896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=731412520
-mem_heap_B=272984
-mem_heap_extra_B=104
-mem_stacks_B=488
+time=0
+mem_heap_B=212992
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=860483582
-mem_heap_B=279992
-mem_heap_extra_B=120
-mem_stacks_B=496
-heap_tree=empty
+time=0
+mem_heap_B=217088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 217088 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 217088 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=963593419
-mem_heap_B=285304
-mem_heap_extra_B=120
-mem_stacks_B=23408
-heap_tree=detailed
-n5: 285304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 89720 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 89720 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 44856 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 22432 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 22424 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-   n3: 44848 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 22424 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 22424 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n0: 0 in 1 place, below massif's threshold (1.00%)
+time=0
+mem_heap_B=221184
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=1102916309
-mem_heap_B=316048
-mem_heap_extra_B=136
-mem_stacks_B=496
+time=0
+mem_heap_B=233472
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=1190890609
-mem_heap_B=295984
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=1271553985
-mem_heap_B=299504
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=1382122233
-mem_heap_B=304192
-mem_heap_extra_B=112
-mem_stacks_B=496
-heap_tree=empty
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 241664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 237568 0x0: ???
+ n1: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+  n1: 4096 0x1: ???
+   n1: 4096 0x1FFEFFF5DE: ???
+    n0: 4096 0x1FFEFFF616: ???
 #-----------
 snapshot=15
 #-----------
-time=1478910368
-mem_heap_B=336280
-mem_heap_extra_B=144
-mem_stacks_B=496
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=1608971182
-mem_heap_B=313296
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=1721631703
-mem_heap_B=317576
-mem_heap_extra_B=104
-mem_stacks_B=488
+time=57446
+mem_heap_B=258048
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=1829012980
-mem_heap_B=321552
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=57522
+mem_heap_B=262144
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=1906084085
-mem_heap_B=324368
-mem_heap_extra_B=96
-mem_stacks_B=496
+time=57572
+mem_heap_B=266240
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=2019493489
-mem_heap_B=361576
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 361576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 132784 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n4: 132784 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 66384 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33192 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 33192 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n2: 33192 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33192 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 33192 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33192 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 1 place, below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 33208 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 33208 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 33208 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33208 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=57619
+mem_heap_B=274432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=2104044306
-mem_heap_B=365232
-mem_heap_extra_B=120
-mem_stacks_B=928
-heap_tree=detailed
-n5: 365232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 135704 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 135704 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 67848 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33928 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 33920 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-   n3: 67840 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33920 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 33920 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 33944 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 33944 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 33944 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 33944 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=60397
+mem_heap_B=315392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=2222461676
-mem_heap_B=370184
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=62334
+mem_heap_B=323584
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=2284274591
-mem_heap_B=372752
-mem_heap_extra_B=120
-mem_stacks_B=856
-heap_tree=detailed
-n5: 372752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 141720 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 141720 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 106280 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 35432 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 35424 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 35424 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 35424 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 35424 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 35448 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 35448 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 35448 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 35448 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=63094
+mem_heap_B=864256
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=2375545038
-mem_heap_B=376432
-mem_heap_extra_B=120
-mem_stacks_B=928
+time=63188
+mem_heap_B=1257472
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=detailed
-n5: 376432 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 144664 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 144664 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 72328 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36168 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 36160 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-   n3: 72320 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36160 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 36160 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 36184 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 36184 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 36184 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36184 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+n3: 1257472 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 1019904 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 1019904 0x401F186: mmap (mmap64.c:47)
+   n1: 561152 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 561152 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 561152 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 540672 0x400F514: openaux (dl-deps.c:64)
+       n1: 540672 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 540672 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 540672 0x4004063: dl_main (rtld.c:1805)
+          n1: 540672 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 540672 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 540672 0x400204B: _dl_start (rtld.c:539)
+             n1: 540672 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 540672 0x1: ???
+               n1: 540672 0x1FFEFFF5DE: ???
+                n0: 540672 0x1FFEFFF616: ???
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n1: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+                n1: 20480 0x1: ???
+                 n1: 20480 0x1FFEFFF5DE: ???
+                  n0: 20480 0x1FFEFFF616: ???
+   n1: 409600 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 409600 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 409600 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 393216 0x400F514: openaux (dl-deps.c:64)
+       n1: 393216 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 393216 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 393216 0x4004063: dl_main (rtld.c:1805)
+          n1: 393216 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 393216 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 393216 0x400204B: _dl_start (rtld.c:539)
+             n1: 393216 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 393216 0x1: ???
+               n1: 393216 0x1FFEFFF5DE: ???
+                n0: 393216 0x1FFEFFF616: ???
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n1: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+                n1: 16384 0x1: ???
+                 n1: 16384 0x1FFEFFF5DE: ???
+                  n0: 16384 0x1FFEFFF616: ???
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n1: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 40960 0x1: ???
+               n1: 40960 0x1FFEFFF5DE: ???
+                n0: 40960 0x1FFEFFF616: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=2473756232
-mem_heap_B=380280
-mem_heap_extra_B=128
-mem_stacks_B=856
-heap_tree=detailed
-n5: 380280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 147744 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 147744 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 110792 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36936 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 36928 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 36928 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 36936 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36936 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 36952 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 36952 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 36952 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 36952 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=63238
+mem_heap_B=1351680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=2570350852
-mem_heap_B=384032
-mem_heap_extra_B=120
-mem_stacks_B=960
-heap_tree=detailed
-n5: 384032 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 150744 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n4: 150744 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n3: 75360 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 37680 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 37680 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 3 places, all below massif's threshold (1.00%)
-   n2: 37688 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 37688 0x10942E: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 37680 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 37680 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 1 place, below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 37704 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 37704 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 37704 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 37704 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=63285
+mem_heap_B=1359872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=2628052786
-mem_heap_B=348112
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=67839
+mem_heap_B=3334144
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=2729907860
-mem_heap_B=351184
-mem_heap_extra_B=96
-mem_stacks_B=704
+time=67933
+mem_heap_B=4321280
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=2837557434
-mem_heap_B=354408
-mem_heap_extra_B=120
-mem_stacks_B=488
+time=67983
+mem_heap_B=4620288
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=2971875813
-mem_heap_B=399000
-mem_heap_extra_B=144
-mem_stacks_B=496
+time=68030
+mem_heap_B=4677632
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=3052621180
-mem_heap_B=401880
-mem_heap_extra_B=144
-mem_stacks_B=496
+time=68517
+mem_heap_B=4689920
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=3139803653
-mem_heap_B=363088
-mem_heap_extra_B=96
-mem_stacks_B=496
+time=73332
+mem_heap_B=4800512
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=3284272938
-mem_heap_B=410000
-mem_heap_extra_B=104
-mem_stacks_B=496
+time=73408
+mem_heap_B=4874240
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=3345726831
-mem_heap_B=412136
-mem_heap_extra_B=144
-mem_stacks_B=856
+time=73458
+mem_heap_B=4890624
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=detailed
-n5: 412136 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 173232 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 173232 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 129912 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 43304 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 43304 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 43304 0x10950D: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 43304 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 43304 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 43320 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 43320 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 43320 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 43320 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+n3: 4890624 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4653056 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4653056 0x401F186: mmap (mmap64.c:47)
+   n1: 2646016 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2646016 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2646016 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2625536 0x400F514: openaux (dl-deps.c:64)
+       n1: 2625536 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2625536 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2625536 0x4004063: dl_main (rtld.c:1805)
+          n1: 2625536 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2625536 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2625536 0x400204B: _dl_start (rtld.c:539)
+             n1: 2625536 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2625536 0x1: ???
+               n1: 2625536 0x1FFEFFF5DE: ???
+                n0: 2625536 0x1FFEFFF616: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1945600 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1945600 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1945600 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1929216 0x400F514: openaux (dl-deps.c:64)
+       n1: 1929216 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1929216 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1929216 0x4004063: dl_main (rtld.c:1805)
+          n1: 1929216 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1929216 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1929216 0x400204B: _dl_start (rtld.c:539)
+             n1: 1929216 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 1929216 0x1: ???
+               n1: 1929216 0x1FFEFFF5DE: ???
+                n0: 1929216 0x1FFEFFF616: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=3435693478
-mem_heap_B=415176
-mem_heap_extra_B=128
-mem_stacks_B=496
+time=73505
+mem_heap_B=4898816
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=3530550362
-mem_heap_B=373840
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=78055
+mem_heap_B=6938624
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=3659142189
-mem_heap_B=377232
-mem_heap_extra_B=96
-mem_stacks_B=496
+time=78112
+mem_heap_B=8478720
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=3753714993
-mem_heap_B=379664
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=78162
+mem_heap_B=8798208
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=3890016293
-mem_heap_B=430000
-mem_heap_extra_B=104
-mem_stacks_B=496
+time=78209
+mem_heap_B=8822784
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=4026272513
-mem_heap_B=386576
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=78528
+mem_heap_B=8839168
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=4090829219
-mem_heap_B=388152
-mem_heap_extra_B=120
-mem_stacks_B=488
+time=85353
+mem_heap_B=10211328
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=4233001600
-mem_heap_B=391664
-mem_heap_extra_B=128
-mem_stacks_B=488
+time=85429
+mem_heap_B=10895360
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=4376143233
-mem_heap_B=445000
-mem_heap_extra_B=144
-mem_stacks_B=496
+time=85479
+mem_heap_B=11522048
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=4464369531
-mem_heap_B=397232
-mem_heap_extra_B=128
-mem_stacks_B=496
-heap_tree=empty
+time=85526
+mem_heap_B=11530240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11530240 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 11292672 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11292672 0x401F186: mmap (mmap64.c:47)
+   n1: 6057984 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6057984 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6057984 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6037504 0x400F514: openaux (dl-deps.c:64)
+       n1: 6037504 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6037504 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6037504 0x4004063: dl_main (rtld.c:1805)
+          n1: 6037504 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6037504 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6037504 0x400204B: _dl_start (rtld.c:539)
+             n1: 6037504 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 6037504 0x1: ???
+               n1: 6037504 0x1FFEFFF5DE: ???
+                n0: 6037504 0x1FFEFFF616: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5156864 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5156864 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5156864 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5140480 0x400F514: openaux (dl-deps.c:64)
+       n1: 5140480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5140480 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5140480 0x4004063: dl_main (rtld.c:1805)
+          n1: 5140480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5140480 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5140480 0x400204B: _dl_start (rtld.c:539)
+             n1: 5140480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 5140480 0x1: ???
+               n1: 5140480 0x1FFEFFF5DE: ???
+                n0: 5140480 0x1FFEFFF616: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 77824 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=45
 #-----------
-time=4528882526
-mem_heap_B=398760
-mem_heap_extra_B=120
-mem_stacks_B=488
+time=104925
+mem_heap_B=11538432
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=4614884665
-mem_heap_B=452080
-mem_heap_extra_B=104
-mem_stacks_B=496
+time=112751
+mem_heap_B=11550720
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=4740227101
-mem_heap_B=455736
-mem_heap_extra_B=144
-mem_stacks_B=856
+time=2348504
+mem_heap_B=11550720
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=detailed
-n5: 455736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 208112 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 208112 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 156072 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52024 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 52024 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 52024 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 52024 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52024 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 52040 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 52040 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 52040 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52040 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+n3: 11550720 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 11313152 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11313152 0x401F186: mmap (mmap64.c:47)
+   n1: 6057984 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6057984 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6057984 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6037504 0x400F514: openaux (dl-deps.c:64)
+       n1: 6037504 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6037504 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6037504 0x4004063: dl_main (rtld.c:1805)
+          n1: 6037504 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6037504 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6037504 0x400204B: _dl_start (rtld.c:539)
+             n1: 6037504 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 6037504 0x1: ???
+               n1: 6037504 0x1FFEFFF5DE: ???
+                n0: 6037504 0x1FFEFFF616: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5156864 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5156864 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5156864 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5140480 0x400F514: openaux (dl-deps.c:64)
+       n1: 5140480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5140480 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5140480 0x4004063: dl_main (rtld.c:1805)
+          n1: 5140480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5140480 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5140480 0x400204B: _dl_start (rtld.c:539)
+             n1: 5140480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 5140480 0x1: ???
+               n1: 5140480 0x1FFEFFF5DE: ???
+                n0: 5140480 0x1FFEFFF616: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 98304 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=48
 #-----------
-time=4837038753
-mem_heap_B=458472
-mem_heap_extra_B=112
-mem_stacks_B=496
+time=2348504
+mem_heap_B=11546624
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=4901596068
-mem_heap_B=407376
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=2431164
+mem_heap_B=11644928
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=4902584808
-mem_heap_B=460352
-mem_heap_extra_B=120
-mem_stacks_B=856
-heap_tree=detailed
-n5: 460352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 211800 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 211800 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 158840 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52952 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 52944 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 52944 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 52944 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52944 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 52968 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 52968 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 52968 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 52968 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=2564569
+mem_heap_B=11804672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=4960294223
-mem_heap_B=461952
-mem_heap_extra_B=136
-mem_stacks_B=488
+time=5494204
+mem_heap_B=11939840
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=5018006373
-mem_heap_B=409984
-mem_heap_extra_B=112
-mem_stacks_B=488
+time=66122426
+mem_heap_B=12075008
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=5068477000
-mem_heap_B=464992
-mem_heap_extra_B=120
-mem_stacks_B=856
+time=66129973
+mem_heap_B=12075008
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=detailed
-n5: 464992 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 215512 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 215512 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 161624 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 53880 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 53872 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 53872 0x10950D: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 53872 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 53872 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 53896 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 53896 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 53896 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 53896 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+n4: 12075008 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 11272192 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11272192 0x401F186: mmap (mmap64.c:47)
+   n1: 6057984 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6057984 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6057984 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6037504 0x400F514: openaux (dl-deps.c:64)
+       n1: 6037504 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6037504 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6037504 0x4004063: dl_main (rtld.c:1805)
+          n1: 6037504 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6037504 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6037504 0x400204B: _dl_start (rtld.c:539)
+             n1: 6037504 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 6037504 0x1: ???
+               n1: 6037504 0x1FFEFFF5DE: ???
+                n0: 6037504 0x1FFEFFF616: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5156864 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5156864 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5156864 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5140480 0x400F514: openaux (dl-deps.c:64)
+       n1: 5140480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5140480 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5140480 0x4004063: dl_main (rtld.c:1805)
+          n1: 5140480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5140480 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5140480 0x400204B: _dl_start (rtld.c:539)
+             n1: 5140480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 5140480 0x1: ???
+               n1: 5140480 0x1FFEFFF5DE: ???
+                n0: 5140480 0x1FFEFFF616: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 57344 in 3 places, all below massif's threshold (1.00%)
+ n1: 565248 0x4BD628B: brk (brk.c:31)
+  n1: 565248 0x4BD6370: __sbrk (sbrk.c:56)
+   n1: 565248 0x4BD6370: sbrk (sbrk.c:31)
+    n1: 565248 0x4B5EB8C: __default_morecore (morecore.c:47)
+     n1: 565248 0x4B59574: sysmalloc (malloc.c:2470)
+      n3: 565248 0x4B5A792: _int_malloc (malloc.c:4141)
+       n2: 294912 0x4B5C153: malloc (malloc.c:3058)
+        n1: 159744 0x496FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 159744 0x49D2B46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n1: 159744 0x49CECF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 159744 0x4980B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n0: 159744 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+        n1: 135168 0x484B59D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+         n1: 135168 0x4863D93: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+          n1: 135168 0x486010D: __gmpz_mul_2exp (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+           n0: 135168 0x109387: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+       n1: 135168 0x4B5A97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4B5BC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4B5BC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4B5BC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x496BA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n1: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+                n1: 135168 0x1: ???
+                 n1: 135168 0x1FFEFFF5DE: ???
+                  n0: 135168 0x1FFEFFF616: ???
+       n1: 135168 0x4B5AE5E: _int_realloc (malloc.c:4600)
+        n1: 135168 0x4B5CFB5: realloc (malloc.c:3226)
+         n1: 135168 0x484B5E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+          n1: 135168 0x4863D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+           n1: 135168 0x48602A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+            n0: 135168 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=54
 #-----------
-time=5126189887
-mem_heap_B=412392
-mem_heap_extra_B=120
-mem_stacks_B=496
+time=66129973
+mem_heap_B=12070912
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=5183925000
-mem_heap_B=413648
-mem_heap_extra_B=96
-mem_stacks_B=488
+time=663390611
+mem_heap_B=12210176
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=5236988908
-mem_heap_B=469656
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 469656 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 219248 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 219248 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 164424 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 54808 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 54808 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 54808 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 54808 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 54808 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 54824 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 54824 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 54824 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 54824 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+time=2202278981
+mem_heap_B=12361728
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=5294720522
-mem_heap_B=416112
-mem_heap_extra_B=128
-mem_stacks_B=488
-heap_tree=empty
+time=6359200117
+mem_heap_B=12361728
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n4: 12361728 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 11272192 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11272192 0x401F186: mmap (mmap64.c:47)
+   n1: 6057984 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6057984 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6057984 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6037504 0x400F514: openaux (dl-deps.c:64)
+       n1: 6037504 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6037504 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6037504 0x4004063: dl_main (rtld.c:1805)
+          n1: 6037504 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6037504 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6037504 0x400204B: _dl_start (rtld.c:539)
+             n1: 6037504 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 6037504 0x1: ???
+               n1: 6037504 0x1FFEFFF5DE: ???
+                n0: 6037504 0x1FFEFFF616: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5156864 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5156864 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5156864 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5140480 0x400F514: openaux (dl-deps.c:64)
+       n1: 5140480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5140480 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5140480 0x4004063: dl_main (rtld.c:1805)
+          n1: 5140480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5140480 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5140480 0x400204B: _dl_start (rtld.c:539)
+             n1: 5140480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 5140480 0x1: ???
+               n1: 5140480 0x1FFEFFF5DE: ???
+                n0: 5140480 0x1FFEFFF616: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 57344 in 3 places, all below massif's threshold (1.00%)
+ n1: 851968 0x4BD628B: brk (brk.c:31)
+  n1: 851968 0x4BD6370: __sbrk (sbrk.c:56)
+   n1: 851968 0x4BD6370: sbrk (sbrk.c:31)
+    n1: 851968 0x4B5EB8C: __default_morecore (morecore.c:47)
+     n1: 851968 0x4B59574: sysmalloc (malloc.c:2470)
+      n3: 851968 0x4B5A792: _int_malloc (malloc.c:4141)
+       n2: 430080 0x4B5C153: malloc (malloc.c:3058)
+        n1: 270336 0x484B59D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+         n1: 270336 0x4863D93: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+          n1: 270336 0x486010D: __gmpz_mul_2exp (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+           n0: 270336 0x109387: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+        n1: 159744 0x496FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 159744 0x49D2B46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n1: 159744 0x49CECF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 159744 0x4980B87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n0: 159744 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+       n1: 286720 0x4B5AE5E: _int_realloc (malloc.c:4600)
+        n1: 286720 0x4B5CFB5: realloc (malloc.c:3226)
+         n1: 286720 0x484B5E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+          n2: 286720 0x4863D61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+           n1: 151552 0x4852A80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+            n0: 151552 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+           n1: 135168 0x48602A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
+            n0: 135168 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
+       n1: 135168 0x4B5A97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4B5BC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4B5BC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4B5BC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x496BA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n1: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+                n1: 135168 0x1: ???
+                 n1: 135168 0x1FFEFFF5DE: ???
+                  n0: 135168 0x1FFEFFF616: ???
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=58
 #-----------
-time=5352443175
-mem_heap_B=417392
-mem_heap_extra_B=128
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=59
-#-----------
-time=5408223091
-mem_heap_B=474376
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 474376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 223024 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 223024 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 167256 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 55752 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 55752 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 55752 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 55752 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 55752 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 55768 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 55768 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 55768 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 55768 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-#-----------
-snapshot=60
-#-----------
-time=5465939693
-mem_heap_B=475920
-mem_heap_extra_B=104
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=61
-#-----------
-time=5523666277
-mem_heap_B=477472
-mem_heap_extra_B=136
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=62
-#-----------
-time=5581376427
-mem_heap_B=479000
-mem_heap_extra_B=144
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=63
-#-----------
-time=5586912610
-mem_heap_B=479176
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 479176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 226864 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 226864 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 170136 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 56712 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 56712 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 56712 0x10950D: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 56712 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 56712 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 56728 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 56728 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 56728 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 56728 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-#-----------
-snapshot=64
-#-----------
-time=5644658049
-mem_heap_B=423696
-mem_heap_extra_B=96
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=65
-#-----------
-time=5702367850
-mem_heap_B=424912
-mem_heap_extra_B=96
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=66
-#-----------
-time=5760101261
-mem_heap_B=426096
-mem_heap_extra_B=128
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=67
-#-----------
-time=5771113154
-mem_heap_B=484056
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 484056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 230768 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 230768 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 173064 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 57688 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 57688 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 57688 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 57688 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 57688 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 57704 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 57704 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 57704 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 57704 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-#-----------
-snapshot=68
-#-----------
-time=5828815181
-mem_heap_B=427544
-mem_heap_extra_B=104
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=69
-#-----------
-time=5886549773
-mem_heap_B=487056
-mem_heap_extra_B=120
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=70
-#-----------
-time=5944254256
-mem_heap_B=488544
-mem_heap_extra_B=120
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=71
-#-----------
-time=5958441041
-mem_heap_B=488936
-mem_heap_extra_B=144
-mem_stacks_B=856
-heap_tree=detailed
-n5: 488936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 234672 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 234672 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 175992 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 58664 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 58664 0x1093D7: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 58664 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n2: 58664 0x485CA80: __gmpz_add (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 58664 0x10939A: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 58680 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 58680 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 58680 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 58680 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-#-----------
-snapshot=72
-#-----------
-time=6016176412
-mem_heap_B=431440
-mem_heap_extra_B=96
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=73
-#-----------
-time=6073894206
-mem_heap_B=432624
-mem_heap_extra_B=128
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=74
-#-----------
-time=6131621755
-mem_heap_B=433784
-mem_heap_extra_B=120
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=75
-#-----------
-time=6152030858
-mem_heap_B=493872
-mem_heap_extra_B=120
-mem_stacks_B=856
-heap_tree=peak
-n5: 493872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 238616 0x48555E8: __gmp_default_reallocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n3: 238616 0x486DD61: __gmpz_realloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n4: 178952 0x486A2A5: __gmpz_mul_ui (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 59656 0x10941C: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 59648 0x1093C8: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 59648 0x10950D: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 2 places, all below massif's threshold (1.00%)
-   n1: 59648 0x4870090: __gmpz_sub (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 59648 0x109531: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n0: 16 in 2 places, all below massif's threshold (1.00%)
- n1: 98304 0x49DCB46: std::basic_filebuf<wchar_t, std::char_traits<wchar_t> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 98304 0x49D8CF9: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 32768 0x498AB6D: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498AB87: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 32768 0x498ABA0: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 32768 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
- n1: 72704 0x4975A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFEFFF5A6: ???
-        n0: 72704 0x1FFEFFF5DE: ???
- n2: 59672 0x485559D: __gmp_default_allocate (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-  n1: 59672 0x48562DC: __gmp_tmp_reentrant_alloc (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-   n2: 59672 0x4870888: __gmpz_tdiv_q (in /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0)
-    n0: 59672 0x109444: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n0: 0 in 2 places, all below massif's threshold (1.00%)
- n1: 24576 0x49DAD33: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n3: 24576 0x49D8B09: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 8192 0x498AAB7: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAD8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-   n1: 8192 0x498AAF8: std::ios_base::sync_with_stdio(bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-    n0: 8192 0x109308: main (in /workspaces/Rusty-Kernels-Code/pidigits/C++/pidigitsC++)
-#-----------
-snapshot=76
-#-----------
-time=6209758682
-mem_heap_B=495296
-mem_heap_extra_B=120
-mem_stacks_B=496
-heap_tree=empty
-#-----------
-snapshot=77
-#-----------
-time=6267495003
-mem_heap_B=436528
-mem_heap_extra_B=128
-mem_stacks_B=488
-heap_tree=empty
-#-----------
-snapshot=78
-#-----------
-time=6325206741
-mem_heap_B=498200
-mem_heap_extra_B=144
-mem_stacks_B=488
+time=6359200117
+mem_heap_B=12357632
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty

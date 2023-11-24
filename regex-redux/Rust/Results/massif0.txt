@@ -1,891 +1,1070 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/regex-redux/Rust/Results/massif0.txt
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/regex-redux/Rust/Results/massif0.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=233472
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=424638
-mem_heap_B=472
-mem_heap_extra_B=16
+time=0
+mem_heap_B=1531904
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=593574
-mem_heap_B=104642132
-mem_heap_extra_B=6564
+time=0
+mem_heap_B=2064384
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=863747
-mem_heap_B=104642260
-mem_heap_extra_B=6572
+time=0
+mem_heap_B=2248704
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=957195
-mem_heap_B=104339680
-mem_heap_extra_B=6648
+time=0
+mem_heap_B=2252800
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=1063039
-mem_heap_B=104332318
-mem_heap_extra_B=7082
+time=0
+mem_heap_B=2396160
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=1108054922
-mem_heap_B=104332278
-mem_heap_extra_B=7066
+time=0
+mem_heap_B=2428928
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=1108119302
-mem_heap_B=154353056
-mem_heap_extra_B=11384
+time=0
+mem_heap_B=2437120
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=1114760016
-mem_heap_B=154353376
-mem_heap_extra_B=11392
+time=0
+mem_heap_B=2441216
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 154353376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 53477376 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 53477376 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 53477376 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 53477376 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 53477376 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 53477376 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 53477376 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 53477376 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 53477376 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 53477376 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 53477376 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 53477376 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 53477376 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 42589 in 95 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=1114766678
-mem_heap_B=154356167
-mem_heap_extra_B=11553
+time=0
+mem_heap_B=2445312
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n4: 154356167 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 53477376 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 53477376 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 53477376 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 53477376 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 53477376 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 53477376 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 53477376 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 53477376 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 53477376 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 53477376 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 53477376 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 53477376 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 53477376 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 45380 in 95 places, all below massif's threshold (1.00%)
+n1: 2445312 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 2445312 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=1114865092
-mem_heap_B=154368690
-mem_heap_extra_B=12110
+time=0
+mem_heap_B=2449408
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=1114953954
-mem_heap_B=154366678
-mem_heap_extra_B=13002
+time=0
+mem_heap_B=2461696
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 154366678 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 53477376 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 53477376 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 53477376 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 53477376 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 53477376 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 53477376 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 53477376 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 53477376 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 53477376 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 53477376 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 53477376 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 53477376 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 53477376 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 55891 in 124 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=1115076627
-mem_heap_B=154376909
-mem_heap_extra_B=15715
+time=0
+mem_heap_B=2465792
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=1115152271
-mem_heap_B=154373203
-mem_heap_extra_B=13253
+time=0
+mem_heap_B=2469888
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=1115299197
-mem_heap_B=154377064
-mem_heap_extra_B=13360
+time=0
+mem_heap_B=2469888
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n2: 2469888 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 2465792 0x0: ???
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=15
 #-----------
-time=1115572121
-mem_heap_B=154697648
-mem_heap_extra_B=13464
+time=0
+mem_heap_B=2465792
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=1115727628
-mem_heap_B=154385558
-mem_heap_extra_B=13954
+time=0
+mem_heap_B=2465792
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=1115998129
-mem_heap_B=154705686
-mem_heap_extra_B=13970
+time=57389
+mem_heap_B=2486272
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=1116157143
-mem_heap_B=154391372
-mem_heap_extra_B=13964
+time=57465
+mem_heap_B=2490368
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=1184746508
-mem_heap_B=154390751
-mem_heap_extra_B=13857
+time=57515
+mem_heap_B=2494464
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=1221940873
-mem_heap_B=154384471
-mem_heap_extra_B=13457
+time=57562
+mem_heap_B=2502656
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=1222075846
-mem_heap_B=154399051
-mem_heap_extra_B=16773
+time=60340
+mem_heap_B=2543616
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 154399051 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 53477376 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 53477376 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 53477376 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 53477376 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 53477376 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 53477376 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 53477376 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 53477376 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 53477376 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 53477376 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 53477376 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 53477376 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 53477376 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 88264 in 130 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=1222164079
-mem_heap_B=154397216
-mem_heap_extra_B=14688
+time=62495
+mem_heap_B=2551808
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=1222271345
-mem_heap_B=154410730
-mem_heap_extra_B=15526
+time=63391
+mem_heap_B=2662400
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=1222407451
-mem_heap_B=154410637
-mem_heap_extra_B=17275
+time=63467
+mem_heap_B=2736128
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 2736128 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 2465792 0x0: ???
+ n1: 270336 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 270336 0x401F186: mmap (mmap64.c:47)
+   n1: 131072 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 131072 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 131072 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 110592 0x400F514: openaux (dl-deps.c:64)
+       n1: 110592 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 110592 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 110592 0x4004063: dl_main (rtld.c:1805)
+          n1: 110592 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 110592 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 110592 0x400204B: _dl_start (rtld.c:539)
+             n0: 110592 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 90112 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 90112 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 90112 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 73728 0x400F514: openaux (dl-deps.c:64)
+       n1: 73728 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 73728 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 73728 0x4004063: dl_main (rtld.c:1805)
+          n1: 73728 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 73728 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 73728 0x400204B: _dl_start (rtld.c:539)
+             n0: 73728 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=1222551726
-mem_heap_B=154419918
-mem_heap_extra_B=16202
+time=63517
+mem_heap_B=2752512
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=1222698043
-mem_heap_B=154419971
-mem_heap_extra_B=17965
+time=63564
+mem_heap_B=2760704
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=1222826684
-mem_heap_B=154429150
-mem_heap_extra_B=16778
+time=68280
+mem_heap_B=2904064
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=1222989231
-mem_heap_B=154429155
-mem_heap_extra_B=18637
+time=68337
+mem_heap_B=2973696
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=1223104327
-mem_heap_B=154438302
-mem_heap_extra_B=16834
+time=68387
+mem_heap_B=2998272
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=1223196376
-mem_heap_B=154439147
-mem_heap_extra_B=19485
+time=68434
+mem_heap_B=3006464
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=1223368315
-mem_heap_B=154442374
-mem_heap_extra_B=17490
+time=68879
+mem_heap_B=3022848
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=1223486706
-mem_heap_B=154448403
-mem_heap_extra_B=20133
+time=73460
+mem_heap_B=3047424
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=1223668081
-mem_heap_B=154456174
-mem_heap_extra_B=18098
+time=73536
+mem_heap_B=3055616
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=1223777247
-mem_heap_B=154457667
-mem_heap_extra_B=21005
+time=73586
+mem_heap_B=3059712
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 3059712 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 2465792 0x0: ???
+ n1: 593920 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 593920 0x401F186: mmap (mmap64.c:47)
+   n1: 299008 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 299008 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 299008 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 278528 0x400F514: openaux (dl-deps.c:64)
+       n1: 278528 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 278528 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 278528 0x4004063: dl_main (rtld.c:1805)
+          n1: 278528 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 278528 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 278528 0x400204B: _dl_start (rtld.c:539)
+             n0: 278528 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 229376 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 229376 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 229376 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 212992 0x400F514: openaux (dl-deps.c:64)
+       n1: 212992 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 212992 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 212992 0x4004063: dl_main (rtld.c:1805)
+          n1: 212992 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 212992 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 212992 0x400204B: _dl_start (rtld.c:539)
+             n0: 212992 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=1223905462
-mem_heap_B=154452724
-mem_heap_extra_B=18372
+time=73633
+mem_heap_B=3067904
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=1224005176
-mem_heap_B=154466134
-mem_heap_extra_B=19258
+time=78101
+mem_heap_B=5107712
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=1224158574
-mem_heap_B=154458624
-mem_heap_extra_B=18408
+time=78158
+mem_heap_B=6647808
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=1224292450
-mem_heap_B=154475146
-mem_heap_extra_B=19790
+time=78208
+mem_heap_B=6967296
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=1224443164
-mem_heap_B=154467352
-mem_heap_extra_B=18912
+time=78255
+mem_heap_B=6991872
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=1305033875
-mem_heap_B=154465904
-mem_heap_extra_B=18648
+time=78574
+mem_heap_B=7008256
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 154465904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 53477376 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 53477376 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 53477376 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 53477376 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 53477376 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 53477376 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 53477376 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 53477376 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 53477376 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 53477376 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 53477376 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 53477376 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 53477376 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 155117 in 132 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=1409520586
-mem_heap_B=154465962
-mem_heap_extra_B=18670
+time=104330
+mem_heap_B=7016448
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=1524480506
-mem_heap_B=154466028
-mem_heap_extra_B=18716
+time=397761
+mem_heap_B=7016448
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 7016448 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4550656 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4550656 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 90112 in 3 places, all below massif's threshold (1.00%)
+ n0: 2465792 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=1639054755
-mem_heap_B=154466094
-mem_heap_extra_B=18762
+time=397761
+mem_heap_B=7012352
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=1754406217
-mem_heap_B=154466160
-mem_heap_extra_B=18824
+time=405730
+mem_heap_B=6987776
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=1861720780
-mem_heap_B=154466226
-mem_heap_extra_B=18886
+time=481668
+mem_heap_B=7122944
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=1971783707
-mem_heap_B=154466292
-mem_heap_extra_B=18948
+time=616002
+mem_heap_B=60604416
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=2081302787
-mem_heap_B=154466358
-mem_heap_extra_B=19010
+time=616773
+mem_heap_B=111439872
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=2191447629
-mem_heap_B=154466424
-mem_heap_extra_B=19072
+time=650490
+mem_heap_B=111763456
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=2191457934
-mem_heap_B=154434497
-mem_heap_extra_B=17087
+time=1014013
+mem_heap_B=111763456
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n4: 111763456 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 104652800 0x499D8E6: __mmap64 (mmap64.c:59)
+  n2: 104652800 0x499D8E6: mmap (mmap64.c:47)
+   n1: 104640512 0x491C978: sysmalloc (malloc.c:2310)
+    n1: 104640512 0x491D792: _int_malloc (malloc.c:4141)
+     n3: 104640512 0x491F153: malloc (malloc.c:3058)
+      n1: 53481472 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 53481472 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 53481472 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 53481472 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 53481472 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 53481472 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 53481472 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 53481472 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 53481472 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 53481472 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 53481472 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 53481472 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 53481472 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n1: 50835456 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 50835456 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 50835456 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 50835456 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 50835456 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 50835456 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 50835456 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 50835456 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 50835456 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 50835456 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 50835456 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 50835456 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 50835456 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n0: 323584 in 1 place, below massif's threshold (1.00%)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 2465792 0x0: ???
+ n0: 135168 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=50
 #-----------
-time=2191464628
-mem_heap_B=154412321
-mem_heap_extra_B=15591
+time=1014013
+mem_heap_B=111759360
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=2191471295
-mem_heap_B=154391793
-mem_heap_extra_B=14135
+time=1108182102
+mem_heap_B=113541120
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=2205453487
-mem_heap_B=154384609
-mem_heap_extra_B=13783
+time=1108187449
+mem_heap_B=115642368
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=3491049152
-mem_heap_B=207854330
-mem_heap_extra_B=13174
+time=1108189119
+mem_heap_B=117743616
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=3492236666
-mem_heap_B=207854330
-mem_heap_extra_B=13174
+time=1108191692
+mem_heap_B=117755904
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=peak
-n4: 207854330 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 106954752 0x14E3A1: _ZN5alloc7raw_vec11finish_grow17h29f4dd24f22ff0d0E.llvm.13845857956903631045 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 106954752 0x1411D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 106954752 0x14C90A: Rust::Regex::replace_all (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 106954752 0x14D975: Rust::find_replaced_sequence_length (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 106954752 0x152DF7: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 106954752 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 106954752 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 106954752 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 106954752 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 106954752 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-           n1: 106954752 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-            n1: 106954752 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-             n1: 106954752 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-              n1: 106954752 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-               n1: 106954752 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-                n1: 106954752 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-                 n1: 106954752 0x486E608: start_thread (pthread_create.c:477)
-                  n0: 106954752 0x49AE132: clone (clone.S:95)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 66167 in 134 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=3492252592
-mem_heap_B=207849314
-mem_heap_extra_B=12806
+time=1108192091
+mem_heap_B=251973632
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=3492265345
-mem_heap_B=207850539
-mem_heap_extra_B=12933
+time=1108192110
+mem_heap_B=251973632
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 251973632 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 244862976 0x499D8E6: __mmap64 (mmap64.c:59)
+  n4: 244862976 0x499D8E6: mmap (mmap64.c:47)
+   n1: 134217728 0x491A3A6: new_heap (arena.c:488)
+    n1: 134217728 0x491ADCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x491ADCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x491D9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x491D9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x491F1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x491F1BD: malloc (malloc.c:3044)
+          n1: 134217728 0x48663F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 134217728 0x25BD90: std::sys::unix::thread::guard::current (thread.rs:914)
+            n1: 134217728 0x235412: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 134217728 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+              n1: 134217728 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+               n1: 134217728 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+                n1: 134217728 0x4864608: start_thread (pthread_create.c:477)
+                 n0: 134217728 0x49A4132: clone (clone.S:95)
+   n1: 104316928 0x491C978: sysmalloc (malloc.c:2310)
+    n1: 104316928 0x491D792: _int_malloc (malloc.c:4141)
+     n3: 104316928 0x491F153: malloc (malloc.c:3058)
+      n1: 53481472 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 53481472 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 53481472 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 53481472 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 53481472 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 53481472 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 53481472 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 53481472 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 53481472 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 53481472 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 53481472 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 53481472 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 53481472 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n1: 50835456 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 50835456 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 50835456 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 50835456 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 50835456 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 50835456 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 50835456 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 50835456 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 50835456 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 50835456 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 50835456 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 50835456 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 50835456 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 6303744 0x4865258: allocate_stack (allocatestack.c:562)
+    n1: 6303744 0x4865258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 6303744 0x25ABFE: std::sys::unix::thread::Thread::new (thread.rs:87)
+      n1: 6303744 0x23518B: std::thread::Builder::spawn_unchecked (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 6303744 0x230A57: <rayon_core::registry::DefaultSpawn as rayon_core::registry::ThreadSpawn>::spawn (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 6303744 0x2316D2: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 6303744 0x230CE1: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+          n1: 6303744 0x14676A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+           n1: 6303744 0x230B7F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+            n1: 6303744 0x15205D: rayon_core::registry::in_worker (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 6303744 0x14DFA0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+              n1: 6303744 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+               n1: 6303744 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+                n1: 6303744 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 6303744 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                  n1: 6303744 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                   n1: 6303744 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 6303744 0x24F43A: {closure#2} (rt.rs:148)
+                     n1: 6303744 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                      n1: 6303744 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                       n1: 6303744 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 6303744 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 6303744 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+   n0: 24576 in 1 place, below massif's threshold (1.00%)
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n1: 4509696 0x401F186: mmap (mmap64.c:47)
+   n0: 4509696 in 5 places, all below massif's threshold (1.00%)
+ n0: 2600960 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=57
 #-----------
-time=3493440361
-mem_heap_B=207850628
-mem_heap_extra_B=12996
+time=1108192110
+mem_heap_B=251969536
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=3493448251
-mem_heap_B=207851377
-mem_heap_extra_B=13039
+time=1108192121
+mem_heap_B=239353856
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=3493457554
-mem_heap_B=207852132
-mem_heap_extra_B=13116
+time=1108199269
+mem_heap_B=186966016
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=3577304976
-mem_heap_B=207852304
-mem_heap_extra_B=13152
+time=1108200222
+mem_heap_B=186978304
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=6786656967
-mem_heap_B=207852264
-mem_heap_extra_B=13120
+time=1108200621
+mem_heap_B=321196032
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=6786663975
-mem_heap_B=207841606
-mem_heap_extra_B=12322
+time=1108200642
+mem_heap_B=321196032
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 321196032 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 314085376 0x499D8E6: __mmap64 (mmap64.c:59)
+  n4: 314085376 0x499D8E6: mmap (mmap64.c:47)
+   n1: 201326592 0x491A3A6: new_heap (arena.c:488)
+    n1: 201326592 0x491ADCB: _int_new_arena (arena.c:693)
+     n1: 201326592 0x491ADCB: arena_get2.part.0 (arena.c:912)
+      n1: 201326592 0x491D9F8: arena_get2 (arena.c:880)
+       n1: 201326592 0x491D9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 201326592 0x491F1BD: tcache_init (malloc.c:2978)
+         n1: 201326592 0x491F1BD: malloc (malloc.c:3044)
+          n1: 201326592 0x48663F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 201326592 0x25BD90: std::sys::unix::thread::guard::current (thread.rs:914)
+            n1: 201326592 0x235412: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 201326592 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+              n1: 201326592 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+               n1: 201326592 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+                n1: 201326592 0x4864608: start_thread (pthread_create.c:477)
+                 n0: 201326592 0x49A4132: clone (clone.S:95)
+   n1: 104316928 0x491C978: sysmalloc (malloc.c:2310)
+    n1: 104316928 0x491D792: _int_malloc (malloc.c:4141)
+     n3: 104316928 0x491F153: malloc (malloc.c:3058)
+      n1: 53481472 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 53481472 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 53481472 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 53481472 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 53481472 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 53481472 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 53481472 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 53481472 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 53481472 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 53481472 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 53481472 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 53481472 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 53481472 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n1: 50835456 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 50835456 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 50835456 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 50835456 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 50835456 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 50835456 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 50835456 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 50835456 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 50835456 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 50835456 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 50835456 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 50835456 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 50835456 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 8404992 0x4865258: allocate_stack (allocatestack.c:562)
+    n1: 8404992 0x4865258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 8404992 0x25ABFE: std::sys::unix::thread::Thread::new (thread.rs:87)
+      n1: 8404992 0x23518B: std::thread::Builder::spawn_unchecked (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 8404992 0x230A57: <rayon_core::registry::DefaultSpawn as rayon_core::registry::ThreadSpawn>::spawn (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 8404992 0x2316D2: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 8404992 0x230CE1: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+          n1: 8404992 0x14676A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+           n1: 8404992 0x230B7F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+            n1: 8404992 0x15205D: rayon_core::registry::in_worker (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 8404992 0x14DFA0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+              n1: 8404992 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+               n1: 8404992 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+                n1: 8404992 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 8404992 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                  n1: 8404992 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                   n1: 8404992 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 8404992 0x24F43A: {closure#2} (rt.rs:148)
+                     n1: 8404992 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                      n1: 8404992 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                       n1: 8404992 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 8404992 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 8404992 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+   n0: 36864 in 1 place, below massif's threshold (1.00%)
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n1: 4509696 0x401F186: mmap (mmap64.c:47)
+   n0: 4509696 in 5 places, all below massif's threshold (1.00%)
+ n0: 2600960 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=63
 #-----------
-time=6786673905
-mem_heap_B=207842246
-mem_heap_extra_B=12330
+time=1108200642
+mem_heap_B=321191936
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=6786686370
-mem_heap_B=207843819
-mem_heap_extra_B=12445
+time=1108210158
+mem_heap_B=254099456
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n4: 207843819 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 106954752 0x14E3A1: _ZN5alloc7raw_vec11finish_grow17h29f4dd24f22ff0d0E.llvm.13845857956903631045 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 106954752 0x1411D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 106954752 0x14C90A: Rust::Regex::replace_all (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 106954752 0x14D975: Rust::find_replaced_sequence_length (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 106954752 0x152DF7: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 106954752 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 106954752 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 106954752 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 106954752 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 106954752 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-           n1: 106954752 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-            n1: 106954752 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-             n1: 106954752 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-              n1: 106954752 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-               n1: 106954752 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-                n1: 106954752 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-                 n1: 106954752 0x486E608: start_thread (pthread_create.c:477)
-                  n0: 106954752 0x49AE132: clone (clone.S:95)
- n1: 50833411 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50833411 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50833411 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50833411 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
-     n1: 50833411 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
-      n1: 50833411 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
-       n1: 50833411 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
-        n1: 50833411 0x24F43A: {closure#2} (rt.rs:148)
-         n1: 50833411 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
-          n1: 50833411 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
-           n1: 50833411 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
-            n1: 50833411 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
-             n0: 50833411 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
- n1: 50000000 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-  n1: 50000000 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-   n1: 50000000 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-    n1: 50000000 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-     n1: 50000000 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-      n1: 50000000 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-       n1: 50000000 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-        n1: 50000000 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-         n1: 50000000 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
-          n1: 50000000 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
-           n1: 50000000 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
-            n1: 50000000 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
-             n1: 50000000 0x486E608: start_thread (pthread_create.c:477)
-              n0: 50000000 0x49AE132: clone (clone.S:95)
- n0: 55656 in 134 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=6787861177
-mem_heap_B=207843908
-mem_heap_extra_B=12460
+time=1108210557
+mem_heap_B=321208320
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=6787868156
-mem_heap_B=207844680
-mem_heap_extra_B=12480
+time=1108216119
+mem_heap_B=371212288
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=6787878672
-mem_heap_B=207845468
-mem_heap_extra_B=12564
+time=2026478293
+mem_heap_B=371224576
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=8381648488
-mem_heap_B=207845592
-mem_heap_extra_B=12560
+time=2026478695
+mem_heap_B=505442304
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=69
 #-----------
-time=8381655750
-mem_heap_B=50877354
-mem_heap_extra_B=3782
+time=2026478714
+mem_heap_B=505442304
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=peak
+n2: 505442304 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 498331648 0x499D8E6: __mmap64 (mmap64.c:59)
+  n5: 498331648 0x499D8E6: mmap (mmap64.c:47)
+   n1: 268435456 0x491A3A6: new_heap (arena.c:488)
+    n1: 268435456 0x491ADCB: _int_new_arena (arena.c:693)
+     n1: 268435456 0x491ADCB: arena_get2.part.0 (arena.c:912)
+      n1: 268435456 0x491D9F8: arena_get2 (arena.c:880)
+       n1: 268435456 0x491D9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 268435456 0x491F1BD: tcache_init (malloc.c:2978)
+         n1: 268435456 0x491F1BD: malloc (malloc.c:3044)
+          n1: 268435456 0x48663F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 268435456 0x25BD90: std::sys::unix::thread::guard::current (thread.rs:914)
+            n1: 268435456 0x235412: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 268435456 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+              n1: 268435456 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+               n1: 268435456 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+                n1: 268435456 0x4864608: start_thread (pthread_create.c:477)
+                 n0: 268435456 0x49A4132: clone (clone.S:95)
+   n1: 154320896 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 154320896 0x491D792: _int_malloc (malloc.c:4141)
+     n3: 104316928 0x491F153: malloc (malloc.c:3058)
+      n1: 53481472 0x14DE2B: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 53481472 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 53481472 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 53481472 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 53481472 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 53481472 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 53481472 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 53481472 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 53481472 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 53481472 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 53481472 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 53481472 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 53481472 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n1: 50835456 0x14DEB0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 50835456 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 50835456 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 50835456 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 50835456 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+           n1: 50835456 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+            n1: 50835456 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 50835456 0x24F43A: {closure#2} (rt.rs:148)
+              n1: 50835456 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+               n1: 50835456 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                n1: 50835456 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 50835456 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 50835456 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n1: 50003968 0x491F298: malloc (malloc.c:3066)
+      n1: 50003968 0x152D9A: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 50003968 0x14FBFB: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 50003968 0x152B25: _ZN10rayon_core4join12join_context28_$u7b$$u7b$closure$u7d$$u7d$17hb4df91f875107493E.llvm.17558184846598138301 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 50003968 0x14FB4E: std::panicking::try (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+          n1: 50003968 0x14F2BA: <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+           n1: 50003968 0x14637E: rayon_core::registry::WorkerThread::wait_until_cold (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+            n1: 50003968 0x2306C1: rayon_core::registry::ThreadBuilder::run (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 50003968 0x234389: _ZN3std10sys_common9backtrace28__rust_begin_short_backtrace17h2b245ab01b8213b7E.llvm.5409980345684642767 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+              n1: 50003968 0x23548E: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+               n1: 50003968 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+                n1: 50003968 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+                 n1: 50003968 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+                  n1: 50003968 0x4864608: start_thread (pthread_create.c:477)
+                   n0: 50003968 0x49A4132: clone (clone.S:95)
+   n1: 67108864 0x491A362: new_heap (arena.c:477)
+    n1: 67108864 0x491ADCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x491ADCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x491D9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x491D9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x491F1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x491F1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x48663F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 67108864 0x25BD90: std::sys::unix::thread::guard::current (thread.rs:914)
+            n1: 67108864 0x235412: core::ops::function::FnOnce::call_once{{vtable-shim}} (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 67108864 0x25AD94: call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> (boxed.rs:2007)
+              n1: 67108864 0x25AD94: call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> (boxed.rs:2007)
+               n1: 67108864 0x25AD94: std::sys::unix::thread::Thread::new::thread_start (thread.rs:108)
+                n1: 67108864 0x4864608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x49A4132: clone (clone.S:95)
+   n1: 8404992 0x4865258: allocate_stack (allocatestack.c:562)
+    n1: 8404992 0x4865258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 8404992 0x25ABFE: std::sys::unix::thread::Thread::new (thread.rs:87)
+      n1: 8404992 0x23518B: std::thread::Builder::spawn_unchecked (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+       n1: 8404992 0x230A57: <rayon_core::registry::DefaultSpawn as rayon_core::registry::ThreadSpawn>::spawn (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+        n1: 8404992 0x2316D2: rayon_core::registry::Registry::new (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+         n1: 8404992 0x230CE1: rayon_core::registry::default_global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+          n1: 8404992 0x14676A: std::sys_common::once::futex::Once::call (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+           n1: 8404992 0x230B7F: rayon_core::registry::global_registry (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+            n1: 8404992 0x15205D: rayon_core::registry::in_worker (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+             n1: 8404992 0x14DFA0: Rust::main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+              n1: 8404992 0x14F9C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+               n1: 8404992 0x14E798: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h0482f5a290bd54c7E.llvm.9077938040025367255 (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+                n1: 8404992 0x24F43A: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 8404992 0x24F43A: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:502)
+                  n1: 8404992 0x24F43A: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:466)
+                   n1: 8404992 0x24F43A: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 8404992 0x24F43A: {closure#2} (rt.rs:148)
+                     n1: 8404992 0x24F43A: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:502)
+                      n1: 8404992 0x24F43A: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:466)
+                       n1: 8404992 0x24F43A: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 8404992 0x24F43A: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 8404992 0x14E364: main (in /workspaces/Rusty-Kernels-Code/regex-redux/Rust/target/release/Rust)
+   n0: 61440 in 1 place, below massif's threshold (1.00%)
+ n0: 7110656 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=70
 #-----------
-time=8381668629
-mem_heap_B=50877170
-mem_heap_extra_B=3646
+time=2026478714
+mem_heap_B=505438208
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=8381676411
-mem_heap_B=50876920
-mem_heap_extra_B=3456
+time=2026478725
+mem_heap_B=488333312
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=8381688327
-mem_heap_B=42152
-mem_heap_extra_B=1400
+time=3491867409
+mem_heap_B=438329344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3491867409
+mem_heap_B=438333440
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=3491867409
+mem_heap_B=491810816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=8382492980
+mem_heap_B=491806720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=8382493049
+mem_heap_B=441802752
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=8382508729
+mem_heap_B=334843904
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=8382509070
+mem_heap_B=284008448
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty

@@ -1,598 +1,604 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/read-write/Rust/Results/massif0.txt --stacks=yes
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/read-write/Rust/Results/One/massif0.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=24576
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1689
-mem_heap_B=0
+time=0
+mem_heap_B=294912
 mem_heap_extra_B=0
-mem_stacks_B=400
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=50486
-mem_heap_B=0
+time=0
+mem_heap_B=364544
 mem_heap_extra_B=0
-mem_stacks_B=400
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=57222
-mem_heap_B=0
+time=0
+mem_heap_B=380928
 mem_heap_extra_B=0
-mem_stacks_B=7392
-heap_tree=peak
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=62974
-mem_heap_B=0
+time=0
+mem_heap_B=385024
 mem_heap_extra_B=0
-mem_stacks_B=4024
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=70921
-mem_heap_B=0
+time=0
+mem_heap_B=528384
 mem_heap_extra_B=0
-mem_stacks_B=4080
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=81281
-mem_heap_B=0
+time=0
+mem_heap_B=561152
 mem_heap_extra_B=0
-mem_stacks_B=5584
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=87915
-mem_heap_B=0
+time=0
+mem_heap_B=569344
 mem_heap_extra_B=0
-mem_stacks_B=2408
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=92815
-mem_heap_B=0
+time=0
+mem_heap_B=573440
 mem_heap_extra_B=0
-mem_stacks_B=1160
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=100000
-mem_heap_B=0
+time=0
+mem_heap_B=577536
 mem_heap_extra_B=0
-mem_stacks_B=1160
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n1: 577536 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 577536 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=109073
-mem_heap_B=0
+time=0
+mem_heap_B=581632
 mem_heap_extra_B=0
-mem_stacks_B=888
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=125197
-mem_heap_B=0
+time=0
+mem_heap_B=593920
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=133327
-mem_heap_B=0
+time=0
+mem_heap_B=598016
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=140669
-mem_heap_B=0
+time=0
+mem_heap_B=602112
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=149784
-mem_heap_B=0
+time=0
+mem_heap_B=602112
 mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n2: 602112 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 598016 0x0: ???
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=15
 #-----------
-time=158873
-mem_heap_B=0
+time=0
+mem_heap_B=598016
 mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=168074
-mem_heap_B=0
+time=0
+mem_heap_B=598016
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=179260
-mem_heap_B=0
+time=57389
+mem_heap_B=618496
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=187221
-mem_heap_B=0
+time=57465
+mem_heap_B=622592
 mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=196603
-mem_heap_B=0
+time=57515
+mem_heap_B=626688
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=203294
-mem_heap_B=0
+time=57562
+mem_heap_B=634880
 mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=208906
-mem_heap_B=0
+time=60340
+mem_heap_B=675840
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=219655
-mem_heap_B=0
+time=62495
+mem_heap_B=684032
 mem_heap_extra_B=0
-mem_stacks_B=1432
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=229126
-mem_heap_B=0
+time=63391
+mem_heap_B=794624
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=238256
-mem_heap_B=0
+time=63467
+mem_heap_B=868352
 mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n3: 868352 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 598016 0x0: ???
+ n1: 270336 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 270336 0x401F186: mmap (mmap64.c:47)
+   n1: 131072 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 131072 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 131072 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 110592 0x400F514: openaux (dl-deps.c:64)
+       n1: 110592 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 110592 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 110592 0x4004063: dl_main (rtld.c:1805)
+          n1: 110592 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 110592 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 110592 0x400204B: _dl_start (rtld.c:539)
+             n0: 110592 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n0: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 90112 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 90112 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 90112 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 73728 0x400F514: openaux (dl-deps.c:64)
+       n1: 73728 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 73728 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 73728 0x4004063: dl_main (rtld.c:1805)
+          n1: 73728 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 73728 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 73728 0x400204B: _dl_start (rtld.c:539)
+             n0: 73728 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=244308
-mem_heap_B=0
+time=63517
+mem_heap_B=884736
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=252355
-mem_heap_B=0
+time=63564
+mem_heap_B=892928
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=257408
-mem_heap_B=0
+time=68280
+mem_heap_B=1036288
 mem_heap_extra_B=0
-mem_stacks_B=1680
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=267791
-mem_heap_B=0
+time=68337
+mem_heap_B=1105920
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=276414
-mem_heap_B=0
+time=68387
+mem_heap_B=1130496
 mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=283326
-mem_heap_B=0
+time=68434
+mem_heap_B=1138688
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=292171
-mem_heap_B=0
+time=68879
+mem_heap_B=1155072
 mem_heap_extra_B=0
-mem_stacks_B=1816
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=300687
-mem_heap_B=472
-mem_heap_extra_B=16
-mem_stacks_B=824
+time=73092
+mem_heap_B=1179648
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=309749
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
+time=73168
+mem_heap_B=1187840
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=316611
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
+time=73218
+mem_heap_B=1191936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1191936 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 598016 0x0: ???
+ n1: 593920 0x401F186: __mmap64 (mmap64.c:59)
+  n5: 593920 0x401F186: mmap (mmap64.c:47)
+   n1: 299008 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 299008 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 299008 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 278528 0x400F514: openaux (dl-deps.c:64)
+       n1: 278528 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 278528 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 278528 0x4004063: dl_main (rtld.c:1805)
+          n1: 278528 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 278528 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 278528 0x400204B: _dl_start (rtld.c:539)
+             n0: 278528 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n0: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 229376 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 229376 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 229376 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 212992 0x400F514: openaux (dl-deps.c:64)
+       n1: 212992 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 212992 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 212992 0x4004063: dl_main (rtld.c:1805)
+          n1: 212992 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 212992 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 212992 0x400204B: _dl_start (rtld.c:539)
+             n0: 212992 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 16384 0x4007C22: _dl_map_segments (dl-map-segments.h:141)
+    n1: 16384 0x4007C22: _dl_map_object_from_fd (dl-load.c:1186)
+     n1: 16384 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 16384 0x400F514: openaux (dl-deps.c:64)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 16384 0x4004063: dl_main (rtld.c:1805)
+          n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 16384 0x400204B: _dl_start (rtld.c:539)
+             n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=321821
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
+time=73265
+mem_heap_B=1200128
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=328649
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=detailed
-n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x4910D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 1024 0x4920ECF: _IO_doallocbuf (genops.c:347)
-   n1: 1024 0x491FCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
-    n1: 1024 0x4912717: getdelim (iogetdelim.c:73)
-     n1: 1024 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
-      n1: 1024 0x12818D: get_stack_start (thread.rs:801)
-       n1: 1024 0x12818D: get_stack_start_aligned (thread.rs:818)
-        n1: 1024 0x12818D: init (thread.rs:850)
-         n1: 1024 0x12818D: init (rt.rs:99)
-          n1: 1024 0x12818D: {closure#1} (rt.rs:147)
-           n1: 1024 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-            n1: 1024 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-             n1: 1024 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-              n1: 1024 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-               n0: 1024 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n1: 472 0x491192D: __fopen_internal (iofopen.c:65)
-  n1: 472 0x491192D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
-   n1: 472 0x48704AA: pthread_getattr_np (pthread_getattr_np.c:81)
-    n1: 472 0x12818D: get_stack_start (thread.rs:801)
-     n1: 472 0x12818D: get_stack_start_aligned (thread.rs:818)
-      n1: 472 0x12818D: init (thread.rs:850)
-       n1: 472 0x12818D: init (rt.rs:99)
-        n1: 472 0x12818D: {closure#1} (rt.rs:147)
-         n1: 472 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-          n1: 472 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-           n1: 472 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 472 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-             n0: 472 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n1: 240 0x491259D: getdelim (iogetdelim.c:102)
-  n1: 240 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
-   n1: 240 0x12818D: get_stack_start (thread.rs:801)
-    n1: 240 0x12818D: get_stack_start_aligned (thread.rs:818)
-     n1: 240 0x12818D: init (thread.rs:850)
-      n1: 240 0x12818D: init (rt.rs:99)
-       n1: 240 0x12818D: {closure#1} (rt.rs:147)
-        n1: 240 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-         n1: 240 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-          n1: 240 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-           n1: 240 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-            n0: 240 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n0: 0 in 1 place, below massif's threshold (1.00%)
+time=77733
+mem_heap_B=3239936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=337435
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
+time=77790
+mem_heap_B=4780032
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=342984
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
+time=77840
+mem_heap_B=5099520
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=349923
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
+time=77887
+mem_heap_B=5124096
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=357238
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
+time=78206
+mem_heap_B=5140480
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=362603
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=1264
+time=102763
+mem_heap_B=5148672
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=369657
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
-heap_tree=empty
+time=272331
+mem_heap_B=5148672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5148672 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4550656 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4550656 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 90112 in 3 places, all below massif's threshold (1.00%)
+ n0: 598016 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=378455
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
+time=272331
+mem_heap_B=5144576
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=388951
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3096
+time=280300
+mem_heap_B=5120000
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=396299
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
+time=356238
+mem_heap_B=5255168
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=404846
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
+time=487496
+mem_heap_B=5255168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n4: 5255168 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 598016 0x0: ???
+ n1: 135168 0x499928B: brk (brk.c:31)
+  n1: 135168 0x4999370: __sbrk (sbrk.c:56)
+   n1: 135168 0x4999370: sbrk (sbrk.c:31)
+    n1: 135168 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 135168 0x491C574: sysmalloc (malloc.c:2470)
+      n1: 135168 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12818D: get_stack_start (thread.rs:801)
+               n1: 135168 0x12818D: get_stack_start_aligned (thread.rs:818)
+                n1: 135168 0x12818D: init (thread.rs:850)
+                 n1: 135168 0x12818D: init (rt.rs:99)
+                  n1: 135168 0x12818D: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
+                    n1: 135168 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
+                     n1: 135168 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12818D: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
+ n0: 12288 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=47
 #-----------
-time=410476
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=48
-#-----------
-time=419624
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=49
-#-----------
-time=426886
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=50
-#-----------
-time=428684
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=51
-#-----------
-time=430393
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=52
-#-----------
-time=432199
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=empty
-#-----------
-snapshot=53
-#-----------
-time=433918
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=824
-heap_tree=empty
-#-----------
-snapshot=54
-#-----------
-time=435687
-mem_heap_B=1736
-mem_heap_extra_B=32
-mem_stacks_B=3048
-heap_tree=detailed
-n4: 1736 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 1024 0x4910D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 1024 0x4920ECF: _IO_doallocbuf (genops.c:347)
-   n1: 1024 0x491FCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
-    n1: 1024 0x4912717: getdelim (iogetdelim.c:73)
-     n1: 1024 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
-      n1: 1024 0x12818D: get_stack_start (thread.rs:801)
-       n1: 1024 0x12818D: get_stack_start_aligned (thread.rs:818)
-        n1: 1024 0x12818D: init (thread.rs:850)
-         n1: 1024 0x12818D: init (rt.rs:99)
-          n1: 1024 0x12818D: {closure#1} (rt.rs:147)
-           n1: 1024 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-            n1: 1024 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-             n1: 1024 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-              n1: 1024 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-               n0: 1024 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n1: 472 0x491192D: __fopen_internal (iofopen.c:65)
-  n1: 472 0x491192D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
-   n1: 472 0x48704AA: pthread_getattr_np (pthread_getattr_np.c:81)
-    n1: 472 0x12818D: get_stack_start (thread.rs:801)
-     n1: 472 0x12818D: get_stack_start_aligned (thread.rs:818)
-      n1: 472 0x12818D: init (thread.rs:850)
-       n1: 472 0x12818D: init (rt.rs:99)
-        n1: 472 0x12818D: {closure#1} (rt.rs:147)
-         n1: 472 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-          n1: 472 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-           n1: 472 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-            n1: 472 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-             n0: 472 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n1: 240 0x491259D: getdelim (iogetdelim.c:102)
-  n1: 240 0x48705A3: pthread_getattr_np (pthread_getattr_np.c:118)
-   n1: 240 0x12818D: get_stack_start (thread.rs:801)
-    n1: 240 0x12818D: get_stack_start_aligned (thread.rs:818)
-     n1: 240 0x12818D: init (thread.rs:850)
-      n1: 240 0x12818D: init (rt.rs:99)
-       n1: 240 0x12818D: {closure#1} (rt.rs:147)
-        n1: 240 0x12818D: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:504)
-         n1: 240 0x12818D: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:468)
-          n1: 240 0x12818D: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
-           n1: 240 0x12818D: std::rt::lang_start_internal (rt.rs:147)
-            n0: 240 0x111024: main (in /workspaces/Rusty-Kernels-Code/read-write/Rust/target/release/Rust)
- n0: 0 in 1 place, below massif's threshold (1.00%)
-#-----------
-snapshot=55
-#-----------
-time=437561
-mem_heap_B=1496
-mem_heap_extra_B=24
-mem_stacks_B=2200
-heap_tree=empty
-#-----------
-snapshot=56
-#-----------
-time=439580
-mem_heap_B=32
-mem_heap_extra_B=8
-mem_stacks_B=2200
-heap_tree=empty
-#-----------
-snapshot=57
-#-----------
-time=441479
-mem_heap_B=85
-mem_heap_extra_B=35
-mem_stacks_B=1944
-heap_tree=empty
-#-----------
-snapshot=58
-#-----------
-time=443172
-mem_heap_B=93
-mem_heap_extra_B=51
-mem_stacks_B=968
-heap_tree=empty
-#-----------
-snapshot=59
-#-----------
-time=444903
-mem_heap_B=0
+time=487496
+mem_heap_B=5251072
 mem_heap_extra_B=0
-mem_stacks_B=680
-heap_tree=empty
-#-----------
-snapshot=60
-#-----------
-time=446759
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1624
-heap_tree=empty
-#-----------
-snapshot=61
-#-----------
-time=448453
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=456
-heap_tree=empty
-#-----------
-snapshot=62
-#-----------
-time=450150
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=464
+mem_stacks_B=0
 heap_tree=empty

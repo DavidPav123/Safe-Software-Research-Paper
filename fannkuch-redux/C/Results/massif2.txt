@@ -1,521 +1,345 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fannkuch-redux/C/Results/massif2.txt --stacks=yes
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/fannkuch-redux/C/Results/massif2.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/fannkuch-redux/C/fannkuchreduxC 12
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=4096
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1689
-mem_heap_B=0
+time=0
+mem_heap_B=8192
 mem_heap_extra_B=0
-mem_stacks_B=400
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=50486
-mem_heap_B=0
+time=0
+mem_heap_B=12288
 mem_heap_extra_B=0
-mem_stacks_B=400
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=52094
-mem_heap_B=0
+time=0
+mem_heap_B=20480
 mem_heap_extra_B=0
-mem_stacks_B=800
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=54430
-mem_heap_B=0
+time=0
+mem_heap_B=24576
 mem_heap_extra_B=0
-mem_stacks_B=1072
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=57258
-mem_heap_B=0
+time=0
+mem_heap_B=167936
 mem_heap_extra_B=0
-mem_stacks_B=7392
-heap_tree=peak
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=60602
-mem_heap_B=0
+time=0
+mem_heap_B=200704
 mem_heap_extra_B=0
-mem_stacks_B=7320
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=63010
-mem_heap_B=0
+time=0
+mem_heap_B=208896
 mem_heap_extra_B=0
-mem_stacks_B=4008
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=65731
-mem_heap_B=0
+time=0
+mem_heap_B=212992
 mem_heap_extra_B=0
-mem_stacks_B=3936
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=68018
-mem_heap_B=0
+time=0
+mem_heap_B=217088
 mem_heap_extra_B=0
-mem_stacks_B=2280
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n1: 217088 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 217088 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=71027
-mem_heap_B=0
+time=0
+mem_heap_B=221184
 mem_heap_extra_B=0
-mem_stacks_B=1160
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=73473
-mem_heap_B=0
+time=0
+mem_heap_B=233472
 mem_heap_extra_B=0
-mem_stacks_B=1104
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=89425
-mem_heap_B=0
+time=0
+mem_heap_B=237568
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=91814
-mem_heap_B=0
+time=0
+mem_heap_B=241664
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=93523
-mem_heap_B=0
+time=0
+mem_heap_B=241664
 mem_heap_extra_B=0
-mem_stacks_B=1656
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n2: 241664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 237568 0x0: ???
+ n1: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+  n1: 4096 0x1: ???
+   n1: 4096 0x1FFEFFF58A: ???
+    n0: 4096 0x1FFEFFF5C9: ???
 #-----------
 snapshot=15
 #-----------
-time=95647
-mem_heap_B=0
+time=0
+mem_heap_B=237568
 mem_heap_extra_B=0
-mem_stacks_B=1120
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=96981
-mem_heap_B=0
+time=0
+mem_heap_B=237568
 mem_heap_extra_B=0
-mem_stacks_B=1648
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=99088
-mem_heap_B=0
+time=57425
+mem_heap_B=258048
 mem_heap_extra_B=0
-mem_stacks_B=1664
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=101199
-mem_heap_B=0
+time=57501
+mem_heap_B=262144
 mem_heap_extra_B=0
-mem_stacks_B=1680
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=103147
-mem_heap_B=0
+time=57551
+mem_heap_B=266240
 mem_heap_extra_B=0
-mem_stacks_B=1688
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=105028
-mem_heap_B=0
+time=57598
+mem_heap_B=274432
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=106554
-mem_heap_B=0
+time=60376
+mem_heap_B=315392
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=108981
-mem_heap_B=0
+time=61914
+mem_heap_B=323584
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=110887
-mem_heap_B=0
+time=62951
+mem_heap_B=2363392
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=112498
-mem_heap_B=0
+time=63008
+mem_heap_B=3903488
 mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3903488 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 3665920 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 3665920 0x401F186: mmap (mmap64.c:47)
+   n1: 2060288 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2060288 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2060288 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2039808 0x400F514: openaux (dl-deps.c:64)
+       n1: 2039808 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2039808 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2039808 0x4004063: dl_main (rtld.c:1805)
+          n1: 2039808 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2039808 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2039808 0x400204B: _dl_start (rtld.c:539)
+             n1: 2039808 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2039808 0x1: ???
+               n1: 2039808 0x1FFEFFF58A: ???
+                n0: 2039808 0x1FFEFFF5C9: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1556480 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1556480 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1556480 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1540096 0x400F514: openaux (dl-deps.c:64)
+       n1: 1540096 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1540096 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1540096 0x4004063: dl_main (rtld.c:1805)
+          n1: 1540096 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1540096 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1540096 0x400204B: _dl_start (rtld.c:539)
+             n1: 1540096 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 1540096 0x1: ???
+               n1: 1540096 0x1FFEFFF58A: ???
+                n0: 1540096 0x1FFEFFF5C9: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n1: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 40960 0x1: ???
+               n1: 40960 0x1FFEFFF58A: ???
+                n0: 40960 0x1FFEFFF5C9: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=114822
-mem_heap_B=0
+time=63058
+mem_heap_B=4222976
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=116181
-mem_heap_B=0
+time=63105
+mem_heap_B=4247552
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=118222
-mem_heap_B=0
+time=63424
+mem_heap_B=4263936
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=120213
-mem_heap_B=0
+time=148271
+mem_heap_B=4263936
 mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
+mem_stacks_B=0
+heap_tree=peak
+n3: 4263936 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4026368 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4026368 0x401F186: mmap (mmap64.c:47)
+   n1: 2060288 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2060288 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2060288 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2039808 0x400F514: openaux (dl-deps.c:64)
+       n1: 2039808 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2039808 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2039808 0x4004063: dl_main (rtld.c:1805)
+          n1: 2039808 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2039808 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2039808 0x400204B: _dl_start (rtld.c:539)
+             n1: 2039808 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2039808 0x1: ???
+               n1: 2039808 0x1FFEFFF58A: ???
+                n0: 2039808 0x1FFEFFF5C9: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1900544 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1900544 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1900544 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1884160 0x400F514: openaux (dl-deps.c:64)
+       n1: 1884160 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1884160 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1884160 0x4004063: dl_main (rtld.c:1805)
+          n1: 1884160 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1884160 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1884160 0x400204B: _dl_start (rtld.c:539)
+             n1: 1884160 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 1884160 0x1: ???
+               n1: 1884160 0x1FFEFFF58A: ???
+                n0: 1884160 0x1FFEFFF5C9: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 65536 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=29
 #-----------
-time=121999
-mem_heap_B=0
+time=148271
+mem_heap_B=4259840
 mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=124950
-mem_heap_B=0
+time=179580418017
+mem_heap_B=4358144
 mem_heap_extra_B=0
-mem_stacks_B=1432
-heap_tree=empty
-#-----------
-snapshot=31
-#-----------
-time=128189
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
-#-----------
-snapshot=32
-#-----------
-time=131220
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
-#-----------
-snapshot=33
-#-----------
-time=134373
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1680
-heap_tree=empty
-#-----------
-snapshot=34
-#-----------
-time=136695
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=35
-#-----------
-time=138366
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1688
-heap_tree=empty
-#-----------
-snapshot=36
-#-----------
-time=141326
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=37
-#-----------
-time=143174
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
-#-----------
-snapshot=38
-#-----------
-time=144886
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=39
-#-----------
-time=146714
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
-#-----------
-snapshot=40
-#-----------
-time=148387
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=41
-#-----------
-time=150804
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1680
-heap_tree=empty
-#-----------
-snapshot=42
-#-----------
-time=153177
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=empty
-#-----------
-snapshot=43
-#-----------
-time=154692
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1680
-heap_tree=empty
-#-----------
-snapshot=44
-#-----------
-time=157667
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
-#-----------
-snapshot=45
-#-----------
-time=160051
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=328
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
-#-----------
-snapshot=46
-#-----------
-time=161719
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=240
-heap_tree=empty
-#-----------
-snapshot=47
-#-----------
-time=12692720108
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=48
-#-----------
-time=27117893365
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=49
-#-----------
-time=42483694057
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=50
-#-----------
-time=57863439652
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=51
-#-----------
-time=73180724384
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=52
-#-----------
-time=88505943577
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=53
-#-----------
-time=103771469507
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=54
-#-----------
-time=119008556921
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
-#-----------
-snapshot=55
-#-----------
-time=134247864754
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=56
-#-----------
-time=149552295940
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=57
-#-----------
-time=164763543744
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=58
-#-----------
-time=179580353895
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=544
-heap_tree=empty
-#-----------
-snapshot=59
-#-----------
-time=179580355307
-mem_heap_B=4096
-mem_heap_extra_B=8
-mem_stacks_B=2184
-heap_tree=empty
-#-----------
-snapshot=60
-#-----------
-time=179580356652
-mem_heap_B=4096
-mem_heap_extra_B=8
-mem_stacks_B=552
-heap_tree=empty
-#-----------
-snapshot=61
-#-----------
-time=179580358007
-mem_heap_B=4096
-mem_heap_extra_B=8
-mem_stacks_B=1392
-heap_tree=empty
-#-----------
-snapshot=62
-#-----------
-time=179580359350
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=464
-heap_tree=empty
-#-----------
-snapshot=63
-#-----------
-time=179580360690
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=464
+mem_stacks_B=0
 heap_tree=empty

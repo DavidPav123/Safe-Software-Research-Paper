@@ -1,0 +1,1414 @@
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/read-write/C++/Results/One-Billion/massif1.txt --pages-as-heap=yes
+cmd: /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=4096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=0
+mem_heap_B=8192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=0
+mem_heap_B=12288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=0
+mem_heap_B=20480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=0
+mem_heap_B=24576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=0
+mem_heap_B=167936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=0
+mem_heap_B=200704
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=0
+mem_heap_B=208896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=0
+mem_heap_B=212992
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=0
+mem_heap_B=217088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 217088 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 217088 0x0: ???
+#-----------
+snapshot=10
+#-----------
+time=0
+mem_heap_B=221184
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=0
+mem_heap_B=233472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 241664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 237568 0x0: ???
+ n0: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=15
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=57439
+mem_heap_B=258048
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=57515
+mem_heap_B=262144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=57565
+mem_heap_B=266240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=57612
+mem_heap_B=274432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=60390
+mem_heap_B=315392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=62187
+mem_heap_B=323584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=63122
+mem_heap_B=2297856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=63216
+mem_heap_B=3284992
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3284992 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 3047424 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 3047424 0x401F186: mmap (mmap64.c:47)
+   n1: 1994752 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 1994752 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1994752 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1974272 0x400F514: openaux (dl-deps.c:64)
+       n1: 1974272 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1974272 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1974272 0x4004063: dl_main (rtld.c:1805)
+          n1: 1974272 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1974272 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1974272 0x400204B: _dl_start (rtld.c:539)
+             n0: 1974272 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1003520 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1003520 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1003520 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 987136 0x400F514: openaux (dl-deps.c:64)
+       n1: 987136 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 987136 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 987136 0x4004063: dl_main (rtld.c:1805)
+          n1: 987136 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 987136 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 987136 0x400204B: _dl_start (rtld.c:539)
+             n0: 987136 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=63266
+mem_heap_B=3584000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=63313
+mem_heap_B=3641344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=63800
+mem_heap_B=3653632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=68671
+mem_heap_B=3764224
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=68747
+mem_heap_B=3837952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=68797
+mem_heap_B=3854336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=68844
+mem_heap_B=3862528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=73233
+mem_heap_B=5902336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=73290
+mem_heap_B=7442432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=73340
+mem_heap_B=7761920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7761920 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7524352 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 7524352 0x401F186: mmap (mmap64.c:47)
+   n1: 4145152 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 4145152 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4145152 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4124672 0x400F514: openaux (dl-deps.c:64)
+       n1: 4124672 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4124672 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4124672 0x4004063: dl_main (rtld.c:1805)
+          n1: 4124672 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4124672 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4124672 0x400204B: _dl_start (rtld.c:539)
+             n0: 4124672 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 3317760 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 3317760 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3317760 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3301376 0x400F514: openaux (dl-deps.c:64)
+       n1: 3301376 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3301376 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3301376 0x4004063: dl_main (rtld.c:1805)
+          n1: 3301376 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3301376 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3301376 0x400204B: _dl_start (rtld.c:539)
+             n0: 3301376 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=73387
+mem_heap_B=7786496
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=73706
+mem_heap_B=7802880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=78545
+mem_heap_B=9175040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=78621
+mem_heap_B=9859072
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=78671
+mem_heap_B=10485760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=78718
+mem_heap_B=10493952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=98853
+mem_heap_B=10502144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=507084
+mem_heap_B=10510336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2222460
+mem_heap_B=10510336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 10510336 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10272768 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10272768 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 94208 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=2222460
+mem_heap_B=10506240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2304814
+mem_heap_B=10604544
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2472966
+mem_heap_B=10752000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2579123
+mem_heap_B=10887168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2653221
+mem_heap_B=10887168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10887168 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 282624 0x4B5228B: brk (brk.c:31)
+  n1: 282624 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 282624 0x4B52370: sbrk (sbrk.c:31)
+    n1: 282624 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 282624 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 282624 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 147456 0x4AD8153: malloc (malloc.c:3058)
+        n1: 147456 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 147456 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n1: 147456 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 147456 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n0: 147456 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 237568 0x0: ???
+ n1: 135168 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 135168 0x4B568E6: mmap (mmap64.c:47)
+   n1: 135168 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 135168 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 135168 0x4AD8153: malloc (malloc.c:3058)
+      n1: 135168 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 135168 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 135168 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 135168 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 135168 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=2653221
+mem_heap_B=10883072
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2719658
+mem_heap_B=11091968
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2859116
+mem_heap_B=11091968
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11091968 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 397312 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 397312 0x4B568E6: mmap (mmap64.c:47)
+   n1: 397312 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 397312 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 397312 0x4AD8153: malloc (malloc.c:3058)
+      n1: 397312 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 397312 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 397312 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 397312 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 397312 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 237568 0x0: ???
+ n1: 225280 0x4B5228B: brk (brk.c:31)
+  n1: 225280 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 225280 0x4B52370: sbrk (sbrk.c:31)
+    n1: 225280 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 225280 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 225280 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 90112 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=2859116
+mem_heap_B=11087872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2999750
+mem_heap_B=11481088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3270262
+mem_heap_B=11481088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11481088 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 786432 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 786432 0x4B568E6: mmap (mmap64.c:47)
+   n1: 786432 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 786432 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 786432 0x4AD8153: malloc (malloc.c:3058)
+      n1: 786432 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 786432 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 786432 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 786432 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 786432 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 237568 0x0: ???
+ n1: 225280 0x4B5228B: brk (brk.c:31)
+  n1: 225280 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 225280 0x4B52370: sbrk (sbrk.c:31)
+    n1: 225280 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 225280 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 225280 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 90112 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=3270262
+mem_heap_B=11476992
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3559456
+mem_heap_B=12267520
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=4092080
+mem_heap_B=12267520
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 12267520 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 1572864 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 1572864 0x4B568E6: mmap (mmap64.c:47)
+   n1: 1572864 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 1572864 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 1572864 0x4AD8153: malloc (malloc.c:3058)
+      n1: 1572864 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1572864 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1572864 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1572864 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 1572864 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 237568 0x0: ???
+ n1: 225280 0x4B5228B: brk (brk.c:31)
+  n1: 225280 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 225280 0x4B52370: sbrk (sbrk.c:31)
+    n1: 225280 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 225280 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 225280 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 90112 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=4092080
+mem_heap_B=12263424
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=4678394
+mem_heap_B=13840384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=4826043
+mem_heap_B=13840384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 13840384 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 3145728 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 3145728 0x4B568E6: mmap (mmap64.c:47)
+   n1: 3145728 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 3145728 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 3145728 0x4AD8153: malloc (malloc.c:3058)
+      n1: 3145728 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 3145728 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 3145728 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 3145728 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 3145728 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 237568 0x0: ???
+ n1: 225280 0x4B5228B: brk (brk.c:31)
+  n1: 225280 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 225280 0x4B52370: sbrk (sbrk.c:31)
+    n1: 225280 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 225280 0x4AD5574: sysmalloc (malloc.c:2470)
+      n1: 225280 0x4AD6792: _int_malloc (malloc.c:4141)
+       n0: 225280 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=4826043
+mem_heap_B=13836288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=6006597
+mem_heap_B=16986112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=6293493
+mem_heap_B=16986112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 16986112 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 6291456 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 6291456 0x4B568E6: mmap (mmap64.c:47)
+   n1: 6291456 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 6291456 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 6291456 0x4AD8153: malloc (malloc.c:3058)
+      n1: 6291456 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 6291456 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 6291456 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 6291456 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 6291456 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 237568 0x0: ???
+ n1: 225280 0x4B5228B: brk (brk.c:31)
+  n1: 225280 0x4B52370: __sbrk (sbrk.c:56)
+   n1: 225280 0x4B52370: sbrk (sbrk.c:31)
+    n1: 225280 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 225280 0x4AD5574: sysmalloc (malloc.c:2470)
+      n1: 225280 0x4AD6792: _int_malloc (malloc.c:4141)
+       n0: 225280 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=6293493
+mem_heap_B=16982016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=8662527
+mem_heap_B=23277568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=9227917
+mem_heap_B=23277568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 23277568 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 12582912 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 12582912 0x4B568E6: mmap (mmap64.c:47)
+   n1: 12582912 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 12582912 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 12582912 0x4AD8153: malloc (malloc.c:3058)
+      n1: 12582912 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 12582912 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 12582912 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 12582912 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 12582912 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 225280 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=9227917
+mem_heap_B=23273472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=13973911
+mem_heap_B=35860480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=15096289
+mem_heap_B=35860480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 35860480 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 25165824 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 25165824 0x4B568E6: mmap (mmap64.c:47)
+   n1: 25165824 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 25165824 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 25165824 0x4AD8153: malloc (malloc.c:3058)
+      n1: 25165824 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 25165824 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 25165824 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 25165824 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 25165824 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=15096289
+mem_heap_B=35856384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=24596203
+mem_heap_B=61026304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=26832557
+mem_heap_B=61026304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 61026304 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 50331648 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 50331648 0x4B568E6: mmap (mmap64.c:47)
+   n1: 50331648 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 50331648 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 50331648 0x4AD8153: malloc (malloc.c:3058)
+      n1: 50331648 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 50331648 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 50331648 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 50331648 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 50331648 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=26832557
+mem_heap_B=61022208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=45840311
+mem_heap_B=111353856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=50304607
+mem_heap_B=111353856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 111353856 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 100659200 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 100659200 0x4B568E6: mmap (mmap64.c:47)
+   n1: 100659200 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 100659200 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 100659200 0x4AD8153: malloc (malloc.c:3058)
+      n1: 100659200 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 100659200 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 100659200 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100659200 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 100659200 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=50304607
+mem_heap_B=111349760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=88328041
+mem_heap_B=212004864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=97248241
+mem_heap_B=212004864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 212004864 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 201310208 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 201310208 0x4B568E6: mmap (mmap64.c:47)
+   n1: 201310208 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 201310208 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 201310208 0x4AD8153: malloc (malloc.c:3058)
+      n1: 201310208 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 201310208 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 201310208 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 201310208 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 201310208 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=97248241
+mem_heap_B=212000768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=173303035
+mem_heap_B=413306880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=191135043
+mem_heap_B=413306880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 413306880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 402612224 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 402612224 0x4B568E6: mmap (mmap64.c:47)
+   n1: 402612224 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 402612224 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 402612224 0x4AD8153: malloc (malloc.c:3058)
+      n1: 402612224 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 402612224 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 402612224 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 402612224 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 402612224 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=82
+#-----------
+time=191135043
+mem_heap_B=413302784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=343252557
+mem_heap_B=815910912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=378908181
+mem_heap_B=815910912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 815910912 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 805216256 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 805216256 0x4B568E6: mmap (mmap64.c:47)
+   n1: 805216256 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 805216256 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 805216256 0x4AD8153: malloc (malloc.c:3058)
+      n1: 805216256 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 805216256 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 805216256 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 805216256 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 805216256 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n1: 10231808 0x401F186: mmap (mmap64.c:47)
+   n0: 10231808 in 5 places, all below massif's threshold (1.00%)
+ n0: 462848 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=85
+#-----------
+time=378908181
+mem_heap_B=815906816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=683151135
+mem_heap_B=1621118976
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=754453991
+mem_heap_B=1621118976
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n2: 1621118976 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 1610424320 0x4B568E6: __mmap64 (mmap64.c:59)
+  n1: 1610424320 0x4B568E6: mmap (mmap64.c:47)
+   n1: 1610424320 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 1610424320 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 1610424320 0x4AD8153: malloc (malloc.c:3058)
+      n1: 1610424320 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1610424320 0x498438D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1610424320 0x4985B82: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1610424320 0x4905315: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+          n0: 1610424320 0x109347: main (in /workspaces/Rusty-Kernels-Code/read-write/C++/read-writeC++)
+ n0: 10694656 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=88
+#-----------
+time=754453991
+mem_heap_B=1621114880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=1279512064
+mem_heap_B=1084305408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

@@ -1,16 +1,25 @@
+Num workers = 4
 
 real	0m0.002s
-user	0m0.002s
-sys	0m0.001s
-
+user	0m0.003s
+sys	0m0.000s
+Num workers = 4
 
 real	0m0.002s
 user	0m0.000s
-sys	0m0.003s
+sys	0m0.002s
+Num workers = 4
 
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+Num workers = 4
 
-real	0m0.003s
-user	0m0.003s
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+Num workers = 4
+
+real	0m0.002s
+user	0m0.002s
 sys	0m0.000s
-
-

@@ -1,149 +1,593 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/spectral-norm/C++/Results/massif2.txt
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/spectral-norm/C++/Results/massif2.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++ 5500
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=4096
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=276976
-mem_heap_B=32816
-mem_heap_extra_B=8
+time=0
+mem_heap_B=8192
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=278812
-mem_heap_B=32816
-mem_heap_extra_B=8
+time=0
+mem_heap_B=12288
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=peak
-n1: 32816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 32816 0x4AB9F18: __alloc_dir (opendir.c:118)
-  n1: 32816 0x4AB9F18: opendir_tail (opendir.c:69)
-   n1: 32816 0x4AB9F18: opendir (opendir.c:92)
-    n1: 32816 0x4AF89EF: get_nprocs_conf (getsysstats.c:242)
-     n1: 32816 0x4AC16AC: posix_sysconf (sysconf.c:628)
-      n1: 32816 0x4AC16AC: linux_sysconf (sysconf.c:106)
-       n1: 32816 0x4AC16AC: sysconf (sysconf.c:36)
-        n1: 32816 0x49B6C72: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-         n1: 32816 0x49A4679: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-          n1: 32816 0x4011B99: call_init.part.0 (dl-init.c:72)
-           n1: 32816 0x4011CA0: call_init (dl-init.c:30)
-            n1: 32816 0x4011CA0: _dl_init (dl-init.c:119)
-             n1: 32816 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-              n1: 32816 0x1: ???
-               n1: 32816 0x1FFEFFF596: ???
-                n0: 32816 0x1FFEFFF5D7: ???
+heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=278812
-mem_heap_B=0
+time=0
+mem_heap_B=20480
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=279670
-mem_heap_B=8
-mem_heap_extra_B=16
+time=0
+mem_heap_B=24576
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=306626
-mem_heap_B=200
-mem_heap_extra_B=24
+time=0
+mem_heap_B=167936
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=307764
-mem_heap_B=2408
-mem_heap_extra_B=32
+time=0
+mem_heap_B=200704
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=308825
-mem_heap_B=2448
-mem_heap_extra_B=48
+time=0
+mem_heap_B=208896
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=313555
-mem_heap_B=2736
-mem_heap_extra_B=56
+time=0
+mem_heap_B=212992
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=1733099
-mem_heap_B=3024
-mem_heap_extra_B=64
+time=0
+mem_heap_B=217088
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n1: 217088 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 217088 0x0: ???
 #-----------
 snapshot=10
 #-----------
-time=2018335
-mem_heap_B=3312
-mem_heap_extra_B=72
+time=0
+mem_heap_B=221184
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=13721904673
-mem_heap_B=7408
-mem_heap_extra_B=80
+time=0
+mem_heap_B=233472
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=13721911679
-mem_heap_B=3312
-mem_heap_extra_B=72
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=0
+mem_heap_B=241664
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n4: 3312 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n3: 2408 0x49A624C: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-  n1: 2208 0x49B48DB: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-   n1: 2208 0x49AC8C9: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-    n1: 2208 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-     n0: 2208 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-  n1: 192 0x49B4A80: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-   n1: 192 0x49AC8C9: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-    n1: 192 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-     n0: 192 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-  n0: 8 in 1 place, below massif's threshold (1.00%)
- n1: 864 0x40149DA: allocate_dtv (dl-tls.c:286)
-  n1: 864 0x40149DA: _dl_allocate_tls (dl-tls.c:532)
-   n1: 864 0x4BDD322: allocate_stack (allocatestack.c:622)
-    n1: 864 0x4BDD322: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
-     n1: 864 0x49B4ECA: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-      n1: 864 0x49AC8E0: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-       n1: 864 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-        n0: 864 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
- n1: 40 0x49A62AC: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-  n1: 40 0x49B5661: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-   n1: 40 0x49AC8E0: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
-    n1: 40 0x109AD9: spectral_game(int) (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
-     n0: 40 0x1091CC: main (in /workspaces/Rusty-Kernels-Code/spectral-norm/C++/spectralnormC++)
- n0: 0 in 2 places, all below massif's threshold (1.00%)
+n2: 241664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 237568 0x0: ???
+ n1: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+  n1: 4096 0x1: ???
+   n1: 4096 0x1FFEFFF5CE: ???
+    n0: 4096 0x1FFEFFF60F: ???
+#-----------
+snapshot=15
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=0
+mem_heap_B=237568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=57439
+mem_heap_B=258048
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=57515
+mem_heap_B=262144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=57565
+mem_heap_B=266240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=57612
+mem_heap_B=274432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=60390
+mem_heap_B=315392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=62049
+mem_heap_B=323584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=62921
+mem_heap_B=1695744
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=62997
+mem_heap_B=2379776
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2379776 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 2142208 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 2142208 0x401F186: mmap (mmap64.c:47)
+   n1: 1392640 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 1392640 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1392640 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1372160 0x400F514: openaux (dl-deps.c:64)
+       n1: 1372160 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1372160 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1372160 0x4004063: dl_main (rtld.c:1805)
+          n1: 1372160 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1372160 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1372160 0x400204B: _dl_start (rtld.c:539)
+             n1: 1372160 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 1372160 0x1: ???
+               n1: 1372160 0x1FFEFFF5CE: ???
+                n0: 1372160 0x1FFEFFF60F: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 700416 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 700416 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 700416 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 684032 0x400F514: openaux (dl-deps.c:64)
+       n1: 684032 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 684032 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 684032 0x4004063: dl_main (rtld.c:1805)
+          n1: 684032 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 684032 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 684032 0x400204B: _dl_start (rtld.c:539)
+             n1: 684032 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 684032 0x1: ???
+               n1: 684032 0x1FFEFFF5CE: ???
+                n0: 684032 0x1FFEFFF60F: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n1: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 40960 0x1: ???
+               n1: 40960 0x1FFEFFF5CE: ???
+                n0: 40960 0x1FFEFFF60F: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=63047
+mem_heap_B=3006464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=63094
+mem_heap_B=3014656
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=67494
+mem_heap_B=3284992
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=67570
+mem_heap_B=3461120
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=67620
+mem_heap_B=3510272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=67667
+mem_heap_B=3518464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=72085
+mem_heap_B=5558272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=72142
+mem_heap_B=7098368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=72192
+mem_heap_B=7417856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=72239
+mem_heap_B=7442432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7442432 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7204864 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 7204864 0x401F186: mmap (mmap64.c:47)
+   n1: 3702784 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 3702784 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3702784 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3682304 0x400F514: openaux (dl-deps.c:64)
+       n1: 3682304 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3682304 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3682304 0x4004063: dl_main (rtld.c:1805)
+          n1: 3682304 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3682304 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3682304 0x400204B: _dl_start (rtld.c:539)
+             n1: 3682304 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3682304 0x1: ???
+               n1: 3682304 0x1FFEFFF5CE: ???
+                n0: 3682304 0x1FFEFFF60F: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 3452928 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 3452928 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3452928 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3436544 0x400F514: openaux (dl-deps.c:64)
+       n1: 3436544 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3436544 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3436544 0x4004063: dl_main (rtld.c:1805)
+          n1: 3436544 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3436544 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3436544 0x400204B: _dl_start (rtld.c:539)
+             n1: 3436544 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3436544 0x1: ???
+               n1: 3436544 0x1FFEFFF5CE: ???
+                n0: 3436544 0x1FFEFFF60F: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 2 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=72558
+mem_heap_B=7458816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=79108
+mem_heap_B=7483392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=79184
+mem_heap_B=7491584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=79234
+mem_heap_B=7495680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=79281
+mem_heap_B=7503872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=84394
+mem_heap_B=7647232
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=84451
+mem_heap_B=7716864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=84501
+mem_heap_B=7741440
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=84548
+mem_heap_B=7749632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=84993
+mem_heap_B=7766016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7766016 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7528448 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 7528448 0x401F186: mmap (mmap64.c:47)
+   n1: 3870720 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 3870720 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3870720 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3850240 0x400F514: openaux (dl-deps.c:64)
+       n1: 3850240 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3850240 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3850240 0x4004063: dl_main (rtld.c:1805)
+          n1: 3850240 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3850240 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3850240 0x400204B: _dl_start (rtld.c:539)
+             n1: 3850240 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3850240 0x1: ???
+               n1: 3850240 0x1FFEFFF5CE: ???
+                n0: 3850240 0x1FFEFFF60F: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 3575808 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 3575808 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3575808 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3559424 0x400F514: openaux (dl-deps.c:64)
+       n1: 3559424 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3559424 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3559424 0x4004063: dl_main (rtld.c:1805)
+          n1: 3559424 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3559424 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3559424 0x400204B: _dl_start (rtld.c:539)
+             n1: 3559424 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3559424 0x1: ???
+               n1: 3559424 0x1FFEFFF5CE: ???
+                n0: 3559424 0x1FFEFFF60F: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 81920 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=102683
+mem_heap_B=7774208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=112234
+mem_heap_B=7782400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=244319
+mem_heap_B=7782400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n3: 7782400 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7544832 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 7544832 0x401F186: mmap (mmap64.c:47)
+   n1: 3870720 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 3870720 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3870720 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3850240 0x400F514: openaux (dl-deps.c:64)
+       n1: 3850240 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3850240 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3850240 0x4004063: dl_main (rtld.c:1805)
+          n1: 3850240 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3850240 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3850240 0x400204B: _dl_start (rtld.c:539)
+             n1: 3850240 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3850240 0x1: ???
+               n1: 3850240 0x1FFEFFF5CE: ???
+                n0: 3850240 0x1FFEFFF60F: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 3575808 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 3575808 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3575808 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3559424 0x400F514: openaux (dl-deps.c:64)
+       n1: 3559424 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3559424 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3559424 0x4004063: dl_main (rtld.c:1805)
+          n1: 3559424 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3559424 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3559424 0x400204B: _dl_start (rtld.c:539)
+             n1: 3559424 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 3559424 0x1: ???
+               n1: 3559424 0x1FFEFFF5CE: ???
+                n0: 3559424 0x1FFEFFF60F: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 98304 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=244319
+mem_heap_B=7778304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=335588
+mem_heap_B=7876608
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=370848
+mem_heap_B=16269312
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=375145
+mem_heap_B=24662016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1807923
+mem_heap_B=33054720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

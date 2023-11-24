@@ -1,478 +1,1175 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/regex-redux/C++/Results/massif0.txt
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/regex-redux/C++/Results/massif0.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=16384
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=24916084
-mem_heap_B=33631233
-mem_heap_extra_B=4055
+time=6304292
+mem_heap_B=18477056
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=46150373
-mem_heap_B=67185665
-mem_heap_extra_B=4055
+time=14268766
+mem_heap_B=37351424
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=79763732
-mem_heap_B=118019567
-mem_heap_extra_B=6097
+time=24886523
+mem_heap_B=62517248
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=420807933
-mem_heap_B=168019568
-mem_heap_extra_B=10008
+time=41664483
+mem_heap_B=112852992
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=445738844
-mem_heap_B=323020034
-mem_heap_extra_B=14854
+time=46121102
+mem_heap_B=112848896
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=500740864
-mem_heap_B=323020216
-mem_heap_extra_B=14872
+time=79686733
+mem_heap_B=79360000
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=500775156
-mem_heap_B=323028741
-mem_heap_extra_B=14947
+time=79737179
+mem_heap_B=130719744
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=peak
-n3: 323028741 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 86461 in 16 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=500780354
-mem_heap_B=323020552
-mem_heap_extra_B=14912
+time=420781631
+mem_heap_B=180723712
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n3: 323020552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 78272 in 16 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=554427056
-mem_heap_B=323020472
-mem_heap_extra_B=14904
+time=427426676
+mem_heap_B=189116416
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=554488517
-mem_heap_B=323020577
-mem_heap_extra_B=14903
+time=434072726
+mem_heap_B=339124224
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=1454570144
-mem_heap_B=323020497
-mem_heap_extra_B=14895
+time=445713917
+mem_heap_B=344121344
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=1454614818
-mem_heap_B=323020555
-mem_heap_extra_B=14909
+time=500758514
+mem_heap_B=344645632
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=1580121782
-mem_heap_B=323020643
-mem_heap_extra_B=14925
+time=554406399
+mem_heap_B=344645632
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 344645632 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 332464128 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n3: 332464128 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 8392704 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 8392704 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n1: 8392704 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 1114112 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5349376 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5349376 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5349376 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5332992 0x400F514: openaux (dl-deps.c:64)
+       n1: 5332992 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5332992 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5332992 0x4004063: dl_main (rtld.c:1805)
+          n1: 5332992 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5332992 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5332992 0x400204B: _dl_start (rtld.c:539)
+             n0: 5332992 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 73728 in 3 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=14
 #-----------
-time=1580174927
-mem_heap_B=323021493
-mem_heap_extra_B=15011
+time=554468755
+mem_heap_B=344645632
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=1625192828
-mem_heap_B=323021509
-mem_heap_extra_B=15035
+time=1345463206
+mem_heap_B=478863360
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=1625257155
-mem_heap_B=323022509
-mem_heap_extra_B=15123
+time=1345535239
+mem_heap_B=496173056
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=1665745871
-mem_heap_B=323022541
-mem_heap_extra_B=15131
+time=2082396607
+mem_heap_B=496168960
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=1682171861
-mem_heap_B=323023981
-mem_heap_extra_B=15251
+time=2082457961
+mem_heap_B=496173056
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=1752640174
-mem_heap_B=323024069
-mem_heap_extra_B=15267
+time=2616760994
+mem_heap_B=496168960
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=1760223770
-mem_heap_B=323026621
-mem_heap_extra_B=15475
+time=2616807371
+mem_heap_B=496173056
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=2416519608
-mem_heap_B=323026541
-mem_heap_extra_B=15467
+time=2935364587
+mem_heap_B=504565760
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=2416519962
-mem_heap_B=323026029
-mem_heap_extra_B=15403
+time=2935434084
+mem_heap_B=572198912
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=3147439587
-mem_heap_B=323025949
-mem_heap_extra_B=15395
+time=3620179990
+mem_heap_B=572198912
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 572198912 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 560017408 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 560017408 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 33570816 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 33570816 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 33570816 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 25178112 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 25178112 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 25178112 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 25178112 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 25178112 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 25178112 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 25178112 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 25178112 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 25178112 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 2162688 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=24
 #-----------
-time=3147439941
-mem_heap_B=323025437
-mem_heap_extra_B=15347
+time=3620179990
+mem_heap_B=572194816
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=3749275134
-mem_heap_B=323025357
-mem_heap_extra_B=15339
+time=3680578232
+mem_heap_B=580067328
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n3: 323025357 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 83077 in 22 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=3749275488
-mem_heap_B=323024907
-mem_heap_extra_B=15277
+time=3680646928
+mem_heap_B=580591616
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=4374431835
-mem_heap_B=323024995
-mem_heap_extra_B=15293
+time=4336943292
+mem_heap_B=580591616
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 580591616 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 568410112 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 568410112 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 41963520 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 41963520 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 41963520 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 33570816 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 33570816 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 33570816 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 33570816 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 33570816 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 33570816 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 33570816 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 33570816 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 33570816 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 2162688 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=28
 #-----------
-time=4392659795
-mem_heap_B=323026755
-mem_heap_extra_B=15445
+time=4337017292
+mem_heap_B=597377024
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=4418705385
-mem_heap_B=323027331
-mem_heap_extra_B=15493
+time=5064260686
+mem_heap_B=597377024
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 597377024 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 585195520 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 585195520 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 58748928 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 58748928 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 58748928 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 50356224 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50356224 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50356224 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 50356224 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 50356224 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 50356224 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 50356224 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 50356224 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 50356224 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 2162688 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=30
 #-----------
-time=4469137266
-mem_heap_B=323027357
-mem_heap_extra_B=15507
+time=5064260686
+mem_heap_B=597372928
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=4469201733
-mem_heap_B=323027933
-mem_heap_extra_B=15555
+time=5272219644
+mem_heap_B=596848640
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=4518540474
-mem_heap_B=323027827
-mem_heap_extra_B=15533
+time=6538377252
+mem_heap_B=596324352
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=4518540828
-mem_heap_B=323027315
-mem_heap_extra_B=15485
+time=6538417328
+mem_heap_B=596328448
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=5193314582
-mem_heap_B=323027235
-mem_heap_extra_B=15477
+time=6584021634
+mem_heap_B=596852736
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n3: 323027235 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 84955 in 22 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=5193314936
-mem_heap_B=323026723
-mem_heap_extra_B=15429
+time=7228940653
+mem_heap_B=596848640
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=5601915946
-mem_heap_B=323026979
-mem_heap_extra_B=15437
+time=7229017141
+mem_heap_B=613638144
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=5601918958
-mem_heap_B=323026707
-mem_heap_extra_B=15413
+time=7911234794
+mem_heap_B=613638144
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 613638144 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 601456640 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 601456640 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 75534336 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 75534336 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 75534336 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 67141632 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 67141632 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 67141632 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 67141632 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 67141632 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 67141632 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67141632 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 67141632 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 67141632 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n0: 1638400 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=38
 #-----------
-time=7719174575
-mem_heap_B=323026547
-mem_heap_extra_B=15397
+time=7911305040
+mem_heap_B=613638144
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=7719212873
-mem_heap_B=323026559
-mem_heap_extra_B=15401
+time=8577123147
+mem_heap_B=613634048
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=9369679339
-mem_heap_B=323026511
-mem_heap_extra_B=15401
+time=9359651118
+mem_heap_B=621506560
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=9377696981
-mem_heap_B=323025407
-mem_heap_extra_B=15297
+time=9359718473
+mem_heap_B=622030848
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=9447156078
-mem_heap_B=323025327
-mem_heap_extra_B=15289
+time=10096498635
+mem_heap_B=622030848
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=peak
+n3: 622030848 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 609849344 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 609849344 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322957312 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322957312 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155004928 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155004928 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155004928 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155004928 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 100003840 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 100003840 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 83927040 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 83927040 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 83927040 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 75534336 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 75534336 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 75534336 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 75534336 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 75534336 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 75534336 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 75534336 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 75534336 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 75534336 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n0: 1638400 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=9447156432
-mem_heap_B=323024815
-mem_heap_extra_B=15241
+time=10096498635
+mem_heap_B=622026752
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=9950690171
-mem_heap_B=323024735
-mem_heap_extra_B=15233
+time=10395915565
+mem_heap_B=621502464
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=9950690525
-mem_heap_B=323024223
-mem_heap_extra_B=15185
+time=10395957532
+mem_heap_B=621506560
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=10395873410
-mem_heap_B=323024143
-mem_heap_extra_B=15177
+time=10868418537
+mem_heap_B=621502464
+mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=detailed
-n3: 323024143 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 272942279 0x4A4238D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n5: 272942279 0x4A42EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-   n1: 100000001 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 100000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 67108865 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n1: 55000001 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-    n0: 55000001 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50833412 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
- n2: 50000001 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n1: 50000001 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-   n0: 50000001 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
-  n0: 0 in 1 place, below massif's threshold (1.00%)
- n0: 81863 in 23 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=10395913972
-mem_heap_B=323024193
-mem_heap_extra_B=15175
+time=10868423114
+mem_heap_B=587931648
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=11038480931
-mem_heap_B=323024145
-mem_heap_extra_B=15175
+time=11038543479
+mem_heap_B=579538944
+mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=11038527131
-mem_heap_B=0
+time=11038543751
+mem_heap_B=579014656
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 579014656 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 566833152 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n5: 566833152 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 322953216 0x4B89978: sysmalloc (malloc.c:2310)
+    n2: 322953216 0x4B8A792: _int_malloc (malloc.c:4141)
+     n1: 167952384 0x4B8C153: malloc (malloc.c:3058)
+      n2: 167952384 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 117948416 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 117948416 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n0: 67112960 0x10CC89: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50835456 0x10CE06: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 50003968 0x10FC2C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 50003968 0x11055F: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n0: 50003968 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+     n1: 155000832 0x4B8C298: malloc (malloc.c:3066)
+      n2: 155000832 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 155000832 0x4A3838D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n2: 155000832 0x4A38EBF: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 99999744 0x10FD13: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 99999744 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 55001088 0x10FD2B: replace_patterns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n0: 55001088 0x10CFD5: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 41963520 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 41963520 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 41963520 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 33570816 0x10F98E: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n1: 33570816 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+        n1: 33570816 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+         n1: 33570816 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+          n1: 33570816 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+           n1: 33570816 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 33570816 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+             n1: 33570816 0x48DA608: start_thread (pthread_create.c:477)
+              n0: 33570816 0x4C11132: clone (clone.S:95)
+      n1: 8392704 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8392704 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+   n0: 589824 in 2 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n2: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n0: 5423104 in 4 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=11038544516
+mem_heap_B=479010816
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=11038544724
+mem_heap_B=470618112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=11038567082
+mem_heap_B=420614144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=11038567156
+mem_heap_B=365613056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=11038567708
+mem_heap_B=314777600
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=11038567963
+mem_heap_B=314253312
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=11038579506
+mem_heap_B=247140352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=11038579958
+mem_heap_B=238747648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=11038580410
+mem_heap_B=230354944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=11038580859
+mem_heap_B=221962240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 221962240 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 209780736 0x4C0A8E6: __mmap64 (mmap64.c:59)
+  n4: 209780736 0x4C0A8E6: mmap (mmap64.c:47)
+   n1: 134217728 0x4B873A6: new_heap (arena.c:488)
+    n1: 134217728 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x4B8C1BD: malloc (malloc.c:3044)
+          n2: 134217728 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+           n1: 67108864 0x10F8BF: std::future<std::__invoke_result<std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type>::type> std::async<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>(std::launch, std::decay&&, (std::decay<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>::type&&)...) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x110B36: count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x10D958: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::vector<unsigned long, std::allocator<unsigned long> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+              n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+                n1: 67108864 0x10EE3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<unsigned long, std::allocator<unsigned long> > >::_Async_state_impl(std::thread::_Invoker<std::tuple<std::vector<unsigned long, std::allocator<unsigned long> > (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+                 n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                  n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 67108864 0x4B87362: new_heap (arena.c:477)
+    n1: 67108864 0x4B87DCB: _int_new_arena (arena.c:693)
+     n1: 67108864 0x4B87DCB: arena_get2.part.0 (arena.c:912)
+      n1: 67108864 0x4B8A9F8: arena_get2 (arena.c:880)
+       n1: 67108864 0x4B8A9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 67108864 0x4B8C1BD: tcache_init (malloc.c:2978)
+         n1: 67108864 0x4B8C1BD: malloc (malloc.c:3044)
+          n1: 67108864 0x499FB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+           n1: 67108864 0x10F2C9: std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<unsigned long>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long> >::_M_invoke(std::_Any_data const&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+            n1: 67108864 0x10DA5C: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+             n1: 67108864 0x48E34DE: __pthread_once_slow (pthread_once.c:116)
+              n1: 67108864 0x10EC3C: std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::__future_base::_Async_state_impl<std::thread::_Invoker<std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> >, unsigned long>::_Async_state_impl(std::tuple<count_occurrences(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}>&&)::{lambda()#1}> > >::_M_run() (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+               n1: 67108864 0x49CBDF3: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+                n1: 67108864 0x48DA608: start_thread (pthread_create.c:477)
+                 n0: 67108864 0x4C11132: clone (clone.S:95)
+   n1: 8388608 0x48DB258: allocate_stack (allocatestack.c:562)
+    n1: 8388608 0x48DB258: pthread_create@@GLIBC_2.2.5 (pthread_create.c:660)
+     n2: 8388608 0x49CC0C9: std::thread::_M_start_thread(std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >, void (*)()) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 8388608 0x110686: std::future<std::__invoke_result<std::decay<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>::type, std::decay<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type>::type> std::async<std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::launch, std::vector<unsigned long, std::allocator<unsigned long> > (&)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+       n0: 8388608 0x10CFC6: main (in /workspaces/Rusty-Kernels-Code/regex-redux/C++/regexreduxC++)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 65536 in 3 places, all below massif's threshold (1.00%)
+ n1: 11677696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 11677696 0x401F186: mmap (mmap64.c:47)
+   n1: 6254592 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 6254592 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 6254592 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 6234112 0x400F514: openaux (dl-deps.c:64)
+       n1: 6234112 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 6234112 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 6234112 0x4004063: dl_main (rtld.c:1805)
+          n1: 6234112 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 6234112 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 6234112 0x400204B: _dl_start (rtld.c:539)
+             n0: 6234112 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 5349376 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 5349376 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5349376 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5332992 0x400F514: openaux (dl-deps.c:64)
+       n1: 5332992 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5332992 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5332992 0x4004063: dl_main (rtld.c:1805)
+          n1: 5332992 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5332992 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5332992 0x400204B: _dl_start (rtld.c:539)
+             n0: 5332992 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 73728 in 3 places, all below massif's threshold (1.00%)
+ n0: 503808 in 3 places, all below massif's threshold (1.00%)

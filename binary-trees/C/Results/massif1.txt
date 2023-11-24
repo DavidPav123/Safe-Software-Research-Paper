@@ -1,795 +1,2307 @@
-desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/binary-trees/C/Results/massif1.txt --stacks=yes
+desc: --massif-out-file=/workspaces/Rusty-Kernels-Code/binary-trees/C/Results/massif1.txt --pages-as-heap=yes
 cmd: /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC 21
 time_unit: i
 #-----------
 snapshot=0
 #-----------
 time=0
-mem_heap_B=0
+mem_heap_B=4096
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=57265
-mem_heap_B=0
+time=268384
+mem_heap_B=5058560
 mem_heap_extra_B=0
-mem_stacks_B=7392
-heap_tree=peak
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5058560 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4820992 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4820992 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 90112 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=2
 #-----------
-time=565646032
-mem_heap_B=4496
-mem_heap_extra_B=40
-mem_stacks_B=1080
-heap_tree=detailed
-n3: 4496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=7482727
+mem_heap_B=7200768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=1252699096
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=616
-heap_tree=empty
+time=19196426
+mem_heap_B=10526720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10526720 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 5373952 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 5373952 0x49928E6: mmap (mmap64.c:47)
+   n1: 5349376 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 5349376 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 2695168 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 1400832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 745472 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 376832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 212992 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 114688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 114688 in 2 places, all below massif's threshold (1.00%)
+          n0: 98304 in 1 place, below massif's threshold (1.00%)
+         n1: 163840 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 163840 in 2 places, all below massif's threshold (1.00%)
+        n2: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 188416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 114688 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 114688 in 2 places, all below massif's threshold (1.00%)
+          n0: 73728 in 1 place, below massif's threshold (1.00%)
+         n1: 180224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+       n2: 655360 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 360448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 212992 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 81920 in 1 place, below massif's threshold (1.00%)
+         n2: 147456 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 106496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 106496 in 2 places, all below massif's threshold (1.00%)
+          n0: 40960 in 1 place, below massif's threshold (1.00%)
+        n2: 294912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 163840 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 163840 in 2 places, all below massif's threshold (1.00%)
+         n1: 131072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 131072 in 2 places, all below massif's threshold (1.00%)
+      n2: 1294336 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 663552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 212992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 106496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 106496 in 2 places, all below massif's threshold (1.00%)
+          n1: 106496 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 106496 in 2 places, all below massif's threshold (1.00%)
+         n1: 139264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 139264 in 2 places, all below massif's threshold (1.00%)
+        n2: 311296 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 163840 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 163840 in 2 places, all below massif's threshold (1.00%)
+         n1: 147456 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 147456 in 2 places, all below massif's threshold (1.00%)
+       n2: 630784 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 360448 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 196608 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 106496 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 106496 in 2 places, all below massif's threshold (1.00%)
+          n0: 90112 in 1 place, below massif's threshold (1.00%)
+         n1: 163840 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 163840 in 2 places, all below massif's threshold (1.00%)
+        n2: 270336 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 139264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 139264 in 2 places, all below massif's threshold (1.00%)
+         n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 131072 in 2 places, all below massif's threshold (1.00%)
+     n2: 2654208 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 1343488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 696320 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 401408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 229376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 147456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 147456 in 2 places, all below massif's threshold (1.00%)
+          n0: 81920 in 1 place, below massif's threshold (1.00%)
+         n1: 172032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 172032 in 2 places, all below massif's threshold (1.00%)
+        n2: 294912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 180224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+         n1: 114688 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 114688 in 2 places, all below massif's threshold (1.00%)
+       n2: 647168 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 327680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 180224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+         n1: 147456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 147456 in 2 places, all below massif's threshold (1.00%)
+        n2: 319488 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 180224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 122880 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 122880 in 2 places, all below massif's threshold (1.00%)
+          n0: 57344 in 1 place, below massif's threshold (1.00%)
+         n1: 139264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 139264 in 2 places, all below massif's threshold (1.00%)
+      n2: 1310720 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 671744 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 188416 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 188416 in 2 places, all below massif's threshold (1.00%)
+         n1: 155648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 155648 in 2 places, all below massif's threshold (1.00%)
+        n2: 327680 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 163840 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 114688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 114688 in 2 places, all below massif's threshold (1.00%)
+          n0: 49152 in 1 place, below massif's threshold (1.00%)
+         n1: 163840 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 163840 in 2 places, all below massif's threshold (1.00%)
+       n2: 638976 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 319488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 180224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+         n1: 139264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 139264 in 2 places, all below massif's threshold (1.00%)
+        n2: 319488 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 172032 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 172032 in 2 places, all below massif's threshold (1.00%)
+         n2: 147456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 106496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 106496 in 2 places, all below massif's threshold (1.00%)
+          n0: 40960 in 1 place, below massif's threshold (1.00%)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n1: 135168 0x498E28B: brk (brk.c:31)
+  n1: 135168 0x498E370: __sbrk (sbrk.c:56)
+   n1: 135168 0x498E370: sbrk (sbrk.c:31)
+    n1: 135168 0x4916B8C: __default_morecore (morecore.c:47)
+     n1: 135168 0x4911574: sysmalloc (malloc.c:2470)
+      n1: 135168 0x4912792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491297A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4913C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4913C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4913C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x4915CE9: calloc (malloc.c:3387)
+            n1: 135168 0x485F46D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+             n1: 135168 0x4860FA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+              n1: 135168 0x48624D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+               n0: 135168 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=4
 #-----------
-time=1751168546
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=536
-heap_tree=empty
+time=26207349
+mem_heap_B=12517376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 12517376 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7364608 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 7364608 0x49928E6: mmap (mmap64.c:47)
+   n1: 7340032 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 7340032 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 3694592 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 1859584 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 958464 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 516096 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 286720 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 180224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 180224 in 2 places, all below massif's threshold (1.00%)
+          n0: 106496 in 1 place, below massif's threshold (1.00%)
+         n1: 229376 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 229376 in 2 places, all below massif's threshold (1.00%)
+        n2: 442368 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 262144 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+         n1: 180224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+       n2: 901120 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 450560 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 245760 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 139264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 139264 in 2 places, all below massif's threshold (1.00%)
+          n0: 106496 in 1 place, below massif's threshold (1.00%)
+         n1: 204800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 204800 in 2 places, all below massif's threshold (1.00%)
+        n2: 450560 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 237568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 139264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 139264 in 2 places, all below massif's threshold (1.00%)
+          n0: 98304 in 1 place, below massif's threshold (1.00%)
+         n2: 212992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 81920 in 1 place, below massif's threshold (1.00%)
+      n2: 1835008 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 933888 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 475136 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 237568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 155648 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 155648 in 2 places, all below massif's threshold (1.00%)
+          n0: 81920 in 1 place, below massif's threshold (1.00%)
+         n2: 237568 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 106496 in 1 place, below massif's threshold (1.00%)
+        n2: 458752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 262144 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 139264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 139264 in 2 places, all below massif's threshold (1.00%)
+          n0: 122880 in 1 place, below massif's threshold (1.00%)
+         n1: 196608 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 196608 in 2 places, all below massif's threshold (1.00%)
+       n2: 901120 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 458752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 278528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 147456 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 147456 in 2 places, all below massif's threshold (1.00%)
+          n1: 131072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+         n1: 180224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 180224 in 2 places, all below massif's threshold (1.00%)
+        n2: 442368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 237568 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 106496 in 1 place, below massif's threshold (1.00%)
+         n2: 204800 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 139264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 139264 in 2 places, all below massif's threshold (1.00%)
+          n0: 65536 in 1 place, below massif's threshold (1.00%)
+     n2: 3645440 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 1859584 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 983040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 499712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 278528 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 172032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 172032 in 2 places, all below massif's threshold (1.00%)
+          n0: 106496 in 1 place, below massif's threshold (1.00%)
+         n1: 221184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 221184 in 2 places, all below massif's threshold (1.00%)
+        n2: 483328 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 253952 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 122880 in 1 place, below massif's threshold (1.00%)
+         n1: 229376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 229376 in 2 places, all below massif's threshold (1.00%)
+       n2: 876544 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 458752 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 253952 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 163840 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 163840 in 2 places, all below massif's threshold (1.00%)
+          n0: 90112 in 1 place, below massif's threshold (1.00%)
+         n2: 204800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 147456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 147456 in 2 places, all below massif's threshold (1.00%)
+          n0: 57344 in 1 place, below massif's threshold (1.00%)
+        n2: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 229376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 229376 in 2 places, all below massif's threshold (1.00%)
+         n1: 188416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 188416 in 2 places, all below massif's threshold (1.00%)
+      n2: 1785856 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 901120 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 466944 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 278528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 147456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 147456 in 2 places, all below massif's threshold (1.00%)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+         n1: 188416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 188416 in 2 places, all below massif's threshold (1.00%)
+        n2: 434176 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n1: 221184 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 221184 in 2 places, all below massif's threshold (1.00%)
+         n1: 212992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 212992 in 2 places, all below massif's threshold (1.00%)
+       n2: 884736 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 483328 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 262144 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 139264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 139264 in 2 places, all below massif's threshold (1.00%)
+          n0: 122880 in 1 place, below massif's threshold (1.00%)
+         n1: 221184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 221184 in 2 places, all below massif's threshold (1.00%)
+        n2: 401408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 212992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 131072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 131072 in 2 places, all below massif's threshold (1.00%)
+          n0: 81920 in 1 place, below massif's threshold (1.00%)
+         n1: 188416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n0: 188416 in 2 places, all below massif's threshold (1.00%)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 237568 0x0: ???
+ n1: 135168 0x498E28B: brk (brk.c:31)
+  n1: 135168 0x498E370: __sbrk (sbrk.c:56)
+   n1: 135168 0x498E370: sbrk (sbrk.c:31)
+    n1: 135168 0x4916B8C: __default_morecore (morecore.c:47)
+     n1: 135168 0x4911574: sysmalloc (malloc.c:2470)
+      n1: 135168 0x4912792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491297A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4913C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4913C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4913C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x4915CE9: calloc (malloc.c:3387)
+            n1: 135168 0x485F46D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+             n1: 135168 0x4860FA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+              n1: 135168 0x48624D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+               n0: 135168 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=5
 #-----------
-time=2646269822
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=520
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=39882961
+mem_heap_B=16400384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=3514571789
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=568
+time=56472562
+mem_heap_B=21110784
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=4093439789
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=440
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=68821027
+mem_heap_B=24616960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=4575829780
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=552
-heap_tree=empty
+time=80534712
+mem_heap_B=27942912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 27942912 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 22790144 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 22790144 0x49928E6: mmap (mmap64.c:47)
+   n1: 22765568 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 22765568 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 11395072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 5709824 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 2899968 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1458176 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 745472 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+         n2: 712704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+          n1: 335872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 335872 in 2 places, all below massif's threshold (1.00%)
+        n2: 1441792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 778240 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+         n2: 663552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+          n1: 294912 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 294912 in 2 places, all below massif's threshold (1.00%)
+       n2: 2809856 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1482752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 753664 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 409600 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+         n2: 729088 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+        n2: 1327104 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 679936 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 368640 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+          n1: 311296 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 311296 in 2 places, all below massif's threshold (1.00%)
+         n2: 647168 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+          n1: 294912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 294912 in 2 places, all below massif's threshold (1.00%)
+      n2: 5685248 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 2916352 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1474560 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 770048 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 704512 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 368640 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+          n1: 335872 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 335872 in 2 places, all below massif's threshold (1.00%)
+        n2: 1441792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 770048 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 425984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 425984 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+         n2: 671744 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+       n2: 2768896 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1441792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 729088 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+         n2: 712704 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 360448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+        n2: 1327104 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 663552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+          n1: 286720 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 286720 in 2 places, all below massif's threshold (1.00%)
+         n2: 663552 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 352256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+          n1: 311296 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 311296 in 2 places, all below massif's threshold (1.00%)
+     n2: 11370496 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 5709824 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 2867200 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1441792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 753664 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+         n2: 688128 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+        n2: 1425408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 761856 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 360448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+         n2: 663552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 335872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 335872 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+       n2: 2842624 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1482752 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 753664 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+         n2: 729088 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+        n2: 1359872 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 704512 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 352256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+         n2: 655360 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 360448 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+          n1: 294912 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 294912 in 2 places, all below massif's threshold (1.00%)
+      n2: 5660672 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 2899968 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1449984 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 737280 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+         n2: 712704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 360448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+        n2: 1449984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 737280 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+         n2: 712704 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+       n2: 2760704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1392640 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 737280 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 393216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+         n2: 655360 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 335872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 335872 in 2 places, all below massif's threshold (1.00%)
+          n1: 319488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 319488 in 2 places, all below massif's threshold (1.00%)
+        n2: 1368064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 688128 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 360448 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+         n2: 679936 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 393216 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+          n1: 286720 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 286720 in 2 places, all below massif's threshold (1.00%)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=9
 #-----------
-time=5283334929
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=648
-heap_tree=empty
+time=88815117
+mem_heap_B=30294016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 30294016 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 25141248 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 25141248 0x49928E6: mmap (mmap64.c:47)
+   n1: 25116672 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 25116672 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 12582912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 6316032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 3178496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1589248 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 811008 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 442368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 442368 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+         n2: 778240 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 360448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 360448 in 2 places, all below massif's threshold (1.00%)
+        n2: 1589248 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 843776 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 442368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 442368 in 2 places, all below massif's threshold (1.00%)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+         n2: 745472 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 409600 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+          n1: 335872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 335872 in 2 places, all below massif's threshold (1.00%)
+       n2: 3137536 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1646592 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 835584 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 450560 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 450560 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 811008 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 393216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+        n2: 1490944 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 770048 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+         n2: 720896 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 393216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+          n1: 327680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 327680 in 2 places, all below massif's threshold (1.00%)
+      n2: 6266880 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 3145728 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1589248 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 827392 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 409600 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+         n2: 761856 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+        n2: 1556480 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 835584 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 442368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 442368 in 2 places, all below massif's threshold (1.00%)
+          n1: 393216 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+         n2: 720896 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 376832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+       n2: 3121152 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1605632 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 827392 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 442368 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 442368 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 778240 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 393216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+        n2: 1515520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 761856 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+         n2: 753664 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 434176 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 434176 in 2 places, all below massif's threshold (1.00%)
+          n1: 319488 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 319488 in 2 places, all below massif's threshold (1.00%)
+     n2: 12533760 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 6283264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 3178496 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1597440 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 819200 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 401408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+         n2: 778240 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 376832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+        n2: 1581056 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 811008 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 393216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 393216 in 2 places, all below massif's threshold (1.00%)
+         n2: 770048 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+       n2: 3104768 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1556480 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 802816 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 425984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 425984 in 2 places, all below massif's threshold (1.00%)
+          n1: 376832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 376832 in 2 places, all below massif's threshold (1.00%)
+         n2: 753664 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+        n2: 1548288 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 786432 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 761856 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 344064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 344064 in 2 places, all below massif's threshold (1.00%)
+      n2: 6250496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 3153920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1581056 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 843776 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 458752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 458752 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 737280 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+        n2: 1572864 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 819200 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 409600 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+          n1: 409600 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+         n2: 753664 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 385024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+          n1: 368640 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 368640 in 2 places, all below massif's threshold (1.00%)
+       n2: 3096576 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 1589248 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 819200 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+         n2: 770048 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 417792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 417792 in 2 places, all below massif's threshold (1.00%)
+          n1: 352256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 352256 in 2 places, all below massif's threshold (1.00%)
+        n2: 1507328 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 794624 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 409600 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 409600 in 2 places, all below massif's threshold (1.00%)
+          n1: 385024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 385024 in 2 places, all below massif's threshold (1.00%)
+         n2: 712704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 401408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 401408 in 2 places, all below massif's threshold (1.00%)
+          n1: 311296 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 311296 in 2 places, all below massif's threshold (1.00%)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=10
 #-----------
-time=5797884127
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=600
+time=102663825
+mem_heap_B=34226176
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=6441070631
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=520
+time=110973057
+mem_heap_B=36585472
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=7019938477
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=640
+time=122975277
+mem_heap_B=39993344
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=7791762276
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=672
+time=131226798
+mem_heap_B=42336256
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=8660063967
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=712
+time=147585611
+mem_heap_B=46981120
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=9238931761
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=584
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=161232369
+mem_heap_B=50855936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=9721321571
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=600
+time=170724529
+mem_heap_B=53551104
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=10396667332
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=712
+time=183072943
+mem_heap_B=57057280
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=10782579191
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=704
+time=199200932
+mem_heap_B=61636608
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=11361446976
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=672
+time=209096998
+mem_heap_B=64446464
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=11843836803
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=712
+time=218993061
+mem_heap_B=67256320
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=12615660628
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=776
+time=236303967
+mem_heap_B=72171520
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=13130209879
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=744
+time=246228885
+mem_heap_B=74989568
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=13902033746
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=736
+time=256124943
+mem_heap_B=77799424
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=14673857628
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=760
+time=266021008
+mem_heap_B=80609280
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=15188406854
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=552
+time=278427185
+mem_heap_B=84131840
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=15960230704
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=680
-heap_tree=empty
+time=288294369
+mem_heap_B=86933504
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 86933504 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 81780736 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 81780736 0x49928E6: mmap (mmap64.c:47)
+   n1: 81756160 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 81756160 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 40919040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 20496384 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 10264576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5152768 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2662400 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1343488 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1343488 in 2 places, all below massif's threshold (1.00%)
+          n1: 1318912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1318912 in 2 places, all below massif's threshold (1.00%)
+         n2: 2490368 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1327104 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1327104 in 2 places, all below massif's threshold (1.00%)
+          n1: 1163264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1163264 in 2 places, all below massif's threshold (1.00%)
+        n2: 5111808 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2564096 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1286144 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1286144 in 2 places, all below massif's threshold (1.00%)
+          n1: 1277952 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1277952 in 2 places, all below massif's threshold (1.00%)
+         n2: 2547712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1277952 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1277952 in 2 places, all below massif's threshold (1.00%)
+          n1: 1269760 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1269760 in 2 places, all below massif's threshold (1.00%)
+       n2: 10231808 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5152768 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2629632 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1327104 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1327104 in 2 places, all below massif's threshold (1.00%)
+          n1: 1302528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1302528 in 2 places, all below massif's threshold (1.00%)
+         n2: 2523136 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1409024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1409024 in 2 places, all below massif's threshold (1.00%)
+          n1: 1114112 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1114112 in 2 places, all below massif's threshold (1.00%)
+        n2: 5079040 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2547712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1294336 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1294336 in 2 places, all below massif's threshold (1.00%)
+          n1: 1253376 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1253376 in 2 places, all below massif's threshold (1.00%)
+         n2: 2531328 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1269760 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1269760 in 2 places, all below massif's threshold (1.00%)
+          n1: 1261568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1261568 in 2 places, all below massif's threshold (1.00%)
+      n2: 20422656 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 10297344 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5218304 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2662400 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1384448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1384448 in 2 places, all below massif's threshold (1.00%)
+          n1: 1277952 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1277952 in 2 places, all below massif's threshold (1.00%)
+         n2: 2555904 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1327104 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1327104 in 2 places, all below massif's threshold (1.00%)
+          n1: 1228800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1228800 in 2 places, all below massif's threshold (1.00%)
+        n2: 5079040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2564096 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1294336 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1294336 in 2 places, all below massif's threshold (1.00%)
+          n1: 1269760 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1269760 in 2 places, all below massif's threshold (1.00%)
+         n2: 2514944 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1277952 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1277952 in 2 places, all below massif's threshold (1.00%)
+          n1: 1236992 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1236992 in 2 places, all below massif's threshold (1.00%)
+       n2: 10125312 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5095424 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2613248 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1384448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1384448 in 2 places, all below massif's threshold (1.00%)
+          n1: 1228800 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1228800 in 2 places, all below massif's threshold (1.00%)
+         n2: 2482176 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1245184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1245184 in 2 places, all below massif's threshold (1.00%)
+          n1: 1236992 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1236992 in 2 places, all below massif's threshold (1.00%)
+        n2: 5029888 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2523136 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1318912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1318912 in 2 places, all below massif's threshold (1.00%)
+          n1: 1204224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1204224 in 2 places, all below massif's threshold (1.00%)
+         n2: 2506752 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1351680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1351680 in 2 places, all below massif's threshold (1.00%)
+          n1: 1155072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1155072 in 2 places, all below massif's threshold (1.00%)
+     n2: 40837120 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 20488192 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 10330112 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5201920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2678784 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1376256 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1376256 in 2 places, all below massif's threshold (1.00%)
+          n1: 1302528 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1302528 in 2 places, all below massif's threshold (1.00%)
+         n2: 2523136 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1327104 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1327104 in 2 places, all below massif's threshold (1.00%)
+          n1: 1196032 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1196032 in 2 places, all below massif's threshold (1.00%)
+        n2: 5128192 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2580480 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1302528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1302528 in 2 places, all below massif's threshold (1.00%)
+          n1: 1277952 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1277952 in 2 places, all below massif's threshold (1.00%)
+         n2: 2547712 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1335296 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1335296 in 2 places, all below massif's threshold (1.00%)
+          n1: 1212416 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1212416 in 2 places, all below massif's threshold (1.00%)
+       n2: 10158080 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5111808 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2564096 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1400832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1400832 in 2 places, all below massif's threshold (1.00%)
+          n1: 1163264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1163264 in 2 places, all below massif's threshold (1.00%)
+         n2: 2547712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1286144 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1286144 in 2 places, all below massif's threshold (1.00%)
+          n1: 1261568 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1261568 in 2 places, all below massif's threshold (1.00%)
+        n2: 5046272 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2539520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1318912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1318912 in 2 places, all below massif's threshold (1.00%)
+          n1: 1220608 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1220608 in 2 places, all below massif's threshold (1.00%)
+         n2: 2506752 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1261568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1261568 in 2 places, all below massif's threshold (1.00%)
+          n1: 1245184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1245184 in 2 places, all below massif's threshold (1.00%)
+      n2: 20348928 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 10264576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5259264 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2711552 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1417216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1417216 in 2 places, all below massif's threshold (1.00%)
+          n1: 1294336 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1294336 in 2 places, all below massif's threshold (1.00%)
+         n2: 2547712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1359872 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1359872 in 2 places, all below massif's threshold (1.00%)
+          n1: 1187840 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1187840 in 2 places, all below massif's threshold (1.00%)
+        n2: 5005312 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2506752 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1286144 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1286144 in 2 places, all below massif's threshold (1.00%)
+          n1: 1220608 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1220608 in 2 places, all below massif's threshold (1.00%)
+         n2: 2498560 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1343488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1343488 in 2 places, all below massif's threshold (1.00%)
+          n1: 1155072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1155072 in 2 places, all below massif's threshold (1.00%)
+       n2: 10084352 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 5062656 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2596864 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1343488 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1343488 in 2 places, all below massif's threshold (1.00%)
+          n1: 1253376 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1253376 in 2 places, all below massif's threshold (1.00%)
+         n2: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1245184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1245184 in 2 places, all below massif's threshold (1.00%)
+          n1: 1220608 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1220608 in 2 places, all below massif's threshold (1.00%)
+        n2: 5021696 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 2555904 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1302528 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1302528 in 2 places, all below massif's threshold (1.00%)
+          n1: 1253376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1253376 in 2 places, all below massif's threshold (1.00%)
+         n2: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 1310720 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1310720 in 2 places, all below massif's threshold (1.00%)
+          n1: 1155072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1155072 in 2 places, all below massif's threshold (1.00%)
+   n0: 24576 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=27
 #-----------
-time=16603417261
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=696
+time=305605269
+mem_heap_B=91848704
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=17117966495
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=472
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=320463791
+mem_heap_B=96067584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=17761153047
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=728
+time=339044175
+mem_heap_B=101343232
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=18147064984
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=608
+time=357595668
+mem_heap_B=106610688
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=18661614236
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=904
+time=366857011
+mem_heap_B=109240320
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=19047526172
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=872
+time=380763420
+mem_heap_B=113188864
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=19626394000
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=800
+time=394698696
+mem_heap_B=117145600
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=20398217777
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=904
+time=408605141
+mem_heap_B=121094144
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=20977085602
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=840
+time=427156639
+mem_heap_B=126361600
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=21748909605
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=472
+time=436446833
+mem_heap_B=128999424
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=22134821504
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=800
+time=454998331
+mem_heap_B=134266880
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=22713689330
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=864
+time=473549867
+mem_heap_B=139534336
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=23099601218
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=904
+time=833319533
+mem_heap_B=140189696
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=23678469042
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=968
+time=9634046451
+mem_heap_B=140197888
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=24450292807
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=904
+time=14077678260
+mem_heap_B=140206080
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=25029160648
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=872
-heap_tree=empty
+time=18520089809
+mem_heap_B=140230656
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 140230656 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 135077888 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 135077888 0x49928E6: mmap (mmap64.c:47)
+   n1: 135045120 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 135045120 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 67559424 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 33923072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 17031168 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8691712 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4366336 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2236416 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2236416 in 2 places, all below massif's threshold (1.00%)
+          n1: 2129920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2129920 in 2 places, all below massif's threshold (1.00%)
+         n2: 4325376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2195456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2195456 in 2 places, all below massif's threshold (1.00%)
+          n1: 2129920 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2129920 in 2 places, all below massif's threshold (1.00%)
+        n2: 8339456 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4186112 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2113536 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2113536 in 2 places, all below massif's threshold (1.00%)
+          n1: 2072576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2072576 in 2 places, all below massif's threshold (1.00%)
+         n2: 4153344 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2211840 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2211840 in 2 places, all below massif's threshold (1.00%)
+          n1: 1941504 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1941504 in 2 places, all below massif's threshold (1.00%)
+       n2: 16891904 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8511488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4300800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2326528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2326528 in 2 places, all below massif's threshold (1.00%)
+          n1: 1974272 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1974272 in 2 places, all below massif's threshold (1.00%)
+         n2: 4210688 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2121728 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2121728 in 2 places, all below massif's threshold (1.00%)
+          n1: 2088960 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2088960 in 2 places, all below massif's threshold (1.00%)
+        n2: 8380416 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4194304 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2129920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2129920 in 2 places, all below massif's threshold (1.00%)
+          n1: 2064384 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2064384 in 2 places, all below massif's threshold (1.00%)
+         n2: 4186112 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2138112 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2138112 in 2 places, all below massif's threshold (1.00%)
+          n1: 2048000 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2048000 in 2 places, all below massif's threshold (1.00%)
+      n2: 33636352 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 16826368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8429568 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4333568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2260992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2260992 in 2 places, all below massif's threshold (1.00%)
+          n1: 2072576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2072576 in 2 places, all below massif's threshold (1.00%)
+         n2: 4096000 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2080768 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2080768 in 2 places, all below massif's threshold (1.00%)
+          n1: 2015232 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2015232 in 2 places, all below massif's threshold (1.00%)
+        n2: 8396800 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4202496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2113536 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2113536 in 2 places, all below massif's threshold (1.00%)
+          n1: 2088960 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2088960 in 2 places, all below massif's threshold (1.00%)
+         n2: 4194304 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2195456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2195456 in 2 places, all below massif's threshold (1.00%)
+          n1: 1998848 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1998848 in 2 places, all below massif's threshold (1.00%)
+       n2: 16809984 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8552448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4374528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2269184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2269184 in 2 places, all below massif's threshold (1.00%)
+          n1: 2105344 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2105344 in 2 places, all below massif's threshold (1.00%)
+         n2: 4177920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2203648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2203648 in 2 places, all below massif's threshold (1.00%)
+          n1: 1974272 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1974272 in 2 places, all below massif's threshold (1.00%)
+        n2: 8257536 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4235264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2228224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2228224 in 2 places, all below massif's threshold (1.00%)
+          n1: 2007040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2007040 in 2 places, all below massif's threshold (1.00%)
+         n2: 4022272 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2048000 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2048000 in 2 places, all below massif's threshold (1.00%)
+          n1: 1974272 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1974272 in 2 places, all below massif's threshold (1.00%)
+     n2: 67485696 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 33816576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 16924672 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8552448 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4284416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2179072 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2179072 in 2 places, all below massif's threshold (1.00%)
+          n1: 2105344 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2105344 in 2 places, all below massif's threshold (1.00%)
+         n2: 4268032 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2195456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2195456 in 2 places, all below massif's threshold (1.00%)
+          n1: 2072576 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2072576 in 2 places, all below massif's threshold (1.00%)
+        n2: 8372224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4276224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2162688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2162688 in 2 places, all below massif's threshold (1.00%)
+          n1: 2113536 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2113536 in 2 places, all below massif's threshold (1.00%)
+         n2: 4096000 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2121728 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2121728 in 2 places, all below massif's threshold (1.00%)
+          n1: 1974272 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1974272 in 2 places, all below massif's threshold (1.00%)
+       n2: 16891904 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8454144 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4308992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2170880 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2170880 in 2 places, all below massif's threshold (1.00%)
+          n1: 2138112 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2138112 in 2 places, all below massif's threshold (1.00%)
+         n2: 4145152 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2236416 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2236416 in 2 places, all below massif's threshold (1.00%)
+          n1: 1908736 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1908736 in 2 places, all below massif's threshold (1.00%)
+        n2: 8437760 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4292608 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2162688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2162688 in 2 places, all below massif's threshold (1.00%)
+          n1: 2129920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2129920 in 2 places, all below massif's threshold (1.00%)
+         n2: 4145152 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2097152 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2097152 in 2 places, all below massif's threshold (1.00%)
+          n1: 2048000 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2048000 in 2 places, all below massif's threshold (1.00%)
+      n2: 33669120 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 16965632 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8544256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4366336 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2228224 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2228224 in 2 places, all below massif's threshold (1.00%)
+          n1: 2138112 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2138112 in 2 places, all below massif's threshold (1.00%)
+         n2: 4177920 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2187264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2187264 in 2 places, all below massif's threshold (1.00%)
+          n1: 1990656 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1990656 in 2 places, all below massif's threshold (1.00%)
+        n2: 8421376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4300800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2195456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2195456 in 2 places, all below massif's threshold (1.00%)
+          n1: 2105344 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2105344 in 2 places, all below massif's threshold (1.00%)
+         n2: 4120576 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2146304 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2146304 in 2 places, all below massif's threshold (1.00%)
+          n1: 1974272 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1974272 in 2 places, all below massif's threshold (1.00%)
+       n2: 16703488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 8396800 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4341760 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2244608 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2244608 in 2 places, all below massif's threshold (1.00%)
+          n1: 2097152 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2097152 in 2 places, all below massif's threshold (1.00%)
+         n2: 4055040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2064384 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2064384 in 2 places, all below massif's threshold (1.00%)
+          n1: 1990656 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1990656 in 2 places, all below massif's threshold (1.00%)
+        n2: 8306688 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4194304 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2179072 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2179072 in 2 places, all below massif's threshold (1.00%)
+          n1: 2015232 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2015232 in 2 places, all below massif's threshold (1.00%)
+         n2: 4112384 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2203648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2203648 in 2 places, all below massif's threshold (1.00%)
+          n1: 1908736 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 1908736 in 2 places, all below massif's threshold (1.00%)
+   n0: 32768 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=25608028478
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=936
+time=22962441562
+mem_heap_B=140328960
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=25993940364
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=536
+time=27405752057
+mem_heap_B=140722176
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=26572808187
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=808
+time=27410397142
+mem_heap_B=142041088
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=27151676028
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=896
+time=31853275738
+mem_heap_B=142303232
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=27730543851
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=920
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=31871856091
+mem_heap_B=147578880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=28309411670
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1000
+time=36317553123
+mem_heap_B=148635648
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=28695323563
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=720
+time=36336075783
+mem_heap_B=153894912
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=29081235438
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=920
+time=36340720869
+mem_heap_B=155213824
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=29467147299
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1000
+time=36345365955
+mem_heap_B=156532736
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=29853059171
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=968
+time=36350011047
+mem_heap_B=157851648
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=30238971039
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1032
+time=36354656143
+mem_heap_B=159170560
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=30624882900
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1032
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=36359301235
+mem_heap_B=160489472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=31010794766
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=992
+time=36363946322
+mem_heap_B=161808384
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=31396706638
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=928
-heap_tree=empty
+time=36368591413
+mem_heap_B=163127296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 163127296 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 157974528 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 157974528 0x49928E6: mmap (mmap64.c:47)
+   n1: 157941760 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 157941760 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 78995456 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 39591936 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 19865600 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9936896 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5046272 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2531328 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2531328 in 2 places, all below massif's threshold (1.00%)
+          n1: 2514944 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2514944 in 2 places, all below massif's threshold (1.00%)
+         n2: 4890624 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2629632 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2629632 in 2 places, all below massif's threshold (1.00%)
+          n1: 2260992 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2260992 in 2 places, all below massif's threshold (1.00%)
+        n2: 9928704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4980736 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2539520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2539520 in 2 places, all below massif's threshold (1.00%)
+          n1: 2441216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2441216 in 2 places, all below massif's threshold (1.00%)
+         n2: 4947968 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2482176 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2482176 in 3 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+       n2: 19726336 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9936896 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4980736 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2588672 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2588672 in 2 places, all below massif's threshold (1.00%)
+          n1: 2392064 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2392064 in 2 places, all below massif's threshold (1.00%)
+         n2: 4956160 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2490368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2490368 in 2 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+        n2: 9789440 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5029888 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2588672 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2588672 in 2 places, all below massif's threshold (1.00%)
+          n1: 2441216 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2441216 in 2 places, all below massif's threshold (1.00%)
+         n2: 4759552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2424832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2424832 in 2 places, all below massif's threshold (1.00%)
+          n1: 2334720 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2334720 in 2 places, all below massif's threshold (1.00%)
+      n2: 39403520 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 19873792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9961472 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5021696 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2555904 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2555904 in 2 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+         n2: 4939776 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2547712 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2547712 in 2 places, all below massif's threshold (1.00%)
+          n1: 2392064 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2392064 in 2 places, all below massif's threshold (1.00%)
+        n2: 9912320 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5013504 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2514944 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2514944 in 2 places, all below massif's threshold (1.00%)
+          n1: 2498560 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2498560 in 2 places, all below massif's threshold (1.00%)
+         n2: 4898816 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2621440 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2621440 in 2 places, all below massif's threshold (1.00%)
+          n1: 2277376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2277376 in 2 places, all below massif's threshold (1.00%)
+       n2: 19529728 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9822208 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4972544 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2490368 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2490368 in 2 places, all below massif's threshold (1.00%)
+          n1: 2482176 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2482176 in 2 places, all below massif's threshold (1.00%)
+         n2: 4849664 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2433024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2433024 in 2 places, all below massif's threshold (1.00%)
+          n1: 2416640 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2416640 in 2 places, all below massif's threshold (1.00%)
+        n2: 9707520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4882432 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2498560 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2498560 in 2 places, all below massif's threshold (1.00%)
+          n1: 2383872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2383872 in 2 places, all below massif's threshold (1.00%)
+         n2: 4825088 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2498560 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2498560 in 2 places, all below massif's threshold (1.00%)
+          n1: 2326528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2326528 in 2 places, all below massif's threshold (1.00%)
+     n2: 78946304 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 39485440 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 19791872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9912320 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4964352 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2605056 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2605056 in 2 places, all below massif's threshold (1.00%)
+          n1: 2359296 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2359296 in 2 places, all below massif's threshold (1.00%)
+         n2: 4947968 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2547712 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2547712 in 2 places, all below massif's threshold (1.00%)
+          n1: 2400256 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2400256 in 2 places, all below massif's threshold (1.00%)
+        n2: 9879552 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5070848 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2662400 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2662400 in 2 places, all below massif's threshold (1.00%)
+          n1: 2408448 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2408448 in 2 places, all below massif's threshold (1.00%)
+         n2: 4808704 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2473984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2473984 in 2 places, all below massif's threshold (1.00%)
+          n1: 2334720 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2334720 in 2 places, all below massif's threshold (1.00%)
+       n2: 19693568 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10010624 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5079040 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2654208 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2654208 in 2 places, all below massif's threshold (1.00%)
+          n1: 2424832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2424832 in 2 places, all below massif's threshold (1.00%)
+         n2: 4931584 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2613248 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2613248 in 2 places, all below massif's threshold (1.00%)
+          n1: 2318336 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2318336 in 2 places, all below massif's threshold (1.00%)
+        n2: 9682944 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4947968 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2637824 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+          n1: 2310144 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2310144 in 2 places, all below massif's threshold (1.00%)
+         n2: 4734976 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2433024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2433024 in 2 places, all below massif's threshold (1.00%)
+          n1: 2301952 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2301952 in 2 places, all below massif's threshold (1.00%)
+      n2: 39460864 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 19791872 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10067968 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5062656 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2555904 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2555904 in 2 places, all below massif's threshold (1.00%)
+          n1: 2506752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2506752 in 2 places, all below massif's threshold (1.00%)
+         n2: 5005312 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2539520 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2539520 in 2 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+        n2: 9723904 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4882432 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2457600 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2457600 in 2 places, all below massif's threshold (1.00%)
+          n1: 2424832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2424832 in 2 places, all below massif's threshold (1.00%)
+         n2: 4841472 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2564096 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2564096 in 2 places, all below massif's threshold (1.00%)
+          n1: 2277376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2277376 in 2 places, all below massif's threshold (1.00%)
+       n2: 19668992 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 9920512 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5013504 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2646016 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2646016 in 2 places, all below massif's threshold (1.00%)
+          n1: 2367488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2367488 in 2 places, all below massif's threshold (1.00%)
+         n2: 4907008 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2473984 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2473984 in 2 places, all below massif's threshold (1.00%)
+          n1: 2433024 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2433024 in 2 places, all below massif's threshold (1.00%)
+        n2: 9748480 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 4907008 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2473984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2473984 in 2 places, all below massif's threshold (1.00%)
+          n1: 2433024 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2433024 in 2 places, all below massif's threshold (1.00%)
+         n2: 4841472 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+          n1: 2375680 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2375680 in 2 places, all below massif's threshold (1.00%)
+   n0: 32768 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=57
 #-----------
-time=31782618508
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=888
+time=36373236515
+mem_heap_B=164446208
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=32168530380
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1032
+time=36377881601
+mem_heap_B=165765120
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=32554442247
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=992
+time=36382526691
+mem_heap_B=167084032
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=32940354113
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1032
+time=36387171789
+mem_heap_B=168402944
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=33326265986
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1032
+time=36391816879
+mem_heap_B=169721856
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=33712177863
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1096
+time=36396490814
+mem_heap_B=171048960
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=34098089723
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=744
+time=36401135911
+mem_heap_B=172367872
+mem_heap_extra_B=0
+mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=34484001586
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1016
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+time=36405781003
+mem_heap_B=173686784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=34869913464
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1064
-heap_tree=empty
-#-----------
-snapshot=66
-#-----------
-time=35255825323
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=968
-heap_tree=empty
-#-----------
-snapshot=67
-#-----------
-time=35641737190
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1096
-heap_tree=empty
-#-----------
-snapshot=68
-#-----------
-time=36027649052
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1016
-heap_tree=empty
-#-----------
-snapshot=69
-#-----------
-time=36413560914
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=824
-heap_tree=empty
-#-----------
-snapshot=70
-#-----------
-time=36799472777
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1160
-heap_tree=empty
-#-----------
-snapshot=71
-#-----------
-time=37185384642
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1048
-heap_tree=empty
-#-----------
-snapshot=72
-#-----------
-time=37571296512
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1088
-heap_tree=empty
-#-----------
-snapshot=73
-#-----------
-time=37957208373
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1096
-heap_tree=empty
-#-----------
-snapshot=74
-#-----------
-time=38343120233
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1064
-heap_tree=detailed
-n3: 4696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 4096 0x4905D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 4096 0x4915ECF: _IO_doallocbuf (genops.c:347)
-   n1: 4096 0x4914F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 4096 0x49136B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 4096 0x49136B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 4096 0x48FA971: __vfprintf_internal (vfprintf-internal.c:1373)
-       n1: 4096 0x49B205A: __printf_chk (printf_chk.c:33)
-        n0: 4096 0x1091F5: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n2: 400 0x486A7AE: apr_pool_create_unmanaged_ex (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n0: 200 0x1091C4: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-  n0: 200 0x109274: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
- n1: 200 0x486946D: apr_allocator_create (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-  n1: 200 0x486AFA4: apr_pool_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-   n1: 200 0x486C4D6: apr_initialize (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
-    n0: 200 0x1091B7: main (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
-#-----------
-snapshot=75
-#-----------
-time=38729032094
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1056
-heap_tree=empty
-#-----------
-snapshot=76
-#-----------
-time=39114943964
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1128
-heap_tree=empty
-#-----------
-snapshot=77
-#-----------
-time=39500855828
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1016
-heap_tree=empty
-#-----------
-snapshot=78
-#-----------
-time=39886767689
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=656
-heap_tree=empty
-#-----------
-snapshot=79
-#-----------
-time=40272679552
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1096
-heap_tree=empty
-#-----------
-snapshot=80
-#-----------
-time=40658591414
-mem_heap_B=4696
-mem_heap_extra_B=56
-mem_stacks_B=1088
-heap_tree=empty
+time=40729844176
+mem_heap_B=173940736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n3: 173940736 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 168787968 0x49928E6: __mmap64 (mmap64.c:59)
+  n2: 168787968 0x49928E6: mmap (mmap64.c:47)
+   n1: 168755200 0x485FC2D: apr_palloc (in /usr/lib/x86_64-linux-gnu/libapr-1.so.0.6.5)
+    n2: 168755200 0x109517: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+     n2: 84393984 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 42295296 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 21200896 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10764288 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5398528 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2711552 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2711552 in 2 places, all below massif's threshold (1.00%)
+          n1: 2686976 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2686976 in 2 places, all below massif's threshold (1.00%)
+         n2: 5365760 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2686976 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2686976 in 2 places, all below massif's threshold (1.00%)
+          n1: 2678784 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2678784 in 2 places, all below massif's threshold (1.00%)
+        n2: 10436608 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5275648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2637824 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+          n1: 2637824 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+         n2: 5160960 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2719744 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2719744 in 2 places, all below massif's threshold (1.00%)
+          n1: 2441216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2441216 in 2 places, all below massif's threshold (1.00%)
+       n2: 21094400 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10657792 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5365760 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2826240 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2826240 in 2 places, all below massif's threshold (1.00%)
+          n1: 2539520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2539520 in 2 places, all below massif's threshold (1.00%)
+         n2: 5292032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2654208 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2654208 in 2 places, all below massif's threshold (1.00%)
+          n1: 2637824 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+        n2: 10436608 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5300224 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2670592 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2670592 in 2 places, all below massif's threshold (1.00%)
+          n1: 2629632 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2629632 in 2 places, all below massif's threshold (1.00%)
+         n2: 5136384 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2629632 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2629632 in 2 places, all below massif's threshold (1.00%)
+          n1: 2506752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2506752 in 2 places, all below massif's threshold (1.00%)
+      n2: 42098688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 21086208 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10551296 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5406720 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2826240 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2826240 in 2 places, all below massif's threshold (1.00%)
+          n1: 2580480 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2580480 in 2 places, all below massif's threshold (1.00%)
+         n2: 5144576 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2621440 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2621440 in 2 places, all below massif's threshold (1.00%)
+          n1: 2523136 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2523136 in 2 places, all below massif's threshold (1.00%)
+        n2: 10534912 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5275648 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2801664 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2801664 in 2 places, all below massif's threshold (1.00%)
+          n1: 2473984 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2473984 in 2 places, all below massif's threshold (1.00%)
+         n2: 5259264 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2695168 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2695168 in 2 places, all below massif's threshold (1.00%)
+          n1: 2564096 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2564096 in 2 places, all below massif's threshold (1.00%)
+       n2: 21012480 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10616832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5423104 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2826240 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2826240 in 2 places, all below massif's threshold (1.00%)
+          n1: 2596864 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2596864 in 2 places, all below massif's threshold (1.00%)
+         n2: 5193728 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2744320 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2744320 in 2 places, all below massif's threshold (1.00%)
+          n1: 2449408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2449408 in 2 places, all below massif's threshold (1.00%)
+        n2: 10395648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5292032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2760704 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2760704 in 2 places, all below massif's threshold (1.00%)
+          n1: 2531328 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2531328 in 2 places, all below massif's threshold (1.00%)
+         n2: 5103616 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2605056 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2605056 in 2 places, all below massif's threshold (1.00%)
+          n1: 2498560 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2498560 in 2 places, all below massif's threshold (1.00%)
+     n2: 84361216 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+      n2: 42262528 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 21184512 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10616832 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5324800 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2703360 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2703360 in 2 places, all below massif's threshold (1.00%)
+          n1: 2621440 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2621440 in 2 places, all below massif's threshold (1.00%)
+         n2: 5292032 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2646016 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2646016 in 3 places, all below massif's threshold (1.00%)
+          n1: 2646016 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2646016 in 2 places, all below massif's threshold (1.00%)
+        n2: 10567680 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5373952 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2686976 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2686976 in 2 places, all below massif's threshold (1.00%)
+          n1: 2686976 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2686976 in 2 places, all below massif's threshold (1.00%)
+         n2: 5193728 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2727936 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2727936 in 2 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+       n2: 21078016 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10616832 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5341184 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2752512 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2752512 in 2 places, all below massif's threshold (1.00%)
+          n1: 2588672 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2588672 in 2 places, all below massif's threshold (1.00%)
+         n2: 5275648 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2646016 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2646016 in 2 places, all below massif's threshold (1.00%)
+          n1: 2629632 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2629632 in 2 places, all below massif's threshold (1.00%)
+        n2: 10461184 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5349376 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2744320 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2744320 in 2 places, all below massif's threshold (1.00%)
+          n1: 2605056 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2605056 in 2 places, all below massif's threshold (1.00%)
+         n2: 5111808 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2605056 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2605056 in 2 places, all below massif's threshold (1.00%)
+          n1: 2506752 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2506752 in 2 places, all below massif's threshold (1.00%)
+      n2: 42098688 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+       n2: 21217280 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10657792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5390336 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2711552 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2711552 in 2 places, all below massif's threshold (1.00%)
+          n1: 2678784 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2678784 in 2 places, all below massif's threshold (1.00%)
+         n2: 5267456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2727936 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2727936 in 2 places, all below massif's threshold (1.00%)
+          n1: 2539520 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2539520 in 2 places, all below massif's threshold (1.00%)
+        n2: 10559488 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5292032 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2654208 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2654208 in 2 places, all below massif's threshold (1.00%)
+          n1: 2637824 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+         n2: 5267456 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2818048 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2818048 in 2 places, all below massif's threshold (1.00%)
+          n1: 2449408 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2449408 in 2 places, all below massif's threshold (1.00%)
+       n2: 20881408 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+        n2: 10534912 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5292032 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2670592 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2670592 in 2 places, all below massif's threshold (1.00%)
+          n1: 2621440 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2621440 in 2 places, all below massif's threshold (1.00%)
+         n2: 5242880 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2637824 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2637824 in 2 places, all below massif's threshold (1.00%)
+          n1: 2605056 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2605056 in 2 places, all below massif's threshold (1.00%)
+        n2: 10346496 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+         n2: 5193728 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2654208 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2654208 in 2 places, all below massif's threshold (1.00%)
+          n1: 2539520 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2539520 in 2 places, all below massif's threshold (1.00%)
+         n2: 5152768 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+          n1: 2686976 0x109535: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2686976 in 2 places, all below massif's threshold (1.00%)
+          n1: 2465792 0x109544: create_Tree (in /workspaces/Rusty-Kernels-Code/binary-trees/C/binarytreesC)
+           n0: 2465792 in 2 places, all below massif's threshold (1.00%)
+   n0: 32768 in 2 places, all below massif's threshold (1.00%)
+ n1: 4780032 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4780032 0x401F186: mmap (mmap64.c:47)
+   n1: 2498560 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2498560 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2498560 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2478080 0x400F514: openaux (dl-deps.c:64)
+       n1: 2478080 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2478080 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2478080 0x4004063: dl_main (rtld.c:1805)
+          n1: 2478080 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2478080 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2478080 0x400204B: _dl_start (rtld.c:539)
+             n1: 2478080 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2478080 0x1: ???
+               n1: 2478080 0x1FFEFFF5DA: ???
+                n0: 2478080 0x1FFEFFF615: ???
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2232320 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2232320 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2232320 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2215936 0x400F514: openaux (dl-deps.c:64)
+       n1: 2215936 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2215936 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2215936 0x4004063: dl_main (rtld.c:1805)
+          n1: 2215936 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2215936 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2215936 0x400204B: _dl_start (rtld.c:539)
+             n1: 2215936 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+              n1: 2215936 0x1: ???
+               n1: 2215936 0x1FFEFFF5DA: ???
+                n0: 2215936 0x1FFEFFF615: ???
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n0: 372736 in 3 places, all below massif's threshold (1.00%)

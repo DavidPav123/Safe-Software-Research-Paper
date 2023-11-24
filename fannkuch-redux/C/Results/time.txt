@@ -1,12 +1,20 @@
 
-real	0m24.398s
-user	0m24.360s
-sys	0m0.032s
+real	0m24.128s
+user	0m24.112s
+sys	0m0.012s
 
-real	0m25.059s
-user	0m25.025s
+real	0m24.146s
+user	0m24.125s
 sys	0m0.008s
 
-real	0m24.617s
-user	0m24.578s
-sys	0m0.012s
+real	0m24.189s
+user	0m24.161s
+sys	0m0.020s
+
+real	0m24.128s
+user	0m24.127s
+sys	0m0.000s
+
+real	0m24.205s
+user	0m24.196s
+sys	0m0.008s
