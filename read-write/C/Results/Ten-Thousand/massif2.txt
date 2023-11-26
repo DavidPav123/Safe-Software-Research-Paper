@@ -274,7 +274,7 @@ heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=148823
+time=152496
 mem_heap_B=4263936
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -312,7 +312,7 @@ n3: 4263936 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=29
 #-----------
-time=148823
+time=152496
 mem_heap_B=4259840
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -320,7 +320,7 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=225805
+time=229480
 mem_heap_B=4358144
 mem_heap_extra_B=0
 mem_stacks_B=0

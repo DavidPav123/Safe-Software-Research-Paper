@@ -2,32 +2,45 @@
 #include <stdlib.h>
 
 int main() {
-    FILE *sourceFile, *destFile;
-    int ch; // Use int to handle EOF correctly
+    char* source = NULL;
+    FILE* sourceFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/source.txt", "r");
+    FILE* destFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/destination.txt", "w");
 
-    // Open the source file in read mode
-    sourceFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/source.txt", "r");
-    if (sourceFile == NULL) {
-        perror("Error opening source file");
-        return 1;
+    if (sourceFile != NULL && destFile != NULL) {
+        /* Go to the end of the file. */
+        if (fseek(sourceFile, 0L, SEEK_END) == 0) {
+            /* Get the size of the file. */
+            long bufsize = ftell(sourceFile);
+            if (bufsize == -1) { /* Error */ }
+
+            /* Allocate our buffer to that size. */
+            source = malloc(sizeof(char) * (bufsize + 1));
+
+            /* Go back to the start of the file. */
+            if (fseek(sourceFile, 0L, SEEK_SET) != 0) { /* Error */ }
+
+            /* Read the entire file into memory. */
+            size_t newLen = fread(source, sizeof(char), bufsize, sourceFile);
+            if (ferror(sourceFile) != 0) {
+                fputs("Error reading file", stderr);
+            }
+            else {
+                source[newLen++] = '\0'; /* Just to be safe. */
+
+                // Write to the destination file
+                fwrite(source, sizeof(char), newLen, destFile);
+            }
+        }
+        fclose(sourceFile);
+        fclose(destFile); // Close the destination file
+    }
+    else {
+        printf("Source or destination file could not be found");
     }
 
-    // Open the destination file in write mode
-    destFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/destination.txt", "w");
-    if (destFile == NULL) {
-        perror("Error opening destination file");
-        fclose(sourceFile);  // Close the source file before exiting
-        return 1;
+    if (source != NULL) {
+        free(source); // Free the allocated memory
     }
-
-    // Read characters from source file and write them to destination file
-    while ((ch = fgetc(sourceFile)) != EOF) {
-        fputc(ch, destFile);
-    }
-
-    // Close the files
-    fclose(sourceFile);
-    fclose(destFile);
 
     return 0;
 }

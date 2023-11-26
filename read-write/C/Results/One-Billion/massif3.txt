@@ -274,11 +274,11 @@ heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=148823
+time=152496
 mem_heap_B=4263936
 mem_heap_extra_B=0
 mem_stacks_B=0
-heap_tree=peak
+heap_tree=detailed
 n3: 4263936 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
  n1: 4026368 0x401F186: __mmap64 (mmap64.c:59)
   n3: 4026368 0x401F186: mmap (mmap64.c:47)
@@ -312,7 +312,7 @@ n3: 4263936 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=29
 #-----------
-time=148823
+time=152496
 mem_heap_B=4259840
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -320,8 +320,40 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=225805
+time=229480
 mem_heap_B=4358144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=231794
+mem_heap_B=1004359680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=234940
+mem_heap_B=1004359680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n2: 1004359680 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 1000001536 0x49598E6: __mmap64 (mmap64.c:59)
+  n1: 1000001536 0x49598E6: mmap (mmap64.c:47)
+   n1: 1000001536 0x48D8978: sysmalloc (malloc.c:2310)
+    n1: 1000001536 0x48D9792: _int_malloc (malloc.c:4141)
+     n1: 1000001536 0x48DB153: malloc (malloc.c:3058)
+      n0: 1000001536 0x10921B: main (in /workspaces/Rusty-Kernels-Code/read-write/C/read-writeC)
+ n0: 4358144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=234940
+mem_heap_B=1004355584
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
